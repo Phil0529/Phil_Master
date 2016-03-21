@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60F839A6ECE8B1D0DD57E5A7 /* libPods-Master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B9F465E779D2F7A15E0DD5 /* libPods-Master.a */; };
 		82D1BC871C995EDB0043B83E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC861C995EDB0043B83E /* main.m */; };
 		82D1BC8A1C995EDB0043B83E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC891C995EDB0043B83E /* AppDelegate.m */; };
 		82D1BC8D1C995EDB0043B83E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC8C1C995EDB0043B83E /* ViewController.m */; };
-		82D1BC901C995EDB0043B83E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D1BC8E1C995EDB0043B83E /* Main.storyboard */; };
 		82D1BC931C995EDB0043B83E /* Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC911C995EDB0043B83E /* Master.xcdatamodeld */; };
 		82D1BC951C995EDB0043B83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D1BC941C995EDB0043B83E /* Assets.xcassets */; };
-		82D1BC981C995EDB0043B83E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82D1BC961C995EDB0043B83E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54A1D29E123C14426738160B /* Pods-Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.debug.xcconfig"; sourceTree = "<group>"; };
+		566339F316C23636408421EF /* Pods-Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.release.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.release.xcconfig"; sourceTree = "<group>"; };
+		80B9F465E779D2F7A15E0DD5 /* libPods-Master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D1BC821C995EDB0043B83E /* Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Master.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D1BC861C995EDB0043B83E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82D1BC881C995EDB0043B83E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		82D1BC891C995EDB0043B83E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		82D1BC8B1C995EDB0043B83E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		82D1BC8C1C995EDB0043B83E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		82D1BC8F1C995EDB0043B83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82D1BC921C995EDB0043B83E /* Master.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Master.xcdatamodel; sourceTree = "<group>"; };
 		82D1BC941C995EDB0043B83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		82D1BC971C995EDB0043B83E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82D1BC991C995EDB0043B83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82D1BCA51C9A498E0043B83E /* PrefixHeader-PCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrefixHeader-PCH.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +36,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F839A6ECE8B1D0DD57E5A7 /* libPods-Master.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09C8F7085B2C8BA5983E172D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80B9F465E779D2F7A15E0DD5 /* libPods-Master.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82D1BC791C995EDB0043B83E = {
 			isa = PBXGroup;
 			children = (
+				82D1BC9F1C9A46460043B83E /* Class */,
+				82D1BCA01C9A46460043B83E /* Controller */,
+				82D1BCA11C9A46460043B83E /* External */,
+				82D1BCA21C9A46460043B83E /* Protocol */,
+				82D1BCA31C9A46460043B83E /* Util */,
+				82D1BCA41C9A46460043B83E /* View */,
 				82D1BC841C995EDB0043B83E /* Master */,
 				82D1BC831C995EDB0043B83E /* Products */,
+				C7E09FE573023E6E81459574 /* Pods */,
+				09C8F7085B2C8BA5983E172D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,12 +82,11 @@
 				82D1BC891C995EDB0043B83E /* AppDelegate.m */,
 				82D1BC8B1C995EDB0043B83E /* ViewController.h */,
 				82D1BC8C1C995EDB0043B83E /* ViewController.m */,
-				82D1BC8E1C995EDB0043B83E /* Main.storyboard */,
 				82D1BC941C995EDB0043B83E /* Assets.xcassets */,
-				82D1BC961C995EDB0043B83E /* LaunchScreen.storyboard */,
 				82D1BC991C995EDB0043B83E /* Info.plist */,
 				82D1BC911C995EDB0043B83E /* Master.xcdatamodeld */,
 				82D1BC851C995EDB0043B83E /* Supporting Files */,
+				82D1BCA51C9A498E0043B83E /* PrefixHeader-PCH.pch */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -82,6 +99,63 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		82D1BC9F1C9A46460043B83E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Class;
+			path = ../../../xiaohancheng/Desktop/Master/Class;
+			sourceTree = "<group>";
+		};
+		82D1BCA01C9A46460043B83E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			path = ../../../xiaohancheng/Desktop/Master/Controller;
+			sourceTree = "<group>";
+		};
+		82D1BCA11C9A46460043B83E /* External */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = External;
+			path = ../../../xiaohancheng/Desktop/Master/External;
+			sourceTree = "<group>";
+		};
+		82D1BCA21C9A46460043B83E /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Protocol;
+			path = ../../../xiaohancheng/Desktop/Master/Protocol;
+			sourceTree = "<group>";
+		};
+		82D1BCA31C9A46460043B83E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			path = ../../../xiaohancheng/Desktop/Master/Util;
+			sourceTree = "<group>";
+		};
+		82D1BCA41C9A46460043B83E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = ../../../xiaohancheng/Desktop/Master/View;
+			sourceTree = "<group>";
+		};
+		C7E09FE573023E6E81459574 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54A1D29E123C14426738160B /* Pods-Master.debug.xcconfig */,
+				566339F316C23636408421EF /* Pods-Master.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82D1BC9C1C995EDB0043B83E /* Build configuration list for PBXNativeTarget "Master" */;
 			buildPhases = (
+				A4C177ECCC07C687F72F1A67 /* Check Pods Manifest.lock */,
 				82D1BC7E1C995EDB0043B83E /* Sources */,
 				82D1BC7F1C995EDB0043B83E /* Frameworks */,
 				82D1BC801C995EDB0043B83E /* Resources */,
+				8205D475979CB5C5678BD508 /* Embed Pods Frameworks */,
+				0EB6906C8EE2E0F179FA3D09 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,13 +216,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D1BC981C995EDB0043B83E /* LaunchScreen.storyboard in Resources */,
 				82D1BC951C995EDB0043B83E /* Assets.xcassets in Resources */,
-				82D1BC901C995EDB0043B83E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EB6906C8EE2E0F179FA3D09 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Master/Pods-Master-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8205D475979CB5C5678BD508 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Master/Pods-Master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4C177ECCC07C687F72F1A67 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82D1BC7E1C995EDB0043B83E /* Sources */ = {
@@ -160,25 +283,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		82D1BC8E1C995EDB0043B83E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82D1BC8F1C995EDB0043B83E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		82D1BC961C995EDB0043B83E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				82D1BC971C995EDB0043B83E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		82D1BC9A1C995EDB0043B83E /* Debug */ = {
@@ -263,8 +367,11 @@
 		};
 		82D1BC9D1C995EDB0043B83E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A1D29E123C14426738160B /* Pods-Master.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Phil.Master;
@@ -274,8 +381,11 @@
 		};
 		82D1BC9E1C995EDB0043B83E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566339F316C23636408421EF /* Pods-Master.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Phil.Master;
@@ -302,6 +412,7 @@
 				82D1BC9E1C995EDB0043B83E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
