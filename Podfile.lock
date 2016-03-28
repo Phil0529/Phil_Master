@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - AMapLocation (1.2.0)
   - CVKHierarchySearcher (0.2.0)
   - CWStatusBarNotification (2.3.4)
   - DGActivityIndicatorView (2.0)
@@ -32,7 +33,7 @@ PODS:
   - Overcoat (1.2.1):
     - AFNetworking (~> 2.0)
     - Mantle (~> 1.3)
-  - RongCloudIMLib (2.4.8)
+  - RongCloudIMLib (2.4.9)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -40,9 +41,10 @@ PODS:
   - UMengAnalytics-NO-IDFA (3.6.7)
   - UMengMessage (1.1.0.2)
   - UMengSocial (5.0)
-  - YYText (1.0.1)
+  - YYText (1.0.3)
 
 DEPENDENCIES:
+  - AMapLocation
   - CVKHierarchySearcher
   - CWStatusBarNotification (~> 2.3.4)
   - DGActivityIndicatorView
@@ -61,6 +63,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AMapLocation: 6d72a8f1c5f2a29a736fcaca3a85173ba3dc5f56
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
   CWStatusBarNotification: 3fec41edcb0ae3677d9febfcb9632d8bdf52294c
   DGActivityIndicatorView: 52875b025a6ccf6a431a905285c12e2bb95eb559
@@ -69,12 +72,12 @@ SPEC CHECKSUMS:
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   Overcoat: 45e4d20eafc02c8d7fcde3cb89d35f0630a9fa80
-  RongCloudIMLib: 68b864a15e03311de627f5f4e58817296b0473e7
+  RongCloudIMLib: e4dd2e5d32e85233c04983dd0b554729ec294168
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
   UMengAnalytics-NO-IDFA: 6d02561a00579b2e37718f204eb81347df5d7b8b
   UMengMessage: 48fac77da8a71729c3d9c40eed16151d8917d9b3
   UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
-  YYText: 29ebca1380349ce9bb8da62c82865254c1f703e3
+  YYText: 3050159192035d7f232b537ce76668aac2e2bd8b
 
 COCOAPODS: 0.39.0

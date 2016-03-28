@@ -1,1 +1,1 @@
-../../../../RongCloudIMLib/Rong_Cloud_iOS_IMLib_SDK_v2_4_8_stable/RongIMLib.framework/Headers/RCPublicServiceRichContentMessage.h
+../../../../RongCloudIMLib/Rong_Cloud_iOS_IMLib_SDK_v2_4_9_dev/RongIMLib.framework/Headers/RCPublicServiceRichContentMessage.h

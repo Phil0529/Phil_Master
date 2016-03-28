@@ -20,6 +20,7 @@ pod 'UMengAnalytics-NO-IDFA'
 pod 'CVKHierarchySearcher'
 pod 'CWStatusBarNotification', '~> 2.3.4'
 pod 'YYText'
+pod 'AMapLocation' #定位SDK
 #pod 'YYKit'
 #pod 'JPSVolumeButtonHandler', '1.0.0'
 #pod 'SBJson', '~> 4.0'

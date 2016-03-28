@@ -6,10 +6,24 @@
 //  Copyright © 2016 Xhc. All rights reserved.
 //
 
-#ifndef PrefixHeader_PCH_pch
-#define PrefixHeader_PCH_pch
+#import <Availability.h>
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
 
-#endif /* PrefixHeader_PCH_pch */
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Macros.h"
+#import "DeviceGlobal.h"
+#import "LanguageBundle.h"
+//#import "UINavigationController+Rotation_IOS6.h"
+//#import "NSString+Additions.h"
+//#import "MLBlackTransition.h"
+//#import "MobClick.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+//#import "MTLModel+KTVNullableScalar.h"
+#import <Mantle/Mantle.h>
+#endif
+
