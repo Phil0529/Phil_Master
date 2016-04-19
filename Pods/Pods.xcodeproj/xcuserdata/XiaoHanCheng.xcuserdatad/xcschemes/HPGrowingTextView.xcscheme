@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7AF6AC7509907D0029DAD893'
+               BlueprintIdentifier = '8D36074D543F47DFD9F684D7'
                BlueprintName = 'HPGrowingTextView'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libHPGrowingTextView.a'>

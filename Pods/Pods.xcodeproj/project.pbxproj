@@ -444,6 +444,7 @@
 		04616C6D149A00849B3C75CF99CD909A /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
 		060310712DE00C95CF0D4B482405FFAE /* MJRefreshHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJRefreshHeader.m; path = MJRefresh/Base/MJRefreshHeader.m; sourceTree = "<group>"; };
 		09A266A8C141CB689174076131682F0E /* DGActivityIndicatorTripleRingsAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorTripleRingsAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorTripleRingsAnimation.h; sourceTree = "<group>"; };
+		0AAF8E44093D6DB4009C674821A3884D /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = Rong_Cloud_iOS_IMLib_SDK_v2_4_10_dev/RongIMLib.framework; sourceTree = "<group>"; };
 		0AC203D0BA962A0DF67C176451700180 /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
 		0AE421991B7867BDE30B9F786E32835E /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = Umeng_SDK_Social_iOS_ARM64_5.0/UMSocial_Sdk_Extra_Frameworks/SinaSSO/WBHttpRequest.h; sourceTree = "<group>"; };
 		0AF3340161083C892A02825B891166BC /* YYTextRunDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextRunDelegate.m; path = YYText/String/YYTextRunDelegate.m; sourceTree = "<group>"; };
@@ -558,7 +559,6 @@
 		52639E6747A3E690B46C764E076B5B80 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
 		52A8C78236CFED0CA9C21926BEBEBC46 /* libSDWebImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSDWebImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		52FFE56DBD66EBA9729298EBDF8A0A4D /* NSObject+MTLComparisonAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTLComparisonAdditions.m"; path = "Mantle/NSObject+MTLComparisonAdditions.m"; sourceTree = "<group>"; };
-		5312B97B60591AD04FE904FCF4CFB14C /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "Rong_Cloud_iOS_IMLib_SDK_v2_4_9_dev/libopencore-amrnb.a"; sourceTree = "<group>"; };
 		53D07CE25558243EAA2A76EFB2609BF4 /* MJRefreshHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJRefreshHeader.h; path = MJRefresh/Base/MJRefreshHeader.h; sourceTree = "<group>"; };
 		53F6DE304505850CFE8F44AEBD9A205D /* metamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Mantle/extobjc/metamacros.h; sourceTree = "<group>"; };
 		544CF4FF096E80B3F92855BCC9155A28 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
@@ -651,6 +651,7 @@
 		884DA533436A1333345956D50EAB5858 /* OVCClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OVCClient.m; path = Overcoat/OVCClient.m; sourceTree = "<group>"; };
 		887322D9296B33F2A24753A493AD34F4 /* YYTextTransaction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextTransaction.h; path = YYText/Utility/YYTextTransaction.h; sourceTree = "<group>"; };
 		889D05A6AC41684EFDC4318E01E18B68 /* MJRefresh-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJRefresh-dummy.m"; sourceTree = "<group>"; };
+		88EB51E80F5EB2D7F34E303B0EA613B5 /* libopencore-amrnb.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = "libopencore-amrnb.a"; path = "Rong_Cloud_iOS_IMLib_SDK_v2_4_10_dev/libopencore-amrnb.a"; sourceTree = "<group>"; };
 		88EFE163731A9DD53D8B51CBAFD9942E /* YYTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYTextParser.h; path = YYText/String/YYTextParser.h; sourceTree = "<group>"; };
 		89372DC13BFFA94167EA5A2B10CF48C2 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = Umeng_SDK_Social_iOS_ARM64_5.0/UMSocial_Sdk_Extra_Frameworks/SinaSSO/WeiboSDK.h; sourceTree = "<group>"; };
 		895CFDE5616DA17903474213C8697A66 /* DGActivityIndicatorBallGridPulseAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DGActivityIndicatorBallGridPulseAnimation.h; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallGridPulseAnimation.h; sourceTree = "<group>"; };
@@ -725,7 +726,6 @@
 		B522A73710307B55A3FAC7D5BD84826C /* DGActivityIndicatorBallPulseSyncAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorBallPulseSyncAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorBallPulseSyncAnimation.m; sourceTree = "<group>"; };
 		B62EC9CD63801E0CA5D72F6CF6B17FA4 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreText.framework; sourceTree = DEVELOPER_DIR; };
 		B7A121320F3DF880E16D24F086D8CC51 /* APOpenAPIObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APOpenAPIObject.h; path = Umeng_SDK_Social_iOS_ARM64_5.0/UMSocial_Sdk_Extra_Frameworks/AlipayShare/APOpenAPIObject.h; sourceTree = "<group>"; };
-		B8F4685257E1DBBD6BE80364F57A0E4E /* RongIMLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RongIMLib.framework; path = Rong_Cloud_iOS_IMLib_SDK_v2_4_9_dev/RongIMLib.framework; sourceTree = "<group>"; };
 		B94C1FC3BE86F068827CFBF2E592850F /* CWStatusBarNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CWStatusBarNotification.h; path = CWStatusBarNotification/CWStatusBarNotification.h; sourceTree = "<group>"; };
 		B99A53F5750B1A5BAB00643BF94CF6CF /* YYTextAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYTextAttribute.m; path = YYText/String/YYTextAttribute.m; sourceTree = "<group>"; };
 		B99ACE0BA557FE758A0439042BC9BCBC /* DGActivityIndicatorRotatingSandglassAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DGActivityIndicatorRotatingSandglassAnimation.m; path = DGActivityIndicatorView/Animations/DGActivityIndicatorRotatingSandglassAnimation.m; sourceTree = "<group>"; };
@@ -1376,6 +1376,15 @@
 			path = "../Target Support Files/SDWebImage";
 			sourceTree = "<group>";
 		};
+		93FC97BEF4D41BD9EF43A7CC701DA573 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EB51E80F5EB2D7F34E303B0EA613B5 /* libopencore-amrnb.a */,
+				0AAF8E44093D6DB4009C674821A3884D /* RongIMLib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		955629DB937E4C19E33BAD9840916796 /* Mantle */ = {
 			isa = PBXGroup;
 			children = (
@@ -1682,7 +1691,7 @@
 		CC9F79FFB82253EDB4CEDD533044CA03 /* RongCloudIMLib */ = {
 			isa = PBXGroup;
 			children = (
-				D48B5BF6F1E1C77B2B57CEC27CE0650F /* Frameworks */,
+				93FC97BEF4D41BD9EF43A7CC701DA573 /* Frameworks */,
 			);
 			path = RongCloudIMLib;
 			sourceTree = "<group>";
@@ -1705,15 +1714,6 @@
 				21C156F2DC0133294D84E6A0F3C089E6 /* UIKit.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		D48B5BF6F1E1C77B2B57CEC27CE0650F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5312B97B60591AD04FE904FCF4CFB14C /* libopencore-amrnb.a */,
-				B8F4685257E1DBBD6BE80364F57A0E4E /* RongIMLib.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D904DA451871BD8EE23495A7D743196F /* Reachability */ = {

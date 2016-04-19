@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F4C0FE0E692BAF8B5DBE67D1'
+               BlueprintIdentifier = 'BAC9FD951462361A1AD5B0A0'
                BlueprintName = 'Overcoat'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libOvercoat.a'>

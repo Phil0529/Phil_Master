@@ -69,9 +69,7 @@
     [super viewDidLoad];
     //    [self.view setBackgroundColor:[UIColor clearColor]];
     self.automaticallyAdjustsScrollViewInsets = NO;
-    if (SYSTEM_VERSION_LESS_THAN(@"8.0")) {
-        [self.navigationController.navigationBar setTranslucent:NO];
-    }
+    
     [self.view setBackgroundColor:BACKGROUND_COLOR];
     
     if (!ISEMPTYSTR(_columnItem.name)) {

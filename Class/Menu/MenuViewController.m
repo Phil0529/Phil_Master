@@ -38,19 +38,19 @@
     }
     switch (menuItem.menutype) {
         case MenuTypeSimpleNews:{
-            paneViewController = [[ContentViewController alloc] initWithStyle:ColumnContent];
-            [(ContentViewController *)paneViewController setColumnItem:menuItem];
+            paneViewController = [[ContentViewController alloc] initWithStyle:MultiColumnContent];
+//            [(ContentViewController *)paneViewController setColumnItem:menuItem];
         }
             break;
         case MenuTypeLocation:{
-            LocationViewController *vc = [[LocationViewController alloc] init];
-            return vc;
+//            LocationViewController *vc = [[LocationViewController alloc] init];
+//            return vc;
         }
             break;
         case MenuTypePay:{
-            PayViewController *vc = [[PayViewController alloc] init];
-            [vc setTitle:menuItem.name];
-            return vc;
+//            PayViewController *vc = [[PayViewController alloc] init];
+//            [vc setTitle:menuItem.name];
+//            return vc;
         }
             break;
         default:
@@ -168,7 +168,7 @@
      }];
     
     CGFloat leftButtonWidth = (SCREEN_WIDTH - MenuFloatWidth)/2 - .5f;
-    CGFloat rightButtonWidth = SCREEN_WIDTH - leftButtonWidth;
+//    CGFloat rightButtonWidth = SCREEN_WIDTH - leftButtonWidth;
     CGFloat buttonHeight = 60.f;
     
     int rowCount = 0;
@@ -194,9 +194,9 @@
             }
         }
         
-        BOOL needWrap = NO;
+//        BOOL needWrap = NO;
         //        btnMode mode = MODE_LARGE;
-        CGRect frame = CGRectZero;
+//        CGRect frame = CGRectZero;
         //        switch (current.position) {
         //            case PositionLeft:
         ////                mode = MODE_LEFT;

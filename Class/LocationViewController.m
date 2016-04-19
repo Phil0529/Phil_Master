@@ -23,11 +23,12 @@
     [self.view setBackgroundColor:BACKGROUND_COLOR];
 
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locaSuccess:) name:LOCATION_INFORMATION object:nil];
-    self.locaManager = [[LocationManager alloc] init];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.locaManager = [[LocationManager alloc] init];
     [self.locaManager startGetLocation];
 }
 

@@ -433,7 +433,7 @@
         [self.delegate tapToPlayRadioViewController];
     }
     else{
-        UIViewController *currentViewController = [self getCurrentVC];
+//        UIViewController *currentViewController = [self getCurrentVC];
 //        [currentViewController.navigationController pushViewController:[EZBroadcastManager shareInstance].playRadioController animated:YES];
     }
 }

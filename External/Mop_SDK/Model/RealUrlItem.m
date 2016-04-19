@@ -101,7 +101,7 @@
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:@"RealUrlItem url=%@ title=%@ qualitys=%@ quality=%d", self.mUrl, self.mTitle, self.mQualitys, self.mQuality];
+    return [NSString stringWithFormat:@"RealUrlItem url=%@ title=%@ qualitys=%@ quality=%ld", self.mUrl, self.mTitle, self.mQualitys, (long)self.mQuality];
 }
 
 @end

@@ -178,10 +178,10 @@ typedef enum{
 //颜色
 
 #define FOREGROUND_COLOR \
-[UIColor colorWithRed:235.0/255.0 green:65.0/255.0 blue:61.0/255.0 alpha:1.0]
+[UIColor colorWithRed:255.0/255.0 green:71.0/255.0 blue:119.0/255.0 alpha:1.0]
 
 #define BACKGROUND_COLOR \
-[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
+[UIColor colorWithRed:79.0/255.0 green:69.0/255.0 blue:92.0/255.0 alpha:1.0]
 
 #define RADIO_STATUS_COLOR \
 [UIColor colorWithRed:((float)((0xec4c48 & 0xFF0000) >> 16))/255.0 \
@@ -193,6 +193,14 @@ typedef enum{
 
 #define RGBACOLOR(r,g,b,a) \
 [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+
+#define UNDERGROUND_COLOR \
+[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
+
+#define LINE_COLOR \
+[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:236.0/255.0 alpha:1.0]
+
+
 
 #define COLORFORRGB(rgbValue) \
 [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \

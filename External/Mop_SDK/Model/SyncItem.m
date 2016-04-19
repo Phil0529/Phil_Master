@@ -83,7 +83,7 @@
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:@"SyncItem columnId=%d syncNumber=%d", self.mColumnId, self.mSyncNum];
+    return [NSString stringWithFormat:@"SyncItem columnId=%ld syncNumber=%ld", (long)self.mColumnId, (long)self.mSyncNum];
 }
 
 @end

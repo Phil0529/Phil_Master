@@ -464,7 +464,7 @@ static SoapClient *sharedInstance = nil;
 - (void)getAssetList:(NSString *)user startUtc:(NSTimeInterval)start_utc endUtc:(NSTimeInterval)end_utc pageNo:(NSInteger)pageno pageSize:(NSInteger)pagesize completion:(HttpResponseCompletion)completion
 {
     NSString *path = [NSString stringWithFormat:@"https://%@%@", _mOisAddr, METHOD_GET_ASSETLIST];
-    NSString *content = [NSString stringWithFormat:@"%@ <assetlist user=\"%@\" start_utc=\"%.0f\" end_utc=\"%.0f\" page_no=\"%d\" page_size=\"%ld\" token=\"%@\" /> %@", SOAP_HEAD, user, start_utc, end_utc, pageno, (long)pagesize, _mOisToken, SOAP_TAIL];
+    NSString *content = [NSString stringWithFormat:@"%@ <assetlist user=\"%@\" start_utc=\"%.0f\" end_utc=\"%.0f\" page_no=\"%ld\" page_size=\"%ld\" token=\"%@\" /> %@", SOAP_HEAD, user, start_utc, end_utc, (long)pageno, (long)pagesize, _mOisToken, SOAP_TAIL];
     [NSHttpRequest POST:path content:content timeout:timeoutInterval completion:^(HttpResponse *response) {
         if (response&& response.mStatusCode == 200) {
             if (![self isStringEmpty:response.mSoapBody]) {

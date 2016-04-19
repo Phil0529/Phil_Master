@@ -93,14 +93,14 @@ NSString* const mapKey = @"configmap.key";
 - (NSArray *)tabMenuArray
 {
     NSMutableArray *tabArray = [[NSMutableArray alloc] initWithCapacity:5];
-//    MenuItem *test = [MenuItem defaultItem];
-//    [test setName:LBLocalized(@"定位")];
-//    test.cid = 1010101;
-//    test.adstatus = 1;
-//    test.haschild = 1;
-//    test.menutype = MenuTypeLocation;
-//    test.tabIcon = TabIconVideo;
-//    [tabArray addObject:test];
+    MenuItem *test = [MenuItem defaultItem];
+    [test setName:LBLocalized(@"定位")];
+    test.cid = 1010101;
+    test.adstatus = 1;
+    test.haschild = 1;
+    test.menutype = MenuTypeLocation;
+    test.tabIcon = TabIconVideo;
+    [tabArray addObject:test];
     
     MenuItem *test2 = [MenuItem defaultItem];
     [test2 setName:LBLocalized(@"等待付款")];
@@ -111,6 +111,15 @@ NSString* const mapKey = @"configmap.key";
     test2.tabIcon = TabIconVideo;
     [tabArray addObject:test2];
     
+    MenuItem *test3 = [MenuItem defaultItem];
+    [test3 setName:LBLocalized(@"简单多列新闻")];
+    test3.cid = 1010101;
+    test3.adstatus = 1;
+    test3.haschild = 1;
+    test3.menutype = MenuTypeSimpleNews;
+    test3.tabIcon = TabIconVideo;
+    [tabArray addObject:test3];
+
     return tabArray;
 }
 

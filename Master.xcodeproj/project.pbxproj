@@ -167,11 +167,20 @@
 		82A9A90D1CA1125500C73CD0 /* UITools.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A9A8EF1CA1125500C73CD0 /* UITools.m */; };
 		82A9A9161CA1162900C73CD0 /* AppDelegateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A9A9151CA1162900C73CD0 /* AppDelegateManager.m */; };
 		82A9A9191CA1242E00C73CD0 /* LaunchAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A9A9181CA1242E00C73CD0 /* LaunchAdView.m */; };
+		82B829301CB355CC00832E5A /* MyTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8292F1CB355CC00832E5A /* MyTicketViewController.m */; };
+		82B829331CB357A500832E5A /* HorizontalTitleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B829321CB357A500832E5A /* HorizontalTitleMenu.m */; };
+		82B8293F1CB36D0A00832E5A /* SFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8293E1CB36D0A00832E5A /* SFViewController.m */; };
+		82B829421CB36FD000832E5A /* TicketNotUseCollViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B829411CB36FD000832E5A /* TicketNotUseCollViewCell.m */; };
+		82B829491CB383B200832E5A /* TicketContentPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B829481CB383B200832E5A /* TicketContentPage.m */; };
+		82B8294C1CB394DF00832E5A /* TicketItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 82B8294B1CB394DF00832E5A /* TicketItem.m */; };
+		82CFAE871CA9169000BC3DD8 /* WaitPayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CFAE861CA9169000BC3DD8 /* WaitPayView.m */; };
 		82D1BC871C995EDB0043B83E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC861C995EDB0043B83E /* main.m */; };
 		82D1BC8A1C995EDB0043B83E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC891C995EDB0043B83E /* AppDelegate.m */; };
 		82D1BC8D1C995EDB0043B83E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC8C1C995EDB0043B83E /* ViewController.m */; };
 		82D1BC931C995EDB0043B83E /* Master.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 82D1BC911C995EDB0043B83E /* Master.xcdatamodeld */; };
 		82D1BC951C995EDB0043B83E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D1BC941C995EDB0043B83E /* Assets.xcassets */; };
+		82F4032B1CAA148C00F938E5 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 82F4032A1CAA148C00F938E5 /* test.png */; };
+		82FD0DB21CB89E3500C47A01 /* EZUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 82FD0DB11CB89E3500C47A01 /* EZUITextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -496,6 +505,20 @@
 		82A9A9151CA1162900C73CD0 /* AppDelegateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegateManager.m; path = ../../../../xiaohancheng/Phil_Dev/Master/Master/AppDelegateManager.m; sourceTree = "<group>"; };
 		82A9A9171CA1242E00C73CD0 /* LaunchAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchAdView.h; sourceTree = "<group>"; };
 		82A9A9181CA1242E00C73CD0 /* LaunchAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchAdView.m; sourceTree = "<group>"; };
+		82B8292E1CB355CC00832E5A /* MyTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTicketViewController.h; sourceTree = "<group>"; };
+		82B8292F1CB355CC00832E5A /* MyTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTicketViewController.m; sourceTree = "<group>"; };
+		82B829311CB357A500832E5A /* HorizontalTitleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizontalTitleMenu.h; sourceTree = "<group>"; };
+		82B829321CB357A500832E5A /* HorizontalTitleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizontalTitleMenu.m; sourceTree = "<group>"; };
+		82B8293D1CB36D0A00832E5A /* SFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFViewController.h; sourceTree = "<group>"; };
+		82B8293E1CB36D0A00832E5A /* SFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFViewController.m; sourceTree = "<group>"; };
+		82B829401CB36FD000832E5A /* TicketNotUseCollViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketNotUseCollViewCell.h; sourceTree = "<group>"; };
+		82B829411CB36FD000832E5A /* TicketNotUseCollViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketNotUseCollViewCell.m; sourceTree = "<group>"; };
+		82B829471CB383B200832E5A /* TicketContentPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketContentPage.h; sourceTree = "<group>"; };
+		82B829481CB383B200832E5A /* TicketContentPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketContentPage.m; sourceTree = "<group>"; };
+		82B8294A1CB394DF00832E5A /* TicketItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketItem.h; sourceTree = "<group>"; };
+		82B8294B1CB394DF00832E5A /* TicketItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketItem.m; sourceTree = "<group>"; };
+		82CFAE851CA9169000BC3DD8 /* WaitPayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitPayView.h; sourceTree = "<group>"; };
+		82CFAE861CA9169000BC3DD8 /* WaitPayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitPayView.m; sourceTree = "<group>"; };
 		82D1BC821C995EDB0043B83E /* Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Master.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D1BC861C995EDB0043B83E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		82D1BC881C995EDB0043B83E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -506,6 +529,9 @@
 		82D1BC941C995EDB0043B83E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D1BC991C995EDB0043B83E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82D1BCA51C9A498E0043B83E /* PrefixHeader-PCH.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PrefixHeader-PCH.pch"; sourceTree = "<group>"; };
+		82F4032A1CAA148C00F938E5 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		82FD0DB01CB89E3500C47A01 /* EZUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EZUITextField.h; sourceTree = "<group>"; };
+		82FD0DB11CB89E3500C47A01 /* EZUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EZUITextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,6 +581,8 @@
 		824A576F1CA13A7800E1E78E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				82B8293D1CB36D0A00832E5A /* SFViewController.h */,
+				82B8293E1CB36D0A00832E5A /* SFViewController.m */,
 				822AFFE21CA3D2F7006B87B7 /* MenuManager.h */,
 				822AFFE31CA3D2F7006B87B7 /* MenuManager.m */,
 				824A57701CA13A8600E1E78E /* MenuViewController.h */,
@@ -907,12 +935,39 @@
 		828EA4AA1CA8FB2F00D3325D /* Pay */ = {
 			isa = PBXGroup;
 			children = (
+				82F4032A1CAA148C00F938E5 /* test.png */,
 				828EA4AB1CA8FB4600D3325D /* PayViewController.h */,
 				828EA4AC1CA8FB4600D3325D /* PayViewController.m */,
 				828EA4AE1CA8FD6000D3325D /* WaitPayViewController.h */,
 				828EA4AF1CA8FD6000D3325D /* WaitPayViewController.m */,
+				82CFAE851CA9169000BC3DD8 /* WaitPayView.h */,
+				82CFAE861CA9169000BC3DD8 /* WaitPayView.m */,
 			);
 			name = Pay;
+			sourceTree = "<group>";
+		};
+		829CE67F1CC48D8D0004362D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UIView;
+			sourceTree = "<group>";
+		};
+		829CE6801CC48D9B0004362D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		829CE6811CC48DAC0004362D /* Function */ = {
+			isa = PBXGroup;
+			children = (
+				822AFFEB1CA4D0C9006B87B7 /* Location */,
+				828EA4AA1CA8FB2F00D3325D /* Pay */,
+				82B8292D1CB3556200832E5A /* Ticket */,
+			);
+			name = Function;
 			sourceTree = "<group>";
 		};
 		82A9A8A71CA1117D00C73CD0 /* External */ = {
@@ -1057,6 +1112,8 @@
 		82A9A8E11CA1125500C73CD0 /* Phil */ = {
 			isa = PBXGroup;
 			children = (
+				82FD0DB01CB89E3500C47A01 /* EZUITextField.h */,
+				82FD0DB11CB89E3500C47A01 /* EZUITextField.m */,
 				824A58E51CA1453600E1E78E /* EZRadioItem.h */,
 				824A58E61CA1453600E1E78E /* EZRadioItem.m */,
 				824A58E21CA1451C00E1E78E /* EZBroadcastManager.h */,
@@ -1086,12 +1143,13 @@
 		82A9A90F1CA114FC00C73CD0 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				828EA4AA1CA8FB2F00D3325D /* Pay */,
-				822AFFEB1CA4D0C9006B87B7 /* Location */,
+				824A576F1CA13A7800E1E78E /* Menu */,
+				829CE6811CC48DAC0004362D /* Function */,
+				829CE6801CC48D9B0004362D /* Util */,
+				829CE67F1CC48D8D0004362D /* UIView */,
+				82A9A9101CA115A100C73CD0 /* LaunchAd */,
 				824D30C71CA29E710012C3E9 /* Unarranged */,
 				824D30C81CA29E710012C3E9 /* NewsListFrame */,
-				824A576F1CA13A7800E1E78E /* Menu */,
-				82A9A9101CA115A100C73CD0 /* LaunchAd */,
 			);
 			name = Class;
 			path = ../../../xiaohancheng/Phil_Dev/Master/Class;
@@ -1104,6 +1162,23 @@
 				82A9A9181CA1242E00C73CD0 /* LaunchAdView.m */,
 			);
 			path = LaunchAd;
+			sourceTree = "<group>";
+		};
+		82B8292D1CB3556200832E5A /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				82B8292E1CB355CC00832E5A /* MyTicketViewController.h */,
+				82B8292F1CB355CC00832E5A /* MyTicketViewController.m */,
+				82B829311CB357A500832E5A /* HorizontalTitleMenu.h */,
+				82B829321CB357A500832E5A /* HorizontalTitleMenu.m */,
+				82B829471CB383B200832E5A /* TicketContentPage.h */,
+				82B829481CB383B200832E5A /* TicketContentPage.m */,
+				82B829401CB36FD000832E5A /* TicketNotUseCollViewCell.h */,
+				82B829411CB36FD000832E5A /* TicketNotUseCollViewCell.m */,
+				82B8294A1CB394DF00832E5A /* TicketItem.h */,
+				82B8294B1CB394DF00832E5A /* TicketItem.m */,
+			);
+			name = Ticket;
 			sourceTree = "<group>";
 		};
 		82D1BC791C995EDB0043B83E = {
@@ -1228,6 +1303,7 @@
 			files = (
 				825BC1F71C9FF3140044C931 /* Master.t in Resources */,
 				8268E45B1CA26B8C00A9DD06 /* Localizable.strings in Resources */,
+				82F4032B1CAA148C00F938E5 /* test.png in Resources */,
 				82A9A8F21CA1125500C73CD0 /* ImagesPicker.xcassets in Resources */,
 				82A9A9061CA1125500C73CD0 /* README.textile in Resources */,
 				82D1BC951C995EDB0043B83E /* Assets.xcassets in Resources */,
@@ -1330,6 +1406,7 @@
 				8268E45E1CA270D400A9DD06 /* ConfigClient.m in Sources */,
 				82D1BC8A1C995EDB0043B83E /* AppDelegate.m in Sources */,
 				82A9A90C1CA1125500C73CD0 /* UIImageView+Addition.m in Sources */,
+				82CFAE871CA9169000BC3DD8 /* WaitPayView.m in Sources */,
 				82A9A9071CA1125500C73CD0 /* CLLocation+GPSDictionary.m in Sources */,
 				82A9A9191CA1242E00C73CD0 /* LaunchAdView.m in Sources */,
 				82A9A8F01CA1125500C73CD0 /* DDCollectionViewFlowLayout.m in Sources */,
@@ -1366,6 +1443,7 @@
 				82D1BC931C995EDB0043B83E /* Master.xcdatamodeld in Sources */,
 				824A57AF1CA13F7500E1E78E /* CertificationItem.m in Sources */,
 				824A58D81CA143DA00E1E78E /* NSString+Additions.m in Sources */,
+				82B829491CB383B200832E5A /* TicketContentPage.m in Sources */,
 				824A57DD1CA13FBE00E1E78E /* CMSDataQuery.m in Sources */,
 				824A58161CA1416000E1E78E /* APPSClient.m in Sources */,
 				824A57781CA13D0400E1E78E /* TabBarViewController.m in Sources */,
@@ -1374,6 +1452,7 @@
 				824A57751CA13B1100E1E78E /* NavigationViewController.m in Sources */,
 				82A9A8FB1CA1125500C73CD0 /* JKPhotoBrowserCell.m in Sources */,
 				824A589C1CA1427200E1E78E /* AuthItem.m in Sources */,
+				82B8293F1CB36D0A00832E5A /* SFViewController.m in Sources */,
 				824A58901CA1427200E1E78E /* CategoryManager.m in Sources */,
 				824A58A31CA1427200E1E78E /* SubscribeItem.m in Sources */,
 				824A58911CA1427200E1E78E /* ColumnManager.m in Sources */,
@@ -1385,6 +1464,7 @@
 				824A588F1CA1427200E1E78E /* AreaManager.m in Sources */,
 				82A9A90D1CA1125500C73CD0 /* UITools.m in Sources */,
 				824A58321CA141DB00E1E78E /* NeighborViewController.m in Sources */,
+				82B8294C1CB394DF00832E5A /* TicketItem.m in Sources */,
 				824A57721CA13A8600E1E78E /* MenuViewController.m in Sources */,
 				824A58891CA1427200E1E78E /* AFHttpAPIClient.m in Sources */,
 				824A58B61CA143A300E1E78E /* SponsorsItem.m in Sources */,
@@ -1395,6 +1475,7 @@
 				824A58261CA1416000E1E78E /* UserQuery.m in Sources */,
 				82A9A8FC1CA1125500C73CD0 /* JKPromptView.m in Sources */,
 				824A57B51CA13F7500E1E78E /* LiveAuthItem.m in Sources */,
+				82B829331CB357A500832E5A /* HorizontalTitleMenu.m in Sources */,
 				824A58301CA141DB00E1E78E /* AppConfig.m in Sources */,
 				824A58A21CA1427200E1E78E /* RealUrlItem.m in Sources */,
 				824A57BD1CA13F7500E1E78E /* TagItem.m in Sources */,
@@ -1423,6 +1504,7 @@
 				824A57E91CA13FBE00E1E78E /* UploadManager.m in Sources */,
 				824A581B1CA1416000E1E78E /* ResponseModel.m in Sources */,
 				824A58E11CA144E900E1E78E /* StatusBarNotificationPhil.m in Sources */,
+				82FD0DB21CB89E3500C47A01 /* EZUITextField.m in Sources */,
 				82A9A8FA1CA1125500C73CD0 /* JKPhotoBrowser.m in Sources */,
 				824A57B21CA13F7500E1E78E /* EZMediaItem.m in Sources */,
 				824A589E1CA1427200E1E78E /* ColumnItem.m in Sources */,
@@ -1438,6 +1520,7 @@
 				82A9A9091CA1125500C73CD0 /* EZWriteGPSToImagePhil.m in Sources */,
 				824A58311CA141DB00E1E78E /* NeighborCell.m in Sources */,
 				824A58921CA1427200E1E78E /* EpgBase.m in Sources */,
+				82B829421CB36FD000832E5A /* TicketNotUseCollViewCell.m in Sources */,
 				82A9A90B1CA1125500C73CD0 /* UIImage+Color.m in Sources */,
 				82A9A9081CA1125500C73CD0 /* EZPhilImageView.m in Sources */,
 				824A57B81CA13F7500E1E78E /* LiveResponseModel.m in Sources */,
@@ -1445,6 +1528,7 @@
 				824A581E1CA1416000E1E78E /* SuperTotalModel.m in Sources */,
 				824A57B31CA13F7500E1E78E /* HomeItem.m in Sources */,
 				824A58951CA1427200E1E78E /* MediaDetailManager.m in Sources */,
+				82B829301CB355CC00832E5A /* MyTicketViewController.m in Sources */,
 				824A576C1CA1397C00E1E78E /* ICSDrawerController.m in Sources */,
 				824A58D71CA143DA00E1E78E /* NSData+base64.m in Sources */,
 				82A9A8F41CA1125500C73CD0 /* JKAssetsCollectionFooterView.m in Sources */,

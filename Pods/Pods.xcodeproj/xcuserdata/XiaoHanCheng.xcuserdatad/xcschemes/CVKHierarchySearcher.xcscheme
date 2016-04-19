@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C26CDD8B57FE2286E17446D3'
+               BlueprintIdentifier = '91002A97C83EA4751A000536'
                BlueprintName = 'CVKHierarchySearcher'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libCVKHierarchySearcher.a'>
