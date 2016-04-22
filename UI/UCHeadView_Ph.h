@@ -1,13 +1,13 @@
 //
-//  UCTopHeadView_Ph.h
+//  UCHeadView_Ph.h
 //  Master
 //
-//  Created by Phil Xhc on 4/21/16.
+//  Created by Phil Xhc on 4/22/16.
 //  Copyright © 2016 Xhc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UCTopHeadView_Ph : UIView
+@interface UCHeadView_Ph : UIView
 
 @end

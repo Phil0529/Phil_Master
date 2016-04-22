@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		60F839A6ECE8B1D0DD57E5A7 /* libPods-Master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80B9F465E779D2F7A15E0DD5 /* libPods-Master.a */; };
+		82039C791CC9F02000593A61 /* UCHeadView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039C781CC9F02000593A61 /* UCHeadView_Ph.m */; };
+		82039C7C1CC9F06100593A61 /* UCTableCell_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 82039C7B1CC9F06100593A61 /* UCTableCell_Ph.m */; };
 		826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */; };
 		826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA31CC9C701004541C0 /* HomeVC_Ph.m */; };
 		826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */; };
@@ -15,7 +17,6 @@
 		826D2EB61CC9C701004541C0 /* NavigationVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA91CC9C701004541C0 /* NavigationVC_Ph.m */; };
 		826D2EB71CC9C701004541C0 /* RightDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EAB1CC9C701004541C0 /* RightDrawerVC_Ph.m */; };
 		826D2EB81CC9C701004541C0 /* TabBarVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EAD1CC9C701004541C0 /* TabBarVC_Ph.m */; };
-		826D2EB91CC9C701004541C0 /* UCTopHeadView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EAF1CC9C701004541C0 /* UCTopHeadView_Ph.m */; };
 		826D2EBA1CC9C701004541C0 /* UserCenterVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EB11CC9C701004541C0 /* UserCenterVC_Ph.m */; };
 		826D2EC01CC9C71E004541C0 /* ConfigItem_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EBD1CC9C71E004541C0 /* ConfigItem_Ph.m */; };
 		826D2EC11CC9C71E004541C0 /* ConfigManager_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EBF1CC9C71E004541C0 /* ConfigManager_Ph.m */; };
@@ -33,6 +34,10 @@
 		54A1D29E123C14426738160B /* Pods-Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.debug.xcconfig"; sourceTree = "<group>"; };
 		566339F316C23636408421EF /* Pods-Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.release.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.release.xcconfig"; sourceTree = "<group>"; };
 		80B9F465E779D2F7A15E0DD5 /* libPods-Master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82039C771CC9F02000593A61 /* UCHeadView_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UCHeadView_Ph.h; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCHeadView_Ph.h; sourceTree = "<group>"; };
+		82039C781CC9F02000593A61 /* UCHeadView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UCHeadView_Ph.m; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCHeadView_Ph.m; sourceTree = "<group>"; };
+		82039C7A1CC9F06100593A61 /* UCTableCell_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UCTableCell_Ph.h; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCTableCell_Ph.h; sourceTree = "<group>"; };
+		82039C7B1CC9F06100593A61 /* UCTableCell_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UCTableCell_Ph.m; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCTableCell_Ph.m; sourceTree = "<group>"; };
 		826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		826D2EA21CC9C701004541C0 /* HomeVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC_Ph.h; sourceTree = "<group>"; };
@@ -47,8 +52,6 @@
 		826D2EAB1CC9C701004541C0 /* RightDrawerVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightDrawerVC_Ph.m; sourceTree = "<group>"; };
 		826D2EAC1CC9C701004541C0 /* TabBarVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC_Ph.h; sourceTree = "<group>"; };
 		826D2EAD1CC9C701004541C0 /* TabBarVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC_Ph.m; sourceTree = "<group>"; };
-		826D2EAE1CC9C701004541C0 /* UCTopHeadView_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCTopHeadView_Ph.h; sourceTree = "<group>"; };
-		826D2EAF1CC9C701004541C0 /* UCTopHeadView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCTopHeadView_Ph.m; sourceTree = "<group>"; };
 		826D2EB01CC9C701004541C0 /* UserCenterVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterVC_Ph.h; sourceTree = "<group>"; };
 		826D2EB11CC9C701004541C0 /* UserCenterVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterVC_Ph.m; sourceTree = "<group>"; };
 		826D2EBC1CC9C71E004541C0 /* ConfigItem_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigItem_Ph.h; sourceTree = "<group>"; };
@@ -90,27 +93,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		826D2E9F1CC9C701004541C0 /* UI */ = {
+		82039C721CC9CE2400593A61 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
-				826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */,
-				826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */,
-				826D2EA21CC9C701004541C0 /* HomeVC_Ph.h */,
-				826D2EA31CC9C701004541C0 /* HomeVC_Ph.m */,
-				826D2EA41CC9C701004541C0 /* LeftDrawerVC_Ph.h */,
-				826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */,
 				826D2EA61CC9C701004541C0 /* MenuVC_Ph.h */,
 				826D2EA71CC9C701004541C0 /* MenuVC_Ph.m */,
 				826D2EA81CC9C701004541C0 /* NavigationVC_Ph.h */,
 				826D2EA91CC9C701004541C0 /* NavigationVC_Ph.m */,
-				826D2EAA1CC9C701004541C0 /* RightDrawerVC_Ph.h */,
-				826D2EAB1CC9C701004541C0 /* RightDrawerVC_Ph.m */,
+				826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */,
+				826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */,
 				826D2EAC1CC9C701004541C0 /* TabBarVC_Ph.h */,
 				826D2EAD1CC9C701004541C0 /* TabBarVC_Ph.m */,
-				826D2EAE1CC9C701004541C0 /* UCTopHeadView_Ph.h */,
-				826D2EAF1CC9C701004541C0 /* UCTopHeadView_Ph.m */,
+				826D2EA41CC9C701004541C0 /* LeftDrawerVC_Ph.h */,
+				826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */,
+				826D2EAA1CC9C701004541C0 /* RightDrawerVC_Ph.h */,
+				826D2EAB1CC9C701004541C0 /* RightDrawerVC_Ph.m */,
+			);
+			name = Frame;
+			sourceTree = "<group>";
+		};
+		82039C731CC9CE4D00593A61 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				826D2EA21CC9C701004541C0 /* HomeVC_Ph.h */,
+				826D2EA31CC9C701004541C0 /* HomeVC_Ph.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		82039C741CC9CE5000593A61 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				82039C761CC9D08A00593A61 /* Controller */,
+				82039C751CC9D08600593A61 /* View */,
+			);
+			name = UserCenter;
+			sourceTree = "<group>";
+		};
+		82039C751CC9D08600593A61 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82039C771CC9F02000593A61 /* UCHeadView_Ph.h */,
+				82039C781CC9F02000593A61 /* UCHeadView_Ph.m */,
+				82039C7A1CC9F06100593A61 /* UCTableCell_Ph.h */,
+				82039C7B1CC9F06100593A61 /* UCTableCell_Ph.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		82039C761CC9D08A00593A61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				826D2EB01CC9C701004541C0 /* UserCenterVC_Ph.h */,
 				826D2EB11CC9C701004541C0 /* UserCenterVC_Ph.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		826D2E9F1CC9C701004541C0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				82039C741CC9CE5000593A61 /* UserCenter */,
+				82039C731CC9CE4D00593A61 /* Home */,
+				82039C721CC9CE2400593A61 /* Frame */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -314,6 +359,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				826D2EB81CC9C701004541C0 /* TabBarVC_Ph.m in Sources */,
+				82039C791CC9F02000593A61 /* UCHeadView_Ph.m in Sources */,
+				82039C7C1CC9F06100593A61 /* UCTableCell_Ph.m in Sources */,
 				826D2EB71CC9C701004541C0 /* RightDrawerVC_Ph.m in Sources */,
 				826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */,
 				826D2EB61CC9C701004541C0 /* NavigationVC_Ph.m in Sources */,
@@ -325,7 +372,6 @@
 				826D2ED31CC9C82A004541C0 /* AppDelegate.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
 				826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */,
-				826D2EB91CC9C701004541C0 /* UCTopHeadView_Ph.m in Sources */,
 				826D2ED81CC9C82A004541C0 /* main.m in Sources */,
 				826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */,
 			);

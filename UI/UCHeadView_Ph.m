@@ -1,24 +1,24 @@
 //
-//  UCTopHeadView_Ph.m
+//  UCHeadView_Ph.m
 //  Master
 //
-//  Created by Phil Xhc on 4/21/16.
+//  Created by Phil Xhc on 4/22/16.
 //  Copyright © 2016 Xhc. All rights reserved.
 //
 
-#import "UCTopHeadView_Ph.h"
+#import "UCHeadView_Ph.h"
 
-@interface UCTopHeadView_Ph()
+@interface UCHeadView_Ph()
 
 @property (nonatomic, strong) UIImageView *bigImgView;
 
 @end
 
-@implementation UCTopHeadView_Ph
+@implementation UCHeadView_Ph
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        
+        [self addSubview:self.bigImgView];
     }
     return self;
 }
@@ -34,6 +34,4 @@
     }
     return _bigImgView;
 }
-
-
 @end
