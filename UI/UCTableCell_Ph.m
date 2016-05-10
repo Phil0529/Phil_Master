@@ -7,8 +7,9 @@
 //
 
 #import "UCTableCell_Ph.h"
+#import "UITools.h"
 
-NSString *UCTableCell_PhReuseIdentifier = @"UCTableCell_PhReuseIdentifier";
+NSString *const UCTableCell_PhReuseIdentifier = @"UCTableCell_PhReuseIdentifier";
 
 @interface UCTableCell_Ph()
 
@@ -18,9 +19,17 @@ NSString *UCTableCell_PhReuseIdentifier = @"UCTableCell_PhReuseIdentifier";
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self setBackgroundColor:BACKGROUND_COLOR];
+        [self setBackgroundColor:UNDERGROUND_COLOR];
+        [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     return self;
+}
+
+- (void)setIsFirstLine:(BOOL)isFirstLine{
+    if (isFirstLine) {
+        return;
+    }
+    [self addSubview:[UITools lineView]];
 }
 
 

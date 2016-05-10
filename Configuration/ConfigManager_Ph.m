@@ -26,8 +26,8 @@
                       selectedImage:@"tab_activity_pressed"
                                type:ConfigType_Home],
              [ConfigItem_Ph newItem:@"My"
-                        normalImage:@"tab_news"
-                      selectedImage:@"tab_news_pressed"
+                        normalImage:@"tab_activity"
+                      selectedImage:@"tab_activity_pressed"
                                type:ConfigType_UserCenter]];
 }
 

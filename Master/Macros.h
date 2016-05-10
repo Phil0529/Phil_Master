@@ -190,6 +190,9 @@ typedef enum{
 #define UNDERGROUND_COLOR \
 [UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
 
+#define LINE_COLOR \
+[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:236.0/255.0 alpha:1.0]
+
 #define RADIO_STATUS_COLOR \
 [UIColor colorWithRed:((float)((0xec4c48 & 0xFF0000) >> 16))/255.0 \
                 green:((float)((0xec4c48 & 0xFF00) >> 8))/255.0 \

@@ -55,7 +55,7 @@ void uncaughtExceptionHandler(NSException *exception)
     [self.drawerController setShowsShadow:YES];
     [self.drawerController setRestorationIdentifier:@"MMDrawer"];
     [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModePanningCenterView];
     [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     [self.window setRootViewController:self.drawerController];
     self.window.backgroundColor = [UIColor whiteColor];

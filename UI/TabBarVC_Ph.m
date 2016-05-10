@@ -29,7 +29,6 @@
         
     }
     UIFont* titleFont = [UIFont systemFontOfSize:12.f];
-    NSMutableArray* tabViewControllers = [[NSMutableArray alloc] initWithCapacity:[tabMenu count]];
     for (ConfigItem_Ph *item in tabMenu) {
         UIViewController* paneController = [MenuVC_Ph paneViewController:item];
         NavigationVC_Ph *navController = [[NavigationVC_Ph alloc] initWithRootViewController:paneController];
@@ -40,9 +39,8 @@
                     imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         [navController.tabBarItem setSelectedImage:[[UIImage imageNamed:item.selectedImage]
                             imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-        [tabViewControllers addObject:navController];
+        [self addChildViewController:navController];
     }
-    [self setViewControllers:tabViewControllers];
 }
 
 @end

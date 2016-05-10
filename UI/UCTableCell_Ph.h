@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *UCTableCell_PhReuseIdentifier;
+extern NSString *const UCTableCell_PhReuseIdentifier;
 
 @interface UCTableCell_Ph : UITableViewCell
+
+@property (nonatomic, assign) BOOL isFirstLine;
 
 @end

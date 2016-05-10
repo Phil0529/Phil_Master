@@ -1,5 +1,5 @@
 //
-//  UCHeadView_Ph.h
+//  UCTopView_Ph.h
 //  Master
 //
 //  Created by Phil Xhc on 4/22/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *const UCHeadView_PhReuseIdentifier;
-
-@interface UCHeadView_Ph : UIView
+@interface UCTopView_Ph : UIView
 
 @end
