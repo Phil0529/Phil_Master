@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UCBaseVC_Ph : NSObject
+@interface UCBaseVC_Ph : UIViewController
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIView *topView;
+
 
 @end

@@ -15,6 +15,7 @@
 		822AAD8D1CE18DBB00F84C63 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD881CE18DBB00F84C63 /* UIImage+Alpha.m */; };
 		822AAD8E1CE18DBB00F84C63 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8A1CE18DBB00F84C63 /* UIImage+Resize.m */; };
 		822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */; };
+		826596641CE32545007D5055 /* UCBaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826596631CE32545007D5055 /* UCBaseVC_Ph.m */; };
 		826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */; };
 		826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA31CC9C701004541C0 /* HomeVC_Ph.m */; };
 		826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */; };
@@ -53,6 +54,8 @@
 		822AAD8A1CE18DBB00F84C63 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		822AAD8B1CE18DBB00F84C63 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
+		826596621CE32545007D5055 /* UCBaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UCBaseVC_Ph.h; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCBaseVC_Ph.h; sourceTree = "<group>"; };
+		826596631CE32545007D5055 /* UCBaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UCBaseVC_Ph.m; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/UCBaseVC_Ph.m; sourceTree = "<group>"; };
 		826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		826D2EA21CC9C701004541C0 /* HomeVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC_Ph.h; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				826D2EB11CC9C701004541C0 /* UserCenterVC_Ph.m */,
 				8227C96F1CE08CC600CCDB97 /* UCAlbumVC_Ph.h */,
 				8227C9701CE08CC600CCDB97 /* UCAlbumVC_Ph.m */,
+				826596621CE32545007D5055 /* UCBaseVC_Ph.h */,
+				826596631CE32545007D5055 /* UCBaseVC_Ph.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				826D2EB71CC9C701004541C0 /* RightDrawerVC_Ph.m in Sources */,
 				826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */,
 				826D2EB61CC9C701004541C0 /* NavigationVC_Ph.m in Sources */,
+				826596641CE32545007D5055 /* UCBaseVC_Ph.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
 				822AAD8D1CE18DBB00F84C63 /* UIImage+Alpha.m in Sources */,
 				826D2EC11CC9C71E004541C0 /* ConfigManager_Ph.m in Sources */,

@@ -16,7 +16,7 @@
 @interface UserCenterVC_Ph ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, retain) NSArray *dataArray;
+@property (nonatomic, strong) NSArray *dataArray;
 @property (nonatomic, strong) UCHeadView_Ph *headView;
 @property (nonatomic, strong) UCTopView_Ph *topView;
 
@@ -73,6 +73,7 @@
         _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH, SCREEN_HEIGHT-49.f) style:UITableViewStylePlain];
         [_tableView setDelegate:self];
         [_tableView setDataSource:self];
+        [_tableView setRowHeight:66.f];
         [_tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         [_tableView setShowsVerticalScrollIndicator:NO];
         [_tableView setBackgroundColor:BACKGROUND_COLOR];
@@ -92,9 +93,18 @@
 - (UCHeadView_Ph *)headView{
     if (!_headView) {
         _headView = [[UCHeadView_Ph alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH, 50.f)];
-        [_headView setBackgroundColor:[UIColor redColor]];
+        [_headView setBackgroundColor:[UIColor greenColor]];
     }
     return _headView;
+}
+
+- (NSArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = @[
+                       
+                       ];
+    }
+    return _dataArray;
 }
 
 @end
