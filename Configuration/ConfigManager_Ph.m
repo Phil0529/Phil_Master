@@ -25,10 +25,19 @@
                         normalImage:@"tab_activity"
                       selectedImage:@"tab_activity_pressed"
                                type:ConfigType_Home],
+             [ConfigItem_Ph newItem:@"Master"
+                        normalImage:@"tab_activity"
+                      selectedImage:@"tab_activity_pressed"
+                               type:ConfigType_Master],
              [ConfigItem_Ph newItem:@"My"
                         normalImage:@"tab_activity"
                       selectedImage:@"tab_activity_pressed"
-                               type:ConfigType_UserCenter]];
+                               type:ConfigType_UserCenter],
+             [ConfigItem_Ph newItem:@"My"
+                        normalImage:@"tab_activity"
+                      selectedImage:@"tab_activity_pressed"
+                               type:ConfigType_UserCenter]
+             ];
 }
 
 @end

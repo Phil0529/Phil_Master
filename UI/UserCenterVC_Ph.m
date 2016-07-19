@@ -39,6 +39,8 @@
     [super viewWillAppear:animated];
     [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeNone];
     [self.mm_drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeNone];
+    [self.tabBarController.tabBar setHidden:NO];
+
 }
 
 - (void)showUI{

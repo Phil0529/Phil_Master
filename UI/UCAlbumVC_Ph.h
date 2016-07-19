@@ -10,4 +10,6 @@
 
 @interface UCAlbumVC_Ph : UIViewController
 
+@property (nonatomic, assign) BOOL isStar;
+
 @end

@@ -24,4 +24,7 @@ pod 'MMDrawerController'
 pod 'YYKit'
 #pod 'JPSVolumeButtonHandler', '1.0.0'
 #pod 'SBJson', '~> 4.0'
+pod 'CVKHierarchySearcher'
+pod 'Masonry'
+pod 'ReactiveCocoa'
 end

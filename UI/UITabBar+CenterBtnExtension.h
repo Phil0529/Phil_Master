@@ -10,4 +10,13 @@
 
 @interface UITabBar (CenterBtnExtension)
 
+@property (nonnull, nonatomic, retain) NSString *showCenterButton;
+@property (nonnull, nonatomic, retain) UIView *badgeView;
+
+- (void)setTabBarCenterButton:(void ( ^ _Nullable )(UIButton * _Nullable centerButton ))centerButtonBlock;
+
+- (void)reloadTabbarWithShowCenterButton:(BOOL)showCenterButton;
+
+- (void)setBadgeOfThirdButton:(BOOL)show;
+
 @end

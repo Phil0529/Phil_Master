@@ -10,4 +10,6 @@
 
 @interface TabBarVC_Ph : UITabBarController
 
+//- (void)addCenterButton:(BOOL )isStar;
+
 @end

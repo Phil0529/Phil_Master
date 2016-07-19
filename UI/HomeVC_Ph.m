@@ -9,6 +9,8 @@
 #import "HomeVC_Ph.h"
 #import <MMDrawerController/MMDrawerBarButtonItem.h>
 #import "UIViewController+MMDrawerController.h"
+#import "TabBarVC_Ph.h"
+#import "UITabBar+CenterBtnExtension.h"
 
 @interface HomeVC_Ph ()
 
@@ -19,8 +21,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLeftMenuButton];
+    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 //    [self setupRightMenuButton];
+//    NSMutableArray *element = [@[@"1",@"2"] mutableCopy];
+//    NSMutableArray *arr = [@[element] mutableCopy];
+//    NSMutableArray *mArr = [arr mutableCopy];
+//    [element replaceObjectAtIndex:0 withObject:@"a"];
+//    NSArray *coArr = [arr copy];
+//
+//    NSMutableArray *element = [NSMutableArray arrayWithObject:@"1"];
+//    NSMutableArray *array = [NSMutableArray arrayWithObject:element];
+//    
+//    id mutableCopyArray = [array mutableCopy];
+//    [element replaceObjectAtIndex:0 withObject:@"a"];
+    
 }
+
+/*
+ 1.无论是copy 还是 mutableCopy. 都是浅拷贝,都是容器拷贝.
+ 2.
+ */
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

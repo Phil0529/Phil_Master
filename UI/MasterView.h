@@ -6,8 +6,11 @@
 //  Copyright © 2016 Xhc. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "AnimtationTools.h"
 
-@interface MasterView : NSObject
+@interface MasterView : UIView<AnimationToolsProtocol>
+
+
 
 @end

@@ -8,6 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol AnimationToolsProtocol <NSObject>
+
+@optional;
+- (void)viewWillPop;
+
+- (void)viewWillDismiss;
+
+@end
+
 @interface AnimtationTools : NSObject
+
+@property (nonatomic,weak)     id<AnimationToolsProtocol> delegate;
+
+- (void)addAnimationPopView:(UIView *)view duration:(float)time;
+
+- (void)addAnimationDismissView:(UIView *)view duration:(float)time;
 
 @end

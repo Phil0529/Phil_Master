@@ -10,6 +10,8 @@
 #import "ConfigManager_Ph.h"
 #import "MenuVC_Ph.h"
 #import "NavigationVC_Ph.h"
+#import "UITabBar+CenterBtnExtension.h"
+#import "LaunchLiveVC.h"
 
 @interface TabBarVC_Ph ()
 
@@ -29,18 +31,46 @@
         
     }
     UIFont* titleFont = [UIFont systemFontOfSize:12.f];
-    for (ConfigItem_Ph *item in tabMenu) {
+    for (NSInteger i = 0; i < tabMenu.count; i ++) {
+        ConfigItem_Ph *item = tabMenu[i];
         UIViewController* paneController = [MenuVC_Ph paneViewController:item];
         NavigationVC_Ph *navController = [[NavigationVC_Ph alloc] initWithRootViewController:paneController];
         [navController.tabBarItem setTitleTextAttributes:@{NSFontAttributeName:titleFont} forState:UIControlStateNormal];
         [navController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName:FOREGROUND_COLOR} forState:UIControlStateSelected];
         [navController.tabBarItem setTitle:item.title];
         [navController.tabBarItem setImage:[[UIImage imageNamed:item.normalImage]
-                    imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                            imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         [navController.tabBarItem setSelectedImage:[[UIImage imageNamed:item.selectedImage]
-                            imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+                                                    imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    
         [self addChildViewController:navController];
     }
+    //    * 配置中间按钮
+//    [self addCenterButton];
+    [self.tabBar reloadTabbarWithShowCenterButton:NO];
+    
 }
+
+- (void)addCenterButton{
+    [self.tabBar setTabBarCenterButton:^(UIButton *centerButton) {
+        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateNormal];
+        
+        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateSelected];
+        
+        [centerButton addTarget:self action:@selector(clickCenterButton) forControlEvents:UIControlEventTouchUpInside];
+    }];
+    
+}
+
+- (void)clickCenterButton
+{
+    LaunchLiveVC *vc = [[LaunchLiveVC alloc] init];
+    vc.modalTransitionStyle = UIModalPresentationPopover;
+    
+    [UIView animateWithDuration:0.5f animations:^{
+        [self presentViewController:vc animated:YES completion:nil];
+    }];
+}
+
 
 @end

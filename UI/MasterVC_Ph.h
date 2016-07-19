@@ -1,5 +1,5 @@
 //
-//  MasterVC_ph.h
+//  MasterVC_Ph.h
 //  Master
 //
 //  Created by Phil Xhc on 7/18/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MasterVC_ph : BaseVC_Ph
+@interface MasterVC_Ph : BaseVC_Ph
 
 @end

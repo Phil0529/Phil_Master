@@ -9,6 +9,7 @@
 #import "MenuVC_Ph.h"
 #import "HomeVC_Ph.h"
 #import "UserCenterVC_Ph.h"
+#import "MasterVC_Ph.h"
 
 @interface MenuVC_Ph ()
 
@@ -22,16 +23,18 @@
 
 + (UIViewController *)paneViewController:(ConfigItem_Ph *)item{
     UIViewController *vc;
-    Class ControllerClass;
     switch (item.type) {
         case ConfigType_Home:{
-            ControllerClass = [HomeVC_Ph class];
-            vc = [[ControllerClass alloc] init];
+            vc = [[HomeVC_Ph alloc] init];
         }
             break;
         case ConfigType_UserCenter:{
-            ControllerClass = [UserCenterVC_Ph class];
-            vc = [[ControllerClass alloc] init];
+            
+            vc = [[UserCenterVC_Ph alloc] init];
+        }
+            break;
+        case ConfigType_Master:{
+            vc = [MasterVC_Ph new];
         }
             break;
         default:{

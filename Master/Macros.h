@@ -176,22 +176,26 @@ typedef enum{
 #define ISPHONENUM(str)\
 [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-9]|4[57]|5[0-35-9]|7[06-8]|8[0-35-9])\\d{8}$"] evaluateWithObject:str]
 
+
+#define _WEAK_SELF __weak __typeof(self) wself = self;
+#define _STRONG_SELF __strong __typeof(wself) strongSelf = wself;
+
 //颜色
-
-#define FOREGROUND_COLOR \
-[UIColor colorWithRed:235.0/255.0 green:65.0/255.0 blue:61.0/255.0 alpha:1.0]
-
-#define BACKGROUND_COLOR \
-[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
-
-#define TINT_COLOR \
-[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
-
-#define UNDERGROUND_COLOR \
-[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
-
-#define LINE_COLOR \
-[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:236.0/255.0 alpha:1.0]
+//
+//#define FOREGROUND_COLOR \
+//[UIColor colorWithRed:235.0/255.0 green:65.0/255.0 blue:61.0/255.0 alpha:1.0]
+//
+//#define BACKGROUND_COLOR \
+//[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
+//
+//#define TINT_COLOR \
+//[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
+//
+//#define UNDERGROUND_COLOR \
+//[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
+//
+//#define LINE_COLOR \
+//[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:236.0/255.0 alpha:1.0]
 
 #define RADIO_STATUS_COLOR \
 [UIColor colorWithRed:((float)((0xec4c48 & 0xFF0000) >> 16))/255.0 \
