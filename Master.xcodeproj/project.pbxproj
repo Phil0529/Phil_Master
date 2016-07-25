@@ -16,6 +16,7 @@
 		8223CA291D3E3EB30055CDE3 /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA211D3E3EB30055CDE3 /* MasterViewModel.m */; };
 		8223CA2A1D3E3EB30055CDE3 /* PopNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA231D3E3EB30055CDE3 /* PopNavigation.m */; };
 		8223CA2B1D3E3EB30055CDE3 /* UIView+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA251D3E3EB30055CDE3 /* UIView+Extent.m */; };
+		8223CA2E1D3E3FAC0055CDE3 /* LaunchLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */; };
 		822AAD8D1CE18DBB00F84C63 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD881CE18DBB00F84C63 /* UIImage+Alpha.m */; };
 		822AAD8E1CE18DBB00F84C63 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8A1CE18DBB00F84C63 /* UIImage+Resize.m */; };
 		822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */; };
@@ -68,6 +69,8 @@
 		8223CA231D3E3EB30055CDE3 /* PopNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigation.m; sourceTree = "<group>"; };
 		8223CA241D3E3EB30055CDE3 /* UIView+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extent.h"; sourceTree = "<group>"; };
 		8223CA251D3E3EB30055CDE3 /* UIView+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extent.m"; sourceTree = "<group>"; };
+		8223CA2C1D3E3FAC0055CDE3 /* LaunchLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchLiveView.h; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/LaunchLiveView.h; sourceTree = "<group>"; };
+		8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchLiveView.m; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/LaunchLiveView.m; sourceTree = "<group>"; };
 		822AAD871CE18DBB00F84C63 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		822AAD881CE18DBB00F84C63 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		822AAD891CE18DBB00F84C63 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
@@ -221,6 +224,8 @@
 			children = (
 				82638B231CE924B800ECFA0F /* LaunchLiveVC.h */,
 				82638B241CE924B800ECFA0F /* LaunchLiveVC.m */,
+				8223CA2C1D3E3FAC0055CDE3 /* LaunchLiveView.h */,
+				8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */,
 				82638B271CE924B800ECFA0F /* ShareView.h */,
 				82638B281CE924B800ECFA0F /* ShareView.m */,
 			);
@@ -497,6 +502,7 @@
 				82D2EF781D3C7E3500A54336 /* UITabBar+CenterBtnExtension.m in Sources */,
 				8223CA2B1D3E3EB30055CDE3 /* UIView+Extent.m in Sources */,
 				826D2EB51CC9C701004541C0 /* MenuVC_Ph.m in Sources */,
+				8223CA2E1D3E3FAC0055CDE3 /* LaunchLiveView.m in Sources */,
 				8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */,
 				826D2EC01CC9C71E004541C0 /* ConfigItem_Ph.m in Sources */,
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,

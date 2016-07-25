@@ -30,7 +30,8 @@
     
     
     [[btn rac_signalForControlEvents:1<<6] subscribeNext:^(UIButton *btn) {
-        AnimtationTools *animationTool = [AnimtationTools new];
+        NSLog(@"点击");
+        AnimtationTools *animationTool = [[AnimtationTools alloc] init];
         animationTool.delegate = self.testView;
         [animationTool addAnimationPopView:self.testView duration:.5f];
     }];

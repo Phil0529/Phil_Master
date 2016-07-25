@@ -30,11 +30,11 @@
 }
 
 - (void)viewWillPop{
-    NSLog(@"将要显示");
+    NSLog(@"将要显示>>>>>>>>>");
 }
 
-- (void)viewwWillDismiss{
-    NSLog(@"将要消失");
+- (void)viewWillDismiss{
+    NSLog(@"将要消失<<<<<<<<<");
 }
 
 @end

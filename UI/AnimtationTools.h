@@ -11,9 +11,14 @@
 @protocol AnimationToolsProtocol <NSObject>
 
 @optional;
+
 - (void)viewWillPop;
 
 - (void)viewWillDismiss;
+
+- (void)viewDidPop;
+
+- (void)viewDidDismiss;
 
 @end
 
@@ -22,7 +27,5 @@
 @property (nonatomic,weak)     id<AnimationToolsProtocol> delegate;
 
 - (void)addAnimationPopView:(UIView *)view duration:(float)time;
-
-- (void)addAnimationDismissView:(UIView *)view duration:(float)time;
 
 @end

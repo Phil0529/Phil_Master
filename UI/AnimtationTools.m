@@ -22,15 +22,15 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 
 @interface AnimtationTools()
 
-@property (nonatomic,retain)      UIView *view;                  //view;
+@property (nonatomic,retain)      UIView *view;                  //需要弹出的视图
 
-@property (nonatomic,retain)      NSString *key;                  //key
+@property (nonatomic,retain)      NSString *key;                 //key
 
-@property (nonatomic,strong)      UIView *transparentView;                  //
+@property (nonatomic,strong)      UIView *transparentView;       //添加的透明视图
 
-@property (nonatomic,assign)      float animationTime;                  //动画时间
+@property (nonatomic,assign)      float animationTime;           //动画时间
 
-@property (nonatomic,assign)      ViewStatus status;                  //
+@property (nonatomic,assign)      ViewStatus status;             //动画运行的状态
 
 
 
@@ -38,12 +38,22 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 
 @implementation AnimtationTools
 
+- (instancetype)init{
+    if(self = [super init]){
+        self.transparentView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH:SCREEN_HEIGHT, SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH:SCREEN_HEIGHT)];
+        [self.transparentView setBackgroundColor:[UIColor greenColor]];
+        [[UIApplication sharedApplication].keyWindow addSubview:self.transparentView];
+    }
+    return self;
+}
+
 - (void)addAnimationPopView:(UIView *)view duration:(float)time{
-    
+    [[UIApplication sharedApplication].keyWindow addSubview:view];
+    //其实设置初始状态.
     self.status = ViewStatus_WillPop;
     self.animationTime = time;
     self.view = view;
-    self.transparentView = [[UIView alloc] init];
+    
     CGPoint toLocation;
     CABasicAnimation *basicAnimation=[CABasicAnimation animationWithKeyPath:@"position"];
     NSString *key = [NSStringFromClass([view class]) stringByAppendingString:CurrentTimeStamp];
@@ -77,9 +87,6 @@ typedef NS_ENUM(NSInteger, ViewStatus){
     basicAnimation.fillMode = kCAFillModeForwards;
     //存储当前位置在动画结束后使用
     [basicAnimation setValue:[NSValue valueWithCGPoint:toLocation] forKey:key];
-    UIWindow *currentWindow = [UIApplication sharedApplication].keyWindow;
-    [currentWindow addSubview:view];
-    [currentWindow addSubview:self.transparentView];
     
     [view.layer addAnimation:basicAnimation forKey:key];
 }
@@ -121,12 +128,23 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 #pragma mark CAAnimationDelegate
 
 - (void)animationDidStart:(CAAnimation *)anim{
+    //动画开始,若是弹出
     if (self.status == ViewStatus_WillPop) {
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+        tap.enabled = NO;
+        
+        [[tap rac_gestureSignal] subscribeNext:^(id x) {
+            [self addAnimationDismissView:self.view duration:self.animationTime];
+        }];
+        [self.transparentView addGestureRecognizer:tap];
         if([self.delegate respondsToSelector:@selector(viewWillPop)]){
             [self.delegate viewWillPop];
         }
     }
+    //动画开始,若是消失
     else if(self.status == ViewStatus_WillDismiss){
+        UITapGestureRecognizer *tap = [self.transparentView.gestureRecognizers firstObject];
+        tap.enabled = NO;
         if ([self.delegate respondsToSelector:@selector(viewWillDismiss)]) {
             [self.delegate viewWillDismiss];
         }
@@ -140,22 +158,21 @@ typedef NS_ENUM(NSInteger, ViewStatus){
     [CATransaction commit];                                                     //提交事务
     [self.view.layer removeAnimationForKey:self.key];
     
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
-    [[tap rac_gestureSignal] subscribeNext:^(id x) {
-        tap.enabled = NO;
-        [self addAnimationDismissView:self.view duration:self.animationTime];
-    }];
-    [self.transparentView addGestureRecognizer:tap];
-    
     if (self.status == ViewStatus_WillPop) {
         self.status = ViewStatus_CompletePop;
+        if([self.delegate respondsToSelector:@selector(viewDidPop)]){
+            [self.delegate viewDidPop];
+        }
     }
     else if(self.status == ViewStatus_WillDismiss){
         self.status = ViewStatus_CompleteDismiss;
         [self.transparentView removeFromSuperview];
         self.transparentView = nil;
-        tap.enabled = YES;
+        if([self.delegate respondsToSelector:@selector(viewDidDismiss)]){
+            [self.delegate viewDidDismiss];
+        }
     }
-
+    UITapGestureRecognizer *tap = [self.transparentView.gestureRecognizers firstObject];
+    tap.enabled = YES;
 }
 @end
