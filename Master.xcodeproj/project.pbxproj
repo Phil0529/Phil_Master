@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8216D2C71D460E8500031351 /* LaunchLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8216D2C21D460E8500031351 /* LaunchLiveVC.m */; };
+		8216D2C81D460E8500031351 /* LaunchLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8216D2C41D460E8500031351 /* LaunchLiveView.m */; };
+		8216D2C91D460E8500031351 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8216D2C61D460E8500031351 /* ShareView.m */; };
 		8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F31CE5AB22000B1B8B /* UIButton+Function_Ph.m */; };
 		8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F61CE5E072000B1B8B /* WBApiManger.m */; };
 		8220A6FA1CE5E07F000B1B8B /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F91CE5E07F000B1B8B /* WXApiManager.m */; };
@@ -16,12 +19,9 @@
 		8223CA291D3E3EB30055CDE3 /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA211D3E3EB30055CDE3 /* MasterViewModel.m */; };
 		8223CA2A1D3E3EB30055CDE3 /* PopNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA231D3E3EB30055CDE3 /* PopNavigation.m */; };
 		8223CA2B1D3E3EB30055CDE3 /* UIView+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA251D3E3EB30055CDE3 /* UIView+Extent.m */; };
-		8223CA2E1D3E3FAC0055CDE3 /* LaunchLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */; };
 		822AAD8D1CE18DBB00F84C63 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD881CE18DBB00F84C63 /* UIImage+Alpha.m */; };
 		822AAD8E1CE18DBB00F84C63 /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8A1CE18DBB00F84C63 /* UIImage+Resize.m */; };
 		822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */; };
-		82638B2D1CE924B800ECFA0F /* LaunchLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 82638B241CE924B800ECFA0F /* LaunchLiveVC.m */; };
-		82638B2F1CE924B800ECFA0F /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82638B281CE924B800ECFA0F /* ShareView.m */; };
 		826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */; };
 		826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA31CC9C701004541C0 /* HomeVC_Ph.m */; };
 		826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */; };
@@ -51,6 +51,12 @@
 
 /* Begin PBXFileReference section */
 		4CC420693F8F97AE50886914 /* libPods-Master.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Master.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8216D2C11D460E8500031351 /* LaunchLiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchLiveVC.h; sourceTree = "<group>"; };
+		8216D2C21D460E8500031351 /* LaunchLiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchLiveVC.m; sourceTree = "<group>"; };
+		8216D2C31D460E8500031351 /* LaunchLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchLiveView.h; sourceTree = "<group>"; };
+		8216D2C41D460E8500031351 /* LaunchLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchLiveView.m; sourceTree = "<group>"; };
+		8216D2C51D460E8500031351 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
+		8216D2C61D460E8500031351 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		8220A6F21CE5AB22000B1B8B /* UIButton+Function_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Function_Ph.h"; sourceTree = "<group>"; };
 		8220A6F31CE5AB22000B1B8B /* UIButton+Function_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Function_Ph.m"; sourceTree = "<group>"; };
 		8220A6F51CE5E072000B1B8B /* WBApiManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBApiManger.h; sourceTree = "<group>"; };
@@ -69,18 +75,12 @@
 		8223CA231D3E3EB30055CDE3 /* PopNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigation.m; sourceTree = "<group>"; };
 		8223CA241D3E3EB30055CDE3 /* UIView+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extent.h"; sourceTree = "<group>"; };
 		8223CA251D3E3EB30055CDE3 /* UIView+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extent.m"; sourceTree = "<group>"; };
-		8223CA2C1D3E3FAC0055CDE3 /* LaunchLiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LaunchLiveView.h; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/LaunchLiveView.h; sourceTree = "<group>"; };
-		8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LaunchLiveView.m; path = ../../../../xiaohancheng/Phil_Dev/Master/UI/LaunchLiveView.m; sourceTree = "<group>"; };
 		822AAD871CE18DBB00F84C63 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		822AAD881CE18DBB00F84C63 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		822AAD891CE18DBB00F84C63 /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
 		822AAD8A1CE18DBB00F84C63 /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 		822AAD8B1CE18DBB00F84C63 /* UIImage+RoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCorner.h"; sourceTree = "<group>"; };
 		822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCorner.m"; sourceTree = "<group>"; };
-		82638B231CE924B800ECFA0F /* LaunchLiveVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchLiveVC.h; sourceTree = "<group>"; };
-		82638B241CE924B800ECFA0F /* LaunchLiveVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchLiveVC.m; sourceTree = "<group>"; };
-		82638B271CE924B800ECFA0F /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
-		82638B281CE924B800ECFA0F /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
 		826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		826D2EA21CC9C701004541C0 /* HomeVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC_Ph.h; sourceTree = "<group>"; };
@@ -222,12 +222,12 @@
 		8220A6E71CE58609000B1B8B /* LaunchLive */ = {
 			isa = PBXGroup;
 			children = (
-				82638B231CE924B800ECFA0F /* LaunchLiveVC.h */,
-				82638B241CE924B800ECFA0F /* LaunchLiveVC.m */,
-				8223CA2C1D3E3FAC0055CDE3 /* LaunchLiveView.h */,
-				8223CA2D1D3E3FAC0055CDE3 /* LaunchLiveView.m */,
-				82638B271CE924B800ECFA0F /* ShareView.h */,
-				82638B281CE924B800ECFA0F /* ShareView.m */,
+				8216D2C11D460E8500031351 /* LaunchLiveVC.h */,
+				8216D2C21D460E8500031351 /* LaunchLiveVC.m */,
+				8216D2C31D460E8500031351 /* LaunchLiveView.h */,
+				8216D2C41D460E8500031351 /* LaunchLiveView.m */,
+				8216D2C51D460E8500031351 /* ShareView.h */,
+				8216D2C61D460E8500031351 /* ShareView.m */,
 			);
 			name = LaunchLive;
 			sourceTree = "<group>";
@@ -485,6 +485,7 @@
 				8220A6FA1CE5E07F000B1B8B /* WXApiManager.m in Sources */,
 				82D2EF701D3C7B0C00A54336 /* UCBaseVC_Ph.m in Sources */,
 				82D2EF6F1D3C7B0C00A54336 /* UCAlbumVC_Ph.m in Sources */,
+				8216D2C81D460E8500031351 /* LaunchLiveView.m in Sources */,
 				826D2EB71CC9C701004541C0 /* RightDrawerVC_Ph.m in Sources */,
 				826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */,
 				82D2EF661D3C7AFB00A54336 /* UCHeadView_Ph.m in Sources */,
@@ -492,17 +493,15 @@
 				8223CA291D3E3EB30055CDE3 /* MasterViewModel.m in Sources */,
 				826D2EB61CC9C701004541C0 /* NavigationVC_Ph.m in Sources */,
 				8223CA261D3E3EB30055CDE3 /* AnimtationTools.m in Sources */,
-				82638B2F1CE924B800ECFA0F /* ShareView.m in Sources */,
+				8216D2C71D460E8500031351 /* LaunchLiveVC.m in Sources */,
 				8223CA271D3E3EB30055CDE3 /* MasterVC_Ph.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
 				822AAD8D1CE18DBB00F84C63 /* UIImage+Alpha.m in Sources */,
 				8223CA281D3E3EB30055CDE3 /* MasterView.m in Sources */,
-				82638B2D1CE924B800ECFA0F /* LaunchLiveVC.m in Sources */,
 				826D2EC11CC9C71E004541C0 /* ConfigManager_Ph.m in Sources */,
 				82D2EF781D3C7E3500A54336 /* UITabBar+CenterBtnExtension.m in Sources */,
 				8223CA2B1D3E3EB30055CDE3 /* UIView+Extent.m in Sources */,
 				826D2EB51CC9C701004541C0 /* MenuVC_Ph.m in Sources */,
-				8223CA2E1D3E3FAC0055CDE3 /* LaunchLiveView.m in Sources */,
 				8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */,
 				826D2EC01CC9C71E004541C0 /* ConfigItem_Ph.m in Sources */,
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,
@@ -510,6 +509,7 @@
 				822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
 				826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */,
+				8216D2C91D460E8500031351 /* ShareView.m in Sources */,
 				826D2ED81CC9C82A004541C0 /* main.m in Sources */,
 				82D2EF681D3C7AFB00A54336 /* UCTopView_Ph.m in Sources */,
 				826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */,
