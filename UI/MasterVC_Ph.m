@@ -8,7 +8,7 @@
 
 #import "MasterVC_Ph.h"
 #import "MasterView.h"
-#import "AnimtationTools.h"
+#import "AnimationTool.h"
 #import <ReactiveCocoa.h>
 
 @interface MasterVC_Ph ()
@@ -29,11 +29,10 @@
     [btn setBackgroundColor:[UIColor redColor]];
     
     
+    
     [[btn rac_signalForControlEvents:1<<6] subscribeNext:^(UIButton *btn) {
-        NSLog(@"点击");
-        AnimtationTools *animationTool = [[AnimtationTools alloc] init];
-        animationTool.delegate = self.testView;
-        [animationTool addAnimationPopView:self.testView duration:.5f];
+        AnimationTool *animationTool = [[AnimationTool alloc] init];
+        [animationTool addAnimationPopView:self.testView duration:.5f orientation:AnimationOrientation_Bottom];
     }];
 
     [self.view addSubview:btn];
@@ -41,7 +40,7 @@
 
 - (MasterView *)testView{
     if (!_testView) {
-        _testView = [[MasterView alloc] initWithFrame:CGRectMake(0.f, SCREEN_HEIGHT, SCREEN_WIDTH, 100.f)];
+        _testView = [[MasterView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH,100.f)];
     }
     return _testView;
 }

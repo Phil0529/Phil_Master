@@ -22,7 +22,7 @@
     [super viewDidLoad];
     [self setupLeftMenuButton];
     MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
+//    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 //    [self setupRightMenuButton];
 //    NSMutableArray *element = [@[@"1",@"2"] mutableCopy];
 //    NSMutableArray *arr = [@[element] mutableCopy];
@@ -45,8 +45,6 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    [self.mm_drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [self.mm_drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
 }
 
 

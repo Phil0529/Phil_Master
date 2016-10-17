@@ -13,7 +13,7 @@
 		8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F31CE5AB22000B1B8B /* UIButton+Function_Ph.m */; };
 		8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F61CE5E072000B1B8B /* WBApiManger.m */; };
 		8220A6FA1CE5E07F000B1B8B /* WXApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8220A6F91CE5E07F000B1B8B /* WXApiManager.m */; };
-		8223CA261D3E3EB30055CDE3 /* AnimtationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA1B1D3E3EB30055CDE3 /* AnimtationTools.m */; };
+		8223CA261D3E3EB30055CDE3 /* AnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA1B1D3E3EB30055CDE3 /* AnimationTool.m */; };
 		8223CA271D3E3EB30055CDE3 /* MasterVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA1D1D3E3EB30055CDE3 /* MasterVC_Ph.m */; };
 		8223CA281D3E3EB30055CDE3 /* MasterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA1F1D3E3EB30055CDE3 /* MasterView.m */; };
 		8223CA291D3E3EB30055CDE3 /* MasterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8223CA211D3E3EB30055CDE3 /* MasterViewModel.m */; };
@@ -47,6 +47,13 @@
 		82D2EF781D3C7E3500A54336 /* UITabBar+CenterBtnExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D2EF771D3C7E3500A54336 /* UITabBar+CenterBtnExtension.m */; };
 		82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DE29581CDB4FDB00CC7EAF /* UITools.m */; };
 		C8A99F34D03FA64B11426445 /* libPods-Master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC420693F8F97AE50886914 /* libPods-Master.a */; };
+		FFB00E081DB4A42700469DE3 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00DFE1DB4A42700469DE3 /* CardCell.m */; };
+		FFB00E091DB4A42700469DE3 /* CardPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E011DB4A42700469DE3 /* CardPageView.m */; };
+		FFB00E0A1DB4A42700469DE3 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E031DB4A42700469DE3 /* CycleScrollView.m */; };
+		FFB00E0B1DB4A42700469DE3 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E051DB4A42700469DE3 /* NewPagedFlowView.m */; };
+		FFB00E0C1DB4A42700469DE3 /* SDPageFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E071DB4A42700469DE3 /* SDPageFlowView.m */; };
+		FFB00E0F1DB4A47500469DE3 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E0E1DB4A47500469DE3 /* PGIndexBannerSubiew.m */; };
+		FFB00E121DB4A5EE00469DE3 /* CardPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB00E111DB4A5EE00469DE3 /* CardPageVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,8 +70,8 @@
 		8220A6F61CE5E072000B1B8B /* WBApiManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBApiManger.m; sourceTree = "<group>"; };
 		8220A6F81CE5E07F000B1B8B /* WXApiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiManager.h; sourceTree = "<group>"; };
 		8220A6F91CE5E07F000B1B8B /* WXApiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXApiManager.m; sourceTree = "<group>"; };
-		8223CA1A1D3E3EB30055CDE3 /* AnimtationTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimtationTools.h; sourceTree = "<group>"; };
-		8223CA1B1D3E3EB30055CDE3 /* AnimtationTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimtationTools.m; sourceTree = "<group>"; };
+		8223CA1A1D3E3EB30055CDE3 /* AnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTool.h; sourceTree = "<group>"; };
+		8223CA1B1D3E3EB30055CDE3 /* AnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTool.m; sourceTree = "<group>"; };
 		8223CA1C1D3E3EB30055CDE3 /* MasterVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC_Ph.h; sourceTree = "<group>"; };
 		8223CA1D1D3E3EB30055CDE3 /* MasterVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC_Ph.m; sourceTree = "<group>"; };
 		8223CA1E1D3E3EB30055CDE3 /* MasterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterView.h; sourceTree = "<group>"; };
@@ -131,6 +138,21 @@
 		82DE29581CDB4FDB00CC7EAF /* UITools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITools.m; sourceTree = "<group>"; };
 		EDE2B6EB9E533A62AFBC4B63 /* Pods-Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.release.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.release.xcconfig"; sourceTree = "<group>"; };
 		F9B04D0B813A8774FBAD4B58 /* Pods-Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Master.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Master/Pods-Master.debug.xcconfig"; sourceTree = "<group>"; };
+		FFB00DFD1DB4A42700469DE3 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCell.h; sourceTree = "<group>"; };
+		FFB00DFE1DB4A42700469DE3 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCell.m; sourceTree = "<group>"; };
+		FFB00DFF1DB4A42700469DE3 /* CardPageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPageProtocol.h; sourceTree = "<group>"; };
+		FFB00E001DB4A42700469DE3 /* CardPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPageView.h; sourceTree = "<group>"; };
+		FFB00E011DB4A42700469DE3 /* CardPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPageView.m; sourceTree = "<group>"; };
+		FFB00E021DB4A42700469DE3 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		FFB00E031DB4A42700469DE3 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		FFB00E041DB4A42700469DE3 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		FFB00E051DB4A42700469DE3 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		FFB00E061DB4A42700469DE3 /* SDPageFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPageFlowView.h; sourceTree = "<group>"; };
+		FFB00E071DB4A42700469DE3 /* SDPageFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPageFlowView.m; sourceTree = "<group>"; };
+		FFB00E0D1DB4A47500469DE3 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		FFB00E0E1DB4A47500469DE3 /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		FFB00E101DB4A5EE00469DE3 /* CardPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardPageVC.h; sourceTree = "<group>"; };
+		FFB00E111DB4A5EE00469DE3 /* CardPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardPageVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,18 +180,18 @@
 			children = (
 				826D2EA61CC9C701004541C0 /* MenuVC_Ph.h */,
 				826D2EA71CC9C701004541C0 /* MenuVC_Ph.m */,
-				826D2EA81CC9C701004541C0 /* NavigationVC_Ph.h */,
-				826D2EA91CC9C701004541C0 /* NavigationVC_Ph.m */,
-				826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */,
-				826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */,
 				826D2EAC1CC9C701004541C0 /* TabBarVC_Ph.h */,
 				826D2EAD1CC9C701004541C0 /* TabBarVC_Ph.m */,
 				826D2EA41CC9C701004541C0 /* LeftDrawerVC_Ph.h */,
 				826D2EA51CC9C701004541C0 /* LeftDrawerVC_Ph.m */,
 				826D2EAA1CC9C701004541C0 /* RightDrawerVC_Ph.h */,
 				826D2EAB1CC9C701004541C0 /* RightDrawerVC_Ph.m */,
+				826D2EA01CC9C701004541C0 /* BaseVC_Ph.h */,
+				826D2EA11CC9C701004541C0 /* BaseVC_Ph.m */,
 				82D2EF761D3C7E3500A54336 /* UITabBar+CenterBtnExtension.h */,
 				82D2EF771D3C7E3500A54336 /* UITabBar+CenterBtnExtension.m */,
+				826D2EA81CC9C701004541C0 /* NavigationVC_Ph.h */,
+				826D2EA91CC9C701004541C0 /* NavigationVC_Ph.m */,
 			);
 			name = Frame;
 			sourceTree = "<group>";
@@ -242,6 +264,7 @@
 		826D2E9F1CC9C701004541C0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FFB00DFC1DB4A3A400469DE3 /* 3DAdScrollView */,
 				82D2EF791D3C806E00A54336 /* Animation */,
 				82039C741CC9CE5000593A61 /* UserCenter */,
 				82039C731CC9CE4D00593A61 /* Home */,
@@ -335,8 +358,8 @@
 		82D2EF791D3C806E00A54336 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
-				8223CA1A1D3E3EB30055CDE3 /* AnimtationTools.h */,
-				8223CA1B1D3E3EB30055CDE3 /* AnimtationTools.m */,
+				8223CA1A1D3E3EB30055CDE3 /* AnimationTool.h */,
+				8223CA1B1D3E3EB30055CDE3 /* AnimationTool.m */,
 				8223CA1C1D3E3EB30055CDE3 /* MasterVC_Ph.h */,
 				8223CA1D1D3E3EB30055CDE3 /* MasterVC_Ph.m */,
 				8223CA1E1D3E3EB30055CDE3 /* MasterView.h */,
@@ -358,6 +381,28 @@
 				EDE2B6EB9E533A62AFBC4B63 /* Pods-Master.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FFB00DFC1DB4A3A400469DE3 /* 3DAdScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FFB00E101DB4A5EE00469DE3 /* CardPageVC.h */,
+				FFB00E111DB4A5EE00469DE3 /* CardPageVC.m */,
+				FFB00DFD1DB4A42700469DE3 /* CardCell.h */,
+				FFB00DFE1DB4A42700469DE3 /* CardCell.m */,
+				FFB00DFF1DB4A42700469DE3 /* CardPageProtocol.h */,
+				FFB00E001DB4A42700469DE3 /* CardPageView.h */,
+				FFB00E011DB4A42700469DE3 /* CardPageView.m */,
+				FFB00E021DB4A42700469DE3 /* CycleScrollView.h */,
+				FFB00E031DB4A42700469DE3 /* CycleScrollView.m */,
+				FFB00E041DB4A42700469DE3 /* NewPagedFlowView.h */,
+				FFB00E051DB4A42700469DE3 /* NewPagedFlowView.m */,
+				FFB00E061DB4A42700469DE3 /* SDPageFlowView.h */,
+				FFB00E071DB4A42700469DE3 /* SDPageFlowView.m */,
+				FFB00E0D1DB4A47500469DE3 /* PGIndexBannerSubiew.h */,
+				FFB00E0E1DB4A47500469DE3 /* PGIndexBannerSubiew.m */,
+			);
+			name = 3DAdScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +439,7 @@
 				TargetAttributes = {
 					82D1BC811C995EDB0043B83E = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = JV8L4GPH8K;
 					};
 				};
 			};
@@ -456,7 +502,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BF09DC9940E8801DE6FE51CD /* [CP] Copy Pods Resources */ = {
@@ -486,13 +532,15 @@
 				82D2EF701D3C7B0C00A54336 /* UCBaseVC_Ph.m in Sources */,
 				82D2EF6F1D3C7B0C00A54336 /* UCAlbumVC_Ph.m in Sources */,
 				8216D2C81D460E8500031351 /* LaunchLiveView.m in Sources */,
+				FFB00E091DB4A42700469DE3 /* CardPageView.m in Sources */,
 				826D2EB71CC9C701004541C0 /* RightDrawerVC_Ph.m in Sources */,
 				826D2EB21CC9C701004541C0 /* BaseVC_Ph.m in Sources */,
 				82D2EF661D3C7AFB00A54336 /* UCHeadView_Ph.m in Sources */,
 				8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */,
 				8223CA291D3E3EB30055CDE3 /* MasterViewModel.m in Sources */,
 				826D2EB61CC9C701004541C0 /* NavigationVC_Ph.m in Sources */,
-				8223CA261D3E3EB30055CDE3 /* AnimtationTools.m in Sources */,
+				8223CA261D3E3EB30055CDE3 /* AnimationTool.m in Sources */,
+				FFB00E121DB4A5EE00469DE3 /* CardPageVC.m in Sources */,
 				8216D2C71D460E8500031351 /* LaunchLiveVC.m in Sources */,
 				8223CA271D3E3EB30055CDE3 /* MasterVC_Ph.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
@@ -505,7 +553,11 @@
 				8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */,
 				826D2EC01CC9C71E004541C0 /* ConfigItem_Ph.m in Sources */,
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,
+				FFB00E081DB4A42700469DE3 /* CardCell.m in Sources */,
+				FFB00E0F1DB4A47500469DE3 /* PGIndexBannerSubiew.m in Sources */,
+				FFB00E0C1DB4A42700469DE3 /* SDPageFlowView.m in Sources */,
 				826D2ED31CC9C82A004541C0 /* AppDelegate.m in Sources */,
+				FFB00E0B1DB4A42700469DE3 /* NewPagedFlowView.m in Sources */,
 				822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
 				826D2EB41CC9C701004541C0 /* LeftDrawerVC_Ph.m in Sources */,
@@ -515,6 +567,7 @@
 				826D2EB31CC9C701004541C0 /* HomeVC_Ph.m in Sources */,
 				822AAD8E1CE18DBB00F84C63 /* UIImage+Resize.m in Sources */,
 				8223CA2A1D3E3EB30055CDE3 /* PopNavigation.m in Sources */,
+				FFB00E0A1DB4A42700469DE3 /* CycleScrollView.m in Sources */,
 				82D2EF671D3C7AFB00A54336 /* UCTableCell_Ph.m in Sources */,
 				82D2EF711D3C7B0C00A54336 /* UserCenterVC_Ph.m in Sources */,
 			);
@@ -611,6 +664,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JV8L4GPH8K;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;
@@ -630,6 +684,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JV8L4GPH8K;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;

@@ -33,10 +33,10 @@
                         normalImage:@"tab_activity"
                       selectedImage:@"tab_activity_pressed"
                                type:ConfigType_UserCenter],
-             [ConfigItem_Ph newItem:@"My"
+             [ConfigItem_Ph newItem:@"CardPage"
                         normalImage:@"tab_activity"
                       selectedImage:@"tab_activity_pressed"
-                               type:ConfigType_UserCenter]
+                               type:ConfigType_CardPage]
              ];
 }
 

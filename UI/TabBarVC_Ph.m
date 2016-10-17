@@ -12,6 +12,9 @@
 #import "NavigationVC_Ph.h"
 #import "UITabBar+CenterBtnExtension.h"
 #import "LaunchLiveVC.h"
+#import <MMDrawerController/MMDrawerController.h>
+#import "LeftDrawerVC_Ph.h"
+#import "RightDrawerVC_Ph.h"
 
 @interface TabBarVC_Ph ()
 
@@ -42,8 +45,24 @@
                                             imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
         [navController.tabBarItem setSelectedImage:[[UIImage imageNamed:item.selectedImage]
                                                     imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-    
-        [self addChildViewController:navController];
+        
+        
+        if(i == 0){
+            LeftDrawerVC_Ph *leftDrawerVC = [[LeftDrawerVC_Ph alloc] init];
+            RightDrawerVC_Ph *rightDrawer = [[RightDrawerVC_Ph alloc] init];
+            MMDrawerController *drawerController = [[MMDrawerController alloc] initWithCenterViewController:navController
+                                                                    leftDrawerViewController:leftDrawerVC
+                                                                   rightDrawerViewController:rightDrawer];
+            [drawerController setShowsShadow:YES];
+            [drawerController setRestorationIdentifier:@"MMDrawer"];
+            [drawerController setMaximumRightDrawerWidth:200.0];
+            [drawerController setOpenDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+            
+            [self addChildViewController:drawerController];
+
+        }else{
+            [self addChildViewController:navController];
+        }
     }
     //    * 配置中间按钮
 //    [self addCenterButton];

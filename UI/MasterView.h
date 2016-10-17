@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AnimtationTools.h"
+#import "AnimationTool.h"
 
-@interface MasterView : UIView<AnimationToolsProtocol>
+@interface MasterView : UIView<AnimationToolProtocol>
 
 
 

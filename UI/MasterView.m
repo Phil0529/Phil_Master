@@ -12,15 +12,15 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor redColor];
+        self.backgroundColor = [UIColor blackColor];
         
         
-        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btn setFrame:CGRectMake(0.f, 10.f, 50.f, 20.f)];
-        [btn setBackgroundColor:[UIColor greenColor]];
-        [self addSubview:btn];
+//        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+//        [btn setFrame:CGRectMake(0.f, 10.f, 50.f, 20.f)];
+//        [btn setBackgroundColor:[UIColor greenColor]];
+//        [self addSubview:btn];
         
-        [btn addTarget:self action:@selector(click) forControlEvents:1<<6];
+//        [btn addTarget:self action:@selector(click) forControlEvents:1<<6];
     }
     return self;
 }

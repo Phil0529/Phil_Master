@@ -10,6 +10,8 @@
 #import "HomeVC_Ph.h"
 #import "UserCenterVC_Ph.h"
 #import "MasterVC_Ph.h"
+#import "CardPageVC.h"
+#import <UIViewController+MMDrawerController.h>
 
 @interface MenuVC_Ph ()
 
@@ -35,6 +37,10 @@
             break;
         case ConfigType_Master:{
             vc = [MasterVC_Ph new];
+        }
+            break;
+        case ConfigType_CardPage:{
+            vc = [CardPageVC new];
         }
             break;
         default:{

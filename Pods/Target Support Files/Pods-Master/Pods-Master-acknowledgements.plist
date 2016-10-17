@@ -34,6 +34,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>AFNetworking</string>
 			<key>Type</key>
@@ -43,6 +45,19 @@ THE SOFTWARE.
 			<key>FooterText</key>
 			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>AMapFoundation</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright &#169; 2014 AutoNavi. All Rights Reserved.
+</string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>AMapLocation</string>
 			<key>Type</key>
@@ -70,6 +85,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>CVKHierarchySearcher</string>
 			<key>Type</key>
@@ -99,6 +116,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>CWStatusBarNotification</string>
 			<key>Type</key>
@@ -129,6 +148,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>DGActivityIndicatorView</string>
 			<key>Type</key>
@@ -157,6 +178,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>HPGrowingTextView</string>
 			<key>Type</key>
@@ -164,7 +187,7 @@ THE SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2009-2015 Matej Bukovinski
+			<string>Copyright &#169; 2009-2016 Matej Bukovinski
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -183,6 +206,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>MBProgressHUD</string>
 			<key>Type</key>
@@ -210,6 +235,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>MJRefresh</string>
 			<key>Type</key>
@@ -237,6 +264,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>MMDrawerController</string>
 			<key>Type</key>
@@ -266,6 +295,8 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>Mantle</string>
 			<key>Type</key>
@@ -292,6 +323,8 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.</string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>Masonry</string>
 			<key>Type</key>
@@ -321,6 +354,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>Overcoat</string>
 			<key>Type</key>
@@ -348,6 +383,8 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>ReactiveCocoa</string>
 			<key>Type</key>
@@ -356,6 +393,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		<dict>
 			<key>FooterText</key>
 			<string>Copyright 2014 Rong Cloud</string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>RongCloudIMLib</string>
 			<key>Type</key>
@@ -363,7 +402,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2009 Olivier Poitrey &lt;rs@dailymotion.com&gt;
+			<string>Copyright (c) 2016 Olivier Poitrey rs@dailymotion.com
  
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -384,6 +423,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>SDWebImage</string>
 			<key>Type</key>
@@ -593,6 +634,8 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 </string>
+			<key>License</key>
+			<string>Apache 2.0</string>
 			<key>Title</key>
 			<string>TMCache</string>
 			<key>Type</key>
@@ -602,6 +645,8 @@ limitations under the License.
 			<key>FooterText</key>
 			<string>Copyright 2011 - 2015 UMeng.com. All rights reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>UMengAnalytics-NO-IDFA</string>
 			<key>Type</key>
@@ -611,6 +656,8 @@ limitations under the License.
 			<key>FooterText</key>
 			<string>Copyright 2011 - 2014 UMeng.com. All rights reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>UMengMessage</string>
 			<key>Type</key>
@@ -620,6 +667,8 @@ limitations under the License.
 			<key>FooterText</key>
 			<string>Copyright 2011 - 2016 UMeng.com. All rights reserved.
 </string>
+			<key>License</key>
+			<string>Copyright</string>
 			<key>Title</key>
 			<string>UMengSocial</string>
 			<key>Type</key>
@@ -650,6 +699,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 </string>
+			<key>License</key>
+			<string>MIT</string>
 			<key>Title</key>
 			<string>YYKit</string>
 			<key>Type</key>
