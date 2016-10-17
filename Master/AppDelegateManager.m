@@ -8,10 +8,11 @@
 
 #import "AppDelegateManager.h"
 #import <AMapLocationKit/AMapLocationKit.h>
-
+#import <MMDrawerController/MMDrawerController.h>
 #import <AMapFoundationKit/AMapFoundationKit.h>
 #import "TabBarVC_Ph.h"
-
+#import "LeftDrawerVC_Ph.h"
+#import "RightDrawerVC_Ph.h"
 
 @implementation AppDelegateManager
 
@@ -47,6 +48,15 @@ void uncaughtExceptionHandler(NSException *exception)
 
 - (void)initWindow{
     TabBarVC_Ph *tabBarController = [[TabBarVC_Ph alloc] init];
+//    LeftDrawerVC_Ph *leftDrawerVC = [[LeftDrawerVC_Ph alloc] init];
+//    RightDrawerVC_Ph *rightDrawer = [[RightDrawerVC_Ph alloc] init];
+//    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:tabBarController
+//                                                            leftDrawerViewController:leftDrawerVC
+//                                                           rightDrawerViewController:rightDrawer];
+//    [self.drawerController setShowsShadow:YES];
+//    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+//    [self.drawerController setMaximumRightDrawerWidth:200.0];
+//    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     [self.window setRootViewController:tabBarController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
