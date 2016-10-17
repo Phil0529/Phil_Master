@@ -20,6 +20,8 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+    //1
+    //2
 }
 
 - (void)viewWillAppear:(BOOL)animated{
