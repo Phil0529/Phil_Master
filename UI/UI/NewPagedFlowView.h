@@ -33,17 +33,30 @@ typedef enum{
 
 @interface NewPagedFlowView : UIView<UIScrollViewDelegate>
 
-@property (nonatomic,assign) NewPagedFlowViewOrientation orientation;//默认为横向
+/**
+ *  默认为横向
+ */
+@property (nonatomic,assign) NewPagedFlowViewOrientation orientation;
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 
 @property (nonatomic,assign) BOOL needsReload;
-@property (nonatomic,assign) CGSize pageSize; //一页的尺寸
-@property (nonatomic,assign) NSInteger pageCount;  //总页数
+
+/**
+ *  一页的尺寸
+ */
+@property (nonatomic,assign) CGSize pageSize;
+/**
+ *  总页数
+ */
+@property (nonatomic,assign) NSInteger pageCount;
 
 @property (nonatomic,strong) NSMutableArray *cells;
 @property (nonatomic,assign) NSRange visibleRange;
-@property (nonatomic,strong) NSMutableArray *reusableCells;//如果以后需要支持reuseIdentifier，这边就得使用字典类型了
+/**
+ *  如果以后需要支持reuseIdentifier，这边就得使用字典类型了
+ */
+@property (nonatomic,strong) NSMutableArray *reusableCells;
 
 @property (nonatomic,assign)   id <NewPagedFlowViewDataSource> dataSource;
 @property (nonatomic,assign)   id <NewPagedFlowViewDelegate>   delegate;
@@ -62,6 +75,11 @@ typedef enum{
  *  非当前页的缩放比例
  */
 @property (nonatomic, assign) CGFloat minimumPageScale;
+
+/**
+ *  是否开启自动滚动,默认为开启
+ */
+@property (nonatomic, assign) BOOL isOpenAutoScroll;
 
 /**
  *  当前是第几页
@@ -83,7 +101,9 @@ typedef enum{
  */
 @property (nonatomic, assign) NSInteger orginPageCount;
 
-
+/**
+ *  刷新视图
+ */
 - (void)reloadData;
 
 /**
@@ -101,12 +121,12 @@ typedef enum{
 - (void)scrollToPage:(NSUInteger)pageNumber;
 
 /**
- *  开启定时器
+ *  开启定时器,废弃
  */
-- (void)startTimer;
+//- (void)startTimer;
 
 /**
- *  关闭定时器
+ *  关闭定时器,关闭自动滚动
  */
 - (void)stopTimer;
 
