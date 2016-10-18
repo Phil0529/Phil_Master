@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CardPageCell.h"
 
-@interface CardCell : UIView
+@interface CardCell : CardPageCell
 
 - (void)refreshViewWithImage:(NSString *)imgUrl title:(NSString *)title;
 

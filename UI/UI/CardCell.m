@@ -29,8 +29,6 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-//        [self addSubview:self.mainImg];
-//        [self addSubview:self.titleLbl];
     }
     return self;
 }

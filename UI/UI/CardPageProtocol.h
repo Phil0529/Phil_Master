@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 @class CardPageView;
 
-@protocol CardPageViewProtocol <NSObject>
+@protocol CardPageViewDataSource <NSObject>
 
 @required
 
 - (NSInteger)numberOfRowsInCardPageView:(CardPageView *)cardPageView;
 
 - (UIView *)cellViewInCardPageView:(CardPageView *)cardPageView index:(NSInteger)index;
+
+@end
+
+@protocol CardPageViewDelegate <NSObject>
 
 @optional
 

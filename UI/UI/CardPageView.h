@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CardPageProtocol.h"
+#import "CardPageCell.h"
 
 @interface CardPageView : UIView
 
@@ -19,7 +20,9 @@
 
 @property (nonatomic,assign) CGSize itemSize;
 
-@property (nonatomic, weak) id <CardPageViewProtocol> delegate;
+@property (nonatomic, weak) id<CardPageViewDelegate> delegate;
+
+@property (nonatomic,weak) id<CardPageViewDataSource> dataSource;
 
 - (id)initWithFrame:(CGRect)frame;
 

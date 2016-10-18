@@ -8,6 +8,7 @@
 
 #import "CardPageView.h"
 #import "UIImageView+WebCache.h"
+#import "CardPageCell.h"
 
 @interface CardPageView()<UIScrollViewDelegate>
 
@@ -89,26 +90,27 @@
         _autoRoll = YES;
         _reusableCells = [[NSMutableArray alloc] init];
         _resuableCellDict = [[NSMutableDictionary alloc] init];
+        [self scView];
     }
     return self;
 }
 
-- (void)setDelegate:(id<CardPageViewProtocol>)delegate{
+- (void)setDelegate:(id<CardPageViewDelegate>)delegate{
     _delegate = delegate;
+}
+
+- (void)setDataSource:(id<CardPageViewDataSource>)dataSource{
+    _dataSource = dataSource;
     [self preLoad];
 }
 
 - (void)preLoad{
-    if (_delegate && [_delegate respondsToSelector:@selector(numberOfRowsInCardPageView:)]) {
-        _cellCount = [_delegate numberOfRowsInCardPageView:self];
-    }
-    
     if (_cellCount == 0) {
         [self resetEmpty];
         return;
     }
-    if (!_scView) {
-        [self initUI];
+    if (_dataSource && [_dataSource respondsToSelector:@selector(numberOfRowsInCardPageView:)]) {
+        _cellCount = [_dataSource numberOfRowsInCardPageView:self];
     }
     if (_cellCount <= 1) {
         _scView.contentSize = CGSizeMake(self.frame.size.width, self.frame.size.height);
@@ -234,8 +236,8 @@
 
 - (void)reloadView{
     if (_needsLayout) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(numberOfRowsInCardPageView:)]) {
-            self.cellCount = [self.delegate numberOfRowsInCardPageView:self];
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(numberOfRowsInCardPageView:)]) {
+            self.cellCount = [self.dataSource numberOfRowsInCardPageView:self];
         }
         [self.reusableCells removeAllObjects];
     }
@@ -266,36 +268,36 @@
         lastIndex = lastIndex - b;
     }
     if (self.resuableCellDict.allKeys.count == 0) {
-        if (self.delegate && [self.delegate respondsToSelector:@selector(cellViewInCardPageView:index:)]) {
-            UIView *firstView = [self.delegate cellViewInCardPageView:self index:firstIndex];
+        if (self.dataSource && [self.dataSource respondsToSelector:@selector(cellViewInCardPageView:index:)]) {
+            UIView *firstView = [self.dataSource cellViewInCardPageView:self index:firstIndex];
             [self.resuableCellDict setValue:firstView forKey:[NSString stringWithFormat:@"%ld",(long)firstIndex]];
             [firstView setFrame:_firstView.bounds];
             [_firstView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [_firstView addSubview:firstView];
             
             
-            UIView *preView = [self.delegate cellViewInCardPageView:self index:prev];
+            UIView *preView = [self.dataSource cellViewInCardPageView:self index:prev];
             [preView setFrame:_preView.bounds];
             [self.resuableCellDict setValue:preView forKey:[NSString stringWithFormat:@"%ld",(long)prev]];
             [_preView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [_preView addSubview:preView];
             
             
-            UIView *currentView = [self.delegate cellViewInCardPageView:self index:_currentIndex];
+            UIView *currentView = [self.dataSource cellViewInCardPageView:self index:_currentIndex];
             [currentView setFrame:_currentView.bounds];
             [self.resuableCellDict setValue:currentView forKey:[NSString stringWithFormat:@"%ld",(long)_currentIndex]];
             [_currentView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [_currentView addSubview:currentView];
             
             
-            UIView *nextView = [self.delegate cellViewInCardPageView:self index:next];
+            UIView *nextView = [self.dataSource cellViewInCardPageView:self index:next];
             [nextView setFrame:_nextView.bounds];
             [self.resuableCellDict setValue:nextView forKey:[NSString stringWithFormat:@"%ld",(long)next]];
             [_nextView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
             [_nextView addSubview:nextView];
             
             
-            UIView *lastView = [self.delegate cellViewInCardPageView:self index:lastIndex];
+            UIView *lastView = [self.dataSource cellViewInCardPageView:self index:lastIndex];
             [lastView setFrame:_lastView.bounds];
             [self.resuableCellDict setValue:lastView forKey:[NSString stringWithFormat:@"%ld",(long)lastIndex]];
             [_lastView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
@@ -530,9 +532,10 @@
         [self addSubview:_scView];
         _scView.delegate = self;
         [_scView setBounces:NO];
-        _scView.showsHorizontalScrollIndicator = NO;
-        _scView.showsVerticalScrollIndicator = NO;
+        [_scView setShowsVerticalScrollIndicator:NO];
+        [_scView setShowsHorizontalScrollIndicator:NO];
         _scView.pagingEnabled = YES;
+        [_scView setScrollsToTop:NO];
     }
     return _scView;
 }

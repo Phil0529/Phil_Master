@@ -9,18 +9,9 @@
 #import "AnimationTool.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 
-typedef NS_ENUM(NSInteger, ViewStatus){
-    ViewStatus_WillPop = 1,
-    ViewStatus_Poping  = 2,
-    ViewStatus_CompletePop = 3,
-    ViewStatus_WillDismiss = 4,
-    ViewStatus_Dismissing  = 5,
-    ViewStatus_CompleteDismiss = 6,
-};
+//#define CurrentTimeStamp [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSinceReferenceDate]]
 
-#define CurrentTimeStamp [NSString stringWithFormat:@"%f",[[NSDate date] timeIntervalSinceReferenceDate]]
-
-@interface AnimationTool()
+@interface AnimationTool()<CAAnimationDelegate>
 
 @property (nonatomic,retain)      UIView *view;                  //需要弹出的视图
 
@@ -34,8 +25,6 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 
 @property (nonatomic,assign)      AnimationOrientation orientation;   //动画方向
 
-
-
 @end
 
 @implementation AnimationTool
@@ -43,6 +32,7 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 - (instancetype)init{
     if(self = [super init]){
         self.transparentView = [[UIView alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH:SCREEN_HEIGHT, SCREEN_WIDTH > SCREEN_HEIGHT ? SCREEN_WIDTH:SCREEN_HEIGHT)];
+        [self.transparentView setBackgroundColor:COLORFORRGBA(0x000000, 0.3)];
         [[UIApplication sharedApplication].keyWindow addSubview:self.transparentView];
     }
     return self;
@@ -85,12 +75,12 @@ typedef NS_ENUM(NSInteger, ViewStatus){
     switch ([UIDevice currentDevice].orientation) {
         case UIDeviceOrientationFaceUp:
         case UIDeviceOrientationPortrait:{
-            [self.transparentView setFrame:CGRectMake(0.f,0.f, SCREEN_WIDTH, SCREEN_HEIGHT-view.frame.size.height)];
+            [self.transparentView setFrame:CGRectMake(0.f,0.f, SCREEN_WIDTH, SCREEN_HEIGHT)];
         }
             break;
         case UIDeviceOrientationLandscapeLeft:
         case UIDeviceOrientationLandscapeRight:{
-            [self.transparentView setFrame:CGRectMake(view.frame.size.height/2,0, SCREEN_WIDTH-view.frame.size.height,SCREEN_HEIGHT)];
+            [self.transparentView setFrame:CGRectMake(view.frame.size.height/2,0, SCREEN_WIDTH,SCREEN_HEIGHT)];
         }
             break;
         default:{
@@ -112,8 +102,9 @@ typedef NS_ENUM(NSInteger, ViewStatus){
     [view.layer addAnimation:basicAnimation forKey:key];
 }
 
-- (void)addAnimationDismissView:(UIView *)view duration:(float)time{
+- (void)addAnimationDismissView:(UIView *)view duration:(float)time orientation:(AnimationOrientation)orientation{
     self.status = ViewStatus_WillDismiss;
+    self.orientation = orientation;
     self.animationTime = time;
     NSString *key = [NSStringFromClass([view class]) stringByAppendingString:CurrentTimeStamp];
     self.key = key;
@@ -154,30 +145,32 @@ typedef NS_ENUM(NSInteger, ViewStatus){
 #pragma mark CAAnimationDelegate
 
 - (void)animationDidStart:(CAAnimation *)anim{
+    self.view.userInteractionEnabled = NO;
     //动画开始,若是弹出
     if (self.status == ViewStatus_WillPop) {
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
         tap.enabled = NO;
         
         [[tap rac_gestureSignal] subscribeNext:^(id x) {
-            [self addAnimationDismissView:self.view duration:self.animationTime];
+            [self addAnimationDismissView:self.view duration:self.animationTime orientation:self.orientation];
         }];
         [self.transparentView addGestureRecognizer:tap];
-        if(self.delegate && [self.delegate respondsToSelector:@selector(viewWillPop)]){
-            [self.delegate viewWillPop];
+        if(self.delegate && [self.delegate respondsToSelector:@selector(viewWillPop:)]){
+            [self.delegate viewWillPop:self.view];
         }
     }
     //动画开始,若是消失
     else if(self.status == ViewStatus_WillDismiss){
         UITapGestureRecognizer *tap = [self.transparentView.gestureRecognizers firstObject];
         tap.enabled = NO;
-        if (self.delegate && [self.delegate respondsToSelector:@selector(viewWillDismiss)]) {
-            [self.delegate viewWillDismiss];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(viewWillDismiss:)]) {
+            [self.delegate viewWillDismiss:self.view];
         }
     }
 }
 
 -(void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+    self.view.userInteractionEnabled = YES;
     [CATransaction begin];                      //开启事务
     [CATransaction setDisableActions:YES];      //禁用隐式动画
     self.view.layer.position = [[anim valueForKey:self.key] CGPointValue];      //固定position
@@ -186,8 +179,8 @@ typedef NS_ENUM(NSInteger, ViewStatus){
     
     if (self.status == ViewStatus_WillPop) {
         self.status = ViewStatus_CompletePop;
-        if(self.delegate && [self.delegate respondsToSelector:@selector(viewDidPop)]){
-            [self.delegate viewDidPop];
+        if(self.delegate && [self.delegate respondsToSelector:@selector(viewDidPop:)]){
+            [self.delegate viewDidPop:self.view];
         }
     }
     else if(self.status == ViewStatus_WillDismiss){
@@ -195,12 +188,13 @@ typedef NS_ENUM(NSInteger, ViewStatus){
         [self.transparentView removeFromSuperview];
         self.transparentView = nil;
         [self.view removeFromSuperview];
-        self.view = nil;
-        if(self.delegate && [self.delegate respondsToSelector:@selector(viewDidDismiss)]){
-            [self.delegate viewDidDismiss];
+        if(self.delegate && [self.delegate respondsToSelector:@selector(viewDidDismiss:)]){
+            [self.delegate viewDidDismiss:self.view];
         }
+        self.view = nil;
     }
     UITapGestureRecognizer *tap = [self.transparentView.gestureRecognizers firstObject];
     tap.enabled = YES;
 }
+
 @end

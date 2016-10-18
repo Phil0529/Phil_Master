@@ -1,96 +1,64 @@
 //
-//  Macros.h
-//  iPhone
+//  CommenHeader.h
+//  OSLive
 //
+//  Created by zhangzq on 16/7/27.
+//  Copyright © 2016年 zhangzq. All rights reserved.
 //
+
+//#define ZZQ
+
+#define Phil
+
+#ifndef CommenHeader_h
+#define CommenHeader_h
 #define APP_BUILDVER [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 #define APP_VERSION  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define IOS_VERSION [NSString stringWithFormat:@"iOS %.2f",[[[UIDevice currentDevice] systemVersion] floatValue]]
-
+//屏幕分辨率 例640*960
+#define Screen_Resolution [NSString stringWithFormat:@"%.0f*%.0f",[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height]
+//设备操作系统型号和版本
+#define OSTYPE [NSString  stringWithFormat:@"IOS%@",[UIDevice currentDevice].systemVersion]
 //应用程序审核版本号
-#define VER_KEY @"ver"
-#define REVIEW_VER @"1511131901"
-//项目标识号
-#define PROJECT_KEY @"project"
-#define PROJECT_ID  @"hainan"
-//ios系统版本号
-#define OS_KEY  @"os"
-#define OS_VERSION  @"2" // 2 = ios
+#define CVER_D     @"IOS_I01_01_01_001"
+#define CHANNEL_D  @"00000000"
+#define DEVICETOKEN @"deviceToken"
+#define CID @"CID"
+#define SID @"SID"
+#define LOGINSTATUS @"LOGINSTATUS"
+//上传图片的临时key
+#define ALI_ACCESS_KEY @"AccessKeyId"
+#define ALI_ACCESS_SECRET @"AccessKeySecret"
+#define ALI_SECURITYTOKEN @"SecurityToken"
+#define ALI_BUCKETNAME @"c"
+//极光推送
+#define JPush_Key @"381a66dfde712a8595723fbb"
+#define Jpush_Secret @"2537c7335813ecf2b8259032"
 
-//新浪微博分享开关
-#define SINA_WB
-//邻居计划的开关
-#define __NEIGHBOR
+//MOB短信验证码key与secret
+#define MOB_SMS_KEY @"1228ecb6be5bc"
+#define MOB_SMS_SECRET @"f314b851906be072d692ea91342ecd32"
 
-//服务器版本
-#define RELEASE_VER
-//#define TESTENV
-//#define DEVENV
+//Mob 三方登录分享
+#define MOB_Key @"1228f22c4be4d"
+#define MOB_Secret @"54f5253e90e0cc374143b7a7c2ef7d77"
 
-#ifdef RELEASE_VER
-#define SWLOG 0
-#define CMSBasePath    @"http://hainan.cms.joygo.com/v1.4/api/"
-#define UserBasePath   @"http://user.joygo.com/hainan/"
-#define APPSBasePath   @"http://fuzhou.talk.joygo.com/"
-#define OISBasePath    @"http://hainan.micro.joygo.com:5000"
-#else
-#ifdef TESTENV
-#define SWLOG 4
-#define CMSBasePath    @"http://hainantest.cms.joygo-dev.com/v1.4/api/"
-#define UserBasePath   @"http://user.test.joygo-dev.com/test/"
-#define APPSBasePath   @"http://test.chat.joygo-dev.com/"
-#define OISBasePath    @"http://dev.micro.joygo-dev.com:5000"
-#else
-#define SWLOG 4
-#define CMSBasePath    @"http://fuzhou.cms.joygo-dev.com/v1.3/api/"
-#define UserBasePath   @"http://user.dev.joygo-dev.com/dev/"
-#define APPSBasePath   @"http://dev.chat.joygo-dev.com/"
-#define OISBasePath    @"http://dev.micro.joygo-dev.com:5000"
-#endif
-#endif
-
-#define RongCloud_KEY       @"6tnym1brns7w7"
-#define OIS_UID             @"sunniwell"
-#define OIS_TID             @"tid001"
-#define OIS_TOKEN           @"guoziyun"
-
-#define UMENG_APPKEY @"55d0b23a67e58ec12c000e16"
-
+//QQ
 #define QQ_KEY @"1104740207"
 #define QQ_SECRET @"rpBzdBX7KLpvWuYf"
+//WX
 #define WeiXin_KEY @"wxee9c402442cf7884"
 #define WeiXin_SECRET @"97babf6dbc5fcc14135c2efdeb73d461"
+//WB
 #define WeiBo_KEY @"783455158"
 #define WeiBo_SECRET @"59338035859459e2607133420564cede"
 
-#define kDeviceToken @"deviceTokenk"
-#define kLaunchImgUrl @"dlaunchImgUrl"
-#define kNotificationAppDidTraveled @"kNotificationAppDidTraveled"
-#define kNotificationUserDidLogined @"kNotificationUserDidLogined"
-
-//常量定义
-#define NAVBTN_WIDTH 26.5f
-#define NAVBTN_HEIGHT 44.f
-
-#define kpadding 20
-#define itemPerLine 4
-#define kItemW (SCREEN_WIDTH - kpadding*(itemPerLine+1))/itemPerLine
-#define kItemH 25
-
-typedef enum{
-    topViewClick = 0,
-    FromTopToTop = 1,
-    FromTopToTopLast = 2,
-    FromTopToBottomHead = 3,
-    FromBottomToTopLast = 4
-} animateType;
-
 #define baseTag 1000
 
-#define pageLoadSize 20
+#define Decode_Type @"software"
+#define Media_Type @"livestream"
 
 #define UMSYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-#define _IPHONE80_ 80000
 
 //判断系统版本
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
@@ -99,9 +67,6 @@ typedef enum{
 #define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
 #define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
-#define IS_OS_5_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 5.0)
-#define IS_OS_6_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
-#define IS_OS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 #define IS_OS_8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
 
 //语言
@@ -124,19 +89,21 @@ typedef enum{
 //消除nil的Nsnumber
 #define NONNILNSNUMBER(v)   (v = (v == nil || v == [NSNull null]) ? [NSNumber numberWithInt:0] : v)
 
+#define INT2STR(t,s) (s = [NSString stringWithFormat:@"%ld",t])
 //测试数组
 #define OBJArray(v,s) (s = (v == nil || v == [NSNull null]) ? @[] :v)
+
 //测试字典
 #define OBJDictionary(v,s) (s = (v == nil || v == [NSNull null]) ? @{} :v)
 
 //判断是否为空字符串
-#define ISEMPTYSTR(str)   (str == nil || [str isEqualToString:@""])
+#define ISEMPTYSTR(str)   (str == nil || [[str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]] isEqualToString:@""])
 
-//界面宽高
-#define STATUSBAR_HEIGHT ((IS_OS_7_OR_LATER)? 20.f : 0.f)
-#define NAVBAR_HEIGHT  44.0f
-#define TABBAR_HEIGHT  49.0f
-#define BeautifulScale 0.618
+#define ErrorReport(code,error) if(error){NSLog(@"Elf Trip ErrorCode %ld %@",(long)code,error)}
+
+#define _WEAK_SELF __weak __typeof(self) wself = self;
+#define _STRONG_SELF __strong __typeof(wself) strongSelf = wself;
+
 
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
@@ -158,80 +125,25 @@ typedef enum{
 #define ISINDEXINRANGE(idx,arr)\
 (idx >=0 && idx < arr.count)
 
-//手机号码校验
+//字号
+#define ODFontSize (IS_SCREEN_55_INCH?15.0:14.0)
+//随屏幕大小改变字号
+#define FontNumber(font) (SCREEN_WIDTH!=375?floor((font)*SCREEN_WIDTH/375):(font))
 
-//检测是否是手机号码
-/**
- * 手机号码
- * 移动：134,135,136,137,138,139,147,150,151,152,157,158,159,178,182,183,187,188,//移动
- * 联通：130,131,132,155,156,185,186,145,176,//联通
- * 电信：133,153,170,177,180,181,189,//电信
- */
+#define DSScale(value) ((value)*SCREEN_WIDTH/640)
+//默认字体字号
+#define FONT_DEFAULT(size) [UIFont systemFontOfSize:SCALING_FONT(size)]
+#define FONT_BOLD(size) [UIFont boldSystemFontOfSize:SCALING_FONT(size)]
 
-//    130,131,132,133,134,135,136,137,138,139
-//    145,147,
-//    150,151,152,153,155,156,157,158,159,
-//    170,176,177,178,
-//    180,181,182,183,185,186,187,188,189,
-#define ISPHONENUM(str)\
-[[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^1(3[0-9]|4[57]|5[0-35-9]|7[06-8]|8[0-35-9])\\d{8}$"] evaluateWithObject:str]
-
-
-#define _WEAK_SELF __weak __typeof(self) wself = self;
-#define _STRONG_SELF __strong __typeof(wself) strongSelf = wself;
-
-//颜色
-//
-//#define FOREGROUND_COLOR \
-//[UIColor colorWithRed:235.0/255.0 green:65.0/255.0 blue:61.0/255.0 alpha:1.0]
-//
-//#define BACKGROUND_COLOR \
-//[UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
-//
-//#define TINT_COLOR \
-//[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
-//
-//#define UNDERGROUND_COLOR \
-//[UIColor colorWithRed:107.0/255.0 green:104.0/255.0 blue:130.0/255.0 alpha:1.0]
-//
-//#define LINE_COLOR \
-//[UIColor colorWithRed:235.0/255.0 green:235.0/255.0 blue:236.0/255.0 alpha:1.0]
-
-#define RADIO_STATUS_COLOR \
-[UIColor colorWithRed:((float)((0xec4c48 & 0xFF0000) >> 16))/255.0 \
-                green:((float)((0xec4c48 & 0xFF00) >> 8))/255.0 \
-                blue:((float)(0xec4c48 & 0xFF))/255.0 \
-                alpha:1.0f]
-#define RGBCOLOR(r,g,b) \
-[UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0]
-
-#define RGBACOLOR(r,g,b,a) \
-[UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
-
-#define COLORFORRGB(rgbValue) \
-[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
-                green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
-                 blue:((float)(rgbValue & 0xFF))/255.0 \
-                alpha:1.0f]
-
-#define COLORFORRGBa(rgbaValue) \
-[UIColor colorWithRed:((float)((rgbaValue & 0xFF000000) >> 24))/255.0 \
-                green:((float)((rgbaValue & 0xFF0000) >> 16))/255.0 \
-                 blue:((float)((rgbaValue & 0xFF00) >> 8))/255.0 \
-                alpha:((float)(rgbaValue & 0xFF))/255.0]
-
-//微软雅黑字体定义
-#define FONT_MSYH(F) [UIFont fontWithName:@"MicrosoftYaHei" size:F]
-//方正黑体简体字体定义
-#define FONT(F) [UIFont fontWithName:@"FZHTJW--GB1-0" size:F]
-
-//#if TARGET_OS_IPHONE
-////iPhone Device
-//#endif
-//
-//#if TARGET_IPHONE_SIMULATOR
-////iPhone Simulator
-//#endif
+//字体---黑体
+#define FONTHT_M(sizeF) [UIFont fontWithName:@"STHeitiSC-Medium" size:sizeF]
+#define FONTHT_L(sizeF) [UIFont fontWithName:@"STHeitiSC-Light" size:sizeF]
+//字体---
+#define FONTHN_H(sizeF) [UIFont fontWithName:@"HelveticaNeue" size:sizeF]
+#define FONTHN_HB(sizeF) [UIFont fontWithName:@"HelveticaNeue-Bold" size:sizeF]
+//宋体
+#define FONTST_B(sizeF) [UIFont fontWithName:@"STSongti-SC-Black" size:sizeF]
+#define FONTST_R(sizeF) [UIFont fontWithName:@"STSongti-SC-Regular" size:sizeF]
 
 
 //G－C－D
@@ -254,56 +166,77 @@ typedef enum{
 //viewWithTag
 #define VIEWWITHTAG(_OBJECT, _TAG) [_OBJECT viewWithTag:_TAG]
 
-//
-#define ITTAssert(condition, ...)   \
-do {    \
-    if (!(condition)) { \
-        [[NSAssertionHandler currentHandler]    \
-        handleFailureInFunction:[NSString stringWithUTF8String:__PRETTY_FUNCTION__] \
-        file:[NSString stringWithUTF8String:__FILE__]   \
-        lineNumber:__LINE__ \
-        description:__VA_ARGS__];   \
-    }   \
-} while(0)
+#define SCALING_FACTOR_W(value) (!IS_SCREEN_47_INCH?(value)*SCREEN_WIDTH/375:(value))
 
-#ifdef SWLOG
-#define SWLog(l, s) NSLog(@"SWlogInfo %@(%d%s) \n%@", l, __LINE__, __func__, (s))
+#define SCALING_FACTOR_H(value) (!IS_SCREEN_47_INCH?(value)*SCREEN_HEIGHT/667:(value))
 
-#if SWLOG == 4
-#define SWLogV(f, s...) SWLog(@"LOGV:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogD(f, s...) SWLog(@"LOGD:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogE(f, s...) SWLog(@"LOGE:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogW(f, s...) SWLog(@"LOGW:", ([NSString stringWithFormat:f, ##s]))
+#define SCALING_FONT(value) (!IS_SCREEN_47_INCH?(value)*SCREEN_HEIGHT/667:(value))
+
+
+//颜色
+#define RGBACOLOR(aRed,aGreen,aBlue,aAlpha) [UIColor colorWithRed:(aRed)/255.0 green:(aGreen)/255.0 blue:(aBlue)/255.0 alpha:(aAlpha)]
+#define RGBCOLOR(r,g,b) \
+[UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1.0]
+
+#define COLORFORRGBA(rgbValue, alpa) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:alpa]
+
+#define COLORFORRGBa(rgbaValue) \
+[UIColor colorWithRed:((float)((rgbaValue & 0xFF000000) >> 24))/255.0 \
+green:((float)((rgbaValue & 0xFF0000) >> 16))/255.0 \
+blue:((float)((rgbaValue & 0xFF00) >> 8))/255.0 \
+alpha:((float)(rgbaValue & 0xFF))/255.0]
+//颜色
+#define COLORFORRGB(rgbValue) \
+[UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 \
+alpha:1.0f]
+//默认颜色
+#define MAINCOLOR [UIColor colorWithRed:251/255.0 green:191/255.0 blue:85/255.0 alpha:1]
+#define GRAYDEFAULTCOLOR [UIColor colorWithRed:151/255.0 green:151/255.0 blue:151/255.0 alpha:1]
+#define MAINSECONDCOLOR [UIColor colorWithRed:74/255.0 green:192/255.0 blue:199/255.0 alpha:1]
+
+//重写NSLog,Debug模式下打印日志和当前行数
+#if DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
 #endif
 
-#if SWLOG == 3
-#define SWLogV(f, s...)
-#define SWLogD(f, s...) SWLog(@"LOGD:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogE(f, s...) SWLog(@"LOGE:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogW(f, s...) SWLog(@"LOGW:", ([NSString stringWithFormat:f, ##s]))
-#endif
+//防止block循环引用
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self
+//****做成单例****
+#define ZZQSingleInstanceH  +(instancetype)shareInstance;
 
-#if SWLOG == 2
-#define SWLogV(f, s...)
-#define SWLogD(f, s...)
-#define SWLogE(f, s...) SWLog(@"LOGE:", ([NSString stringWithFormat:f, ##s]))
-#define SWLogW(f, s...) SWLog(@"LOGW:", ([NSString stringWithFormat:f, ##s]))
-#endif
+#define ZZQSingleInstanceM \
+static id _singleinstance;\
++ (instancetype)allocWithZone:(struct _NSZone *)zone{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_singleinstance = [super allocWithZone:zone];\
+});\
+return _singleinstance;\
+}\
++ (instancetype)shareInstance{\
+\
+static dispatch_once_t onceToken;\
+\
+dispatch_once(&onceToken, ^{\
+\
+_singleinstance = [[self alloc]init];\
+\
+});\
+\
+return _singleinstance;\
+}\
+-(id)copyWithZone:(NSZone *)zone{\
+return _singleinstance;\
+}
 
-#if SWLOG == 1
-#define SWLogV(f, s...)
-#define SWLogD(f, s...)
-#define SWLogE(f, s...)
-#define SWLogW(f, s...) SWLog(@"LOGW:", ([NSString stringWithFormat:f, ##s]))
-#endif
+#define BeautifulScale 0.618
 
-#if SWLOG == 0
-#define SWLogV(f, s...)
-#define SWLogD(f, s...)
-#define SWLogE(f, s...)
-#define SWLogW(f, s...)
-#endif
-
-#endif
-
-
+#endif /* CommenHeader_h */
