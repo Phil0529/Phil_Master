@@ -10,7 +10,7 @@
 
 @interface SDPageFlowView : UIView
 
-+ (void)setCellClass:(Class )cellClass;
+//+ (void)setCellClass:(Class )cellClass;
 
 @property (nonatomic, strong) UIImage *placeHolderImg;
 

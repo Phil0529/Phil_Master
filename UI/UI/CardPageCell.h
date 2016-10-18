@@ -10,6 +10,4 @@
 
 @interface CardPageCell : UIView
 
-- (id)dequeueReusableCellWithIdentifier:(NSString *)reuseIdentifier;;
-
 @end

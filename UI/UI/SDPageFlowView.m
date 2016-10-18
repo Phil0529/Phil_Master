@@ -9,8 +9,6 @@
 #import "SDPageFlowView.h"
 #import "UIImageView+WebCache.h"
 
-static Class _cellClass = nil;
-
 @interface SDPageFlowView()<UIScrollViewDelegate>
 
 {

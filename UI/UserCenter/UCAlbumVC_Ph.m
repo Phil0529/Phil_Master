@@ -32,13 +32,13 @@
 }
 
 - (void)click{
-    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
+//    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 }
 
 - (void)normalClick{
-    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
-    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
+//    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 }
 
 - (void)viewWillAppear:(BOOL)animated

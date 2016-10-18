@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLeftMenuButton];
-    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+//    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
 //    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 //    [self setupRightMenuButton];
 //    NSMutableArray *element = [@[@"1",@"2"] mutableCopy];

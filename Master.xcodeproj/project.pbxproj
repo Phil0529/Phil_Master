@@ -30,7 +30,6 @@
 		FF21A8221DB5C84500973433 /* CardPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8141DB5C84500973433 /* CardPageView.m */; };
 		FF21A8231DB5C84500973433 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8161DB5C84500973433 /* CycleScrollView.m */; };
 		FF21A8241DB5C84500973433 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8181DB5C84500973433 /* NewPagedFlowView.m */; };
-		FF21A8251DB5C84500973433 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A81A1DB5C84500973433 /* PGIndexBannerSubiew.m */; };
 		FF21A8261DB5C84500973433 /* SDPageFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A81C1DB5C84500973433 /* SDPageFlowView.m */; };
 		FF21A8271DB5C84500973433 /* UIVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A81E1DB5C84500973433 /* UIVC_Ph.m */; };
 		FF21A8371DB5C86D00973433 /* AnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8291DB5C86D00973433 /* AnimationTool.m */; };
@@ -58,6 +57,8 @@
 		FF21A8731DB5C91C00973433 /* UCTableCell_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A86B1DB5C91C00973433 /* UCTableCell_Ph.m */; };
 		FF21A8741DB5C91C00973433 /* UCTopView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A86D1DB5C91C00973433 /* UCTopView_Ph.m */; };
 		FF21A8751DB5C91C00973433 /* UserCenterVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A86F1DB5C91C00973433 /* UserCenterVC_Ph.m */; };
+		FF21A8781DB5ED7E00973433 /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8771DB5ED7E00973433 /* NewPagedFlowView.m */; };
+		FF21A87B1DB5ED9D00973433 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A87A1DB5ED9D00973433 /* PGIndexBannerSubiew.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -109,8 +110,6 @@
 		FF21A8161DB5C84500973433 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CycleScrollView.m; path = UI/CycleScrollView.m; sourceTree = "<group>"; };
 		FF21A8171DB5C84500973433 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewPagedFlowView.h; path = UI/NewPagedFlowView.h; sourceTree = "<group>"; };
 		FF21A8181DB5C84500973433 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewPagedFlowView.m; path = UI/NewPagedFlowView.m; sourceTree = "<group>"; };
-		FF21A8191DB5C84500973433 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PGIndexBannerSubiew.h; path = UI/PGIndexBannerSubiew.h; sourceTree = "<group>"; };
-		FF21A81A1DB5C84500973433 /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PGIndexBannerSubiew.m; path = UI/PGIndexBannerSubiew.m; sourceTree = "<group>"; };
 		FF21A81B1DB5C84500973433 /* SDPageFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDPageFlowView.h; path = UI/SDPageFlowView.h; sourceTree = "<group>"; };
 		FF21A81C1DB5C84500973433 /* SDPageFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDPageFlowView.m; path = UI/SDPageFlowView.m; sourceTree = "<group>"; };
 		FF21A81D1DB5C84500973433 /* UIVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVC_Ph.h; sourceTree = "<group>"; };
@@ -166,6 +165,10 @@
 		FF21A86D1DB5C91C00973433 /* UCTopView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCTopView_Ph.m; sourceTree = "<group>"; };
 		FF21A86E1DB5C91C00973433 /* UserCenterVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserCenterVC_Ph.h; sourceTree = "<group>"; };
 		FF21A86F1DB5C91C00973433 /* UserCenterVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserCenterVC_Ph.m; sourceTree = "<group>"; };
+		FF21A8761DB5ED7E00973433 /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		FF21A8771DB5ED7E00973433 /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		FF21A8791DB5ED9D00973433 /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		FF21A87A1DB5ED9D00973433 /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,20 +191,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8220A6EE1CE5A534000B1B8B /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		826D2E9F1CC9C701004541C0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				FF21A8631DB5C90700973433 /* UserCenter */,
 				FF21A8081DB5C81900973433 /* Animation */,
-				FF21A8091DB5C81900973433 /* frame */,
-				FF21A80A1DB5C81900973433 /* home */,
+				FF21A8091DB5C81900973433 /* Frame */,
+				FF21A80A1DB5C81900973433 /* Home */,
 				FF21A80B1DB5C81900973433 /* UI */,
 				82D2EF791D3C806E00A54336 /* Animation */,
 			);
@@ -255,7 +251,6 @@
 				826D2EC61CC9C82A004541C0 /* AppDelegate.h */,
 				826D2EC71CC9C82A004541C0 /* AppDelegate.m */,
 				826D2ECA1CC9C82A004541C0 /* Assets.xcassets */,
-				8220A6EE1CE5A534000B1B8B /* New Group */,
 				826D2ECB1CC9C82A004541C0 /* Info.plist */,
 				826D2ECC1CC9C82A004541C0 /* Localizable.strings */,
 				826D2ECD1CC9C82A004541C0 /* Macros.h */,
@@ -328,7 +323,7 @@
 			path = Animation;
 			sourceTree = "<group>";
 		};
-		FF21A8091DB5C81900973433 /* frame */ = {
+		FF21A8091DB5C81900973433 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
 				FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */,
@@ -348,10 +343,11 @@
 				FF21A84C1DB5C88400973433 /* UIViewController+BaseViewController_Ph.h */,
 				FF21A84D1DB5C88400973433 /* UIViewController+BaseViewController_Ph.m */,
 			);
+			name = Frame;
 			path = frame;
 			sourceTree = "<group>";
 		};
-		FF21A80A1DB5C81900973433 /* home */ = {
+		FF21A80A1DB5C81900973433 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				FF21A8561DB5C8A800973433 /* HomeVC_Ph.h */,
@@ -363,6 +359,7 @@
 				FF21A85C1DB5C8A800973433 /* ShareView.h */,
 				FF21A85D1DB5C8A800973433 /* ShareView.m */,
 			);
+			name = Home;
 			path = home;
 			sourceTree = "<group>";
 		};
@@ -398,23 +395,25 @@
 		FFB00DFC1DB4A3A400469DE3 /* 3DAdScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				FF21A8111DB5C84500973433 /* CardPageVC.h */,
+				FF21A8121DB5C84500973433 /* CardPageVC.m */,
 				FF21A80C1DB5C84500973433 /* CardCell.h */,
 				FF21A80D1DB5C84500973433 /* CardCell.m */,
 				FF21A80E1DB5C84500973433 /* CardPageCell.h */,
 				FF21A80F1DB5C84500973433 /* CardPageCell.m */,
 				FF21A8101DB5C84500973433 /* CardPageProtocol.h */,
-				FF21A8111DB5C84500973433 /* CardPageVC.h */,
-				FF21A8121DB5C84500973433 /* CardPageVC.m */,
 				FF21A8131DB5C84500973433 /* CardPageView.h */,
 				FF21A8141DB5C84500973433 /* CardPageView.m */,
 				FF21A8151DB5C84500973433 /* CycleScrollView.h */,
 				FF21A8161DB5C84500973433 /* CycleScrollView.m */,
 				FF21A8171DB5C84500973433 /* NewPagedFlowView.h */,
 				FF21A8181DB5C84500973433 /* NewPagedFlowView.m */,
-				FF21A8191DB5C84500973433 /* PGIndexBannerSubiew.h */,
-				FF21A81A1DB5C84500973433 /* PGIndexBannerSubiew.m */,
 				FF21A81B1DB5C84500973433 /* SDPageFlowView.h */,
 				FF21A81C1DB5C84500973433 /* SDPageFlowView.m */,
+				FF21A8761DB5ED7E00973433 /* NewPagedFlowView.h */,
+				FF21A8771DB5ED7E00973433 /* NewPagedFlowView.m */,
+				FF21A8791DB5ED9D00973433 /* PGIndexBannerSubiew.h */,
+				FF21A87A1DB5ED9D00973433 /* PGIndexBannerSubiew.m */,
 			);
 			name = 3DAdScrollView;
 			path = ..;
@@ -449,7 +448,7 @@
 		82D1BC7A1C995EDB0043B83E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Xhc;
 				TargetAttributes = {
 					82D1BC811C995EDB0043B83E = {
@@ -562,6 +561,7 @@
 				FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */,
 				FF21A8221DB5C84500973433 /* CardPageView.m in Sources */,
 				FF21A8391DB5C86D00973433 /* MasterView.m in Sources */,
+				FF21A87B1DB5ED9D00973433 /* PGIndexBannerSubiew.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
 				FF21A8201DB5C84500973433 /* CardPageCell.m in Sources */,
 				FF21A8711DB5C91C00973433 /* UCBaseVC_Ph.m in Sources */,
@@ -578,13 +578,13 @@
 				826D2ED31CC9C82A004541C0 /* AppDelegate.m in Sources */,
 				FF21A8521DB5C88400973433 /* RightDrawerVC_Ph.m in Sources */,
 				FF21A8381DB5C86D00973433 /* MasterVC_Ph.m in Sources */,
-				FF21A8251DB5C84500973433 /* PGIndexBannerSubiew.m in Sources */,
 				FF21A8231DB5C84500973433 /* CycleScrollView.m in Sources */,
 				822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
 				826D2ED81CC9C82A004541C0 /* main.m in Sources */,
 				FF21A83D1DB5C86D00973433 /* UIView+Extent.m in Sources */,
 				FF21A8271DB5C84500973433 /* UIVC_Ph.m in Sources */,
+				FF21A8781DB5ED7E00973433 /* NewPagedFlowView.m in Sources */,
 				FF21A8741DB5C91C00973433 /* UCTopView_Ph.m in Sources */,
 				822AAD8E1CE18DBB00F84C63 /* UIImage+Resize.m in Sources */,
 				FF21A83B1DB5C86D00973433 /* NonWindowAnimationTool.m in Sources */,
@@ -608,8 +608,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -651,8 +653,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -687,7 +691,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Phil.Master;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,7 +711,7 @@
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "Master/PrefixHeader-PCH.pch";
 				INFOPLIST_FILE = Master/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Phil.Master;
 				PRODUCT_NAME = "$(TARGET_NAME)";

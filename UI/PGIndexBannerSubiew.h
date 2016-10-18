@@ -28,6 +28,4 @@
  */
 @property (nonatomic, strong) UIView *coverView;
 
-@property (nonatomic, strong) UILabel *titleLabel;
-
 @end

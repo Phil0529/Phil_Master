@@ -89,7 +89,7 @@
 
 //    
     [attrStr addAttribute:NSForegroundColorAttributeName value:firColor range:range1];
-    if (secString.length > 0) {
+    if (range2.length > 0) {
         [attrStr addAttribute:NSForegroundColorAttributeName value:secColor range:range2];
     }
     
