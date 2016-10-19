@@ -10,4 +10,8 @@
 
 @interface CardPageCell : UIView
 
+@property (nonatomic,strong) UIImageView *imgView;
+
+- (instancetype)initWithNSIndexPath:(NSIndexPath *)indexPath reuseIdentifier:(NSString *)reuseIdentifier;
+
 @end

@@ -24,6 +24,7 @@
 //#import "MobClick.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 //#import "MTLModel+KTVNullableScalar.h"
+#import <Masonry/Masonry.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <Mantle/Mantle.h>
 #import "BaseVC_Ph.h"

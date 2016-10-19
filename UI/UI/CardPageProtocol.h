@@ -15,7 +15,7 @@
 
 - (NSInteger)numberOfRowsInCardPageView:(CardPageView *)cardPageView;
 
-- (UIView *)cellViewInCardPageView:(CardPageView *)cardPageView index:(NSInteger)index;
+- (UIView *)cellViewInCardPageView:(CardPageView *)cardPageView indexPath:(NSIndexPath *)indexPath;
 
 @end
 
@@ -23,7 +23,7 @@
 
 @optional
 
-- (void)cardPageView:(CardPageView *)cardPageView didSelectRowAtIndex:(NSInteger)index;
+- (void)cardPageView:(CardPageView *)cardPageView didSelectRowAtIndex:(NSIndexPath *)indexPath;
 
 @end
 

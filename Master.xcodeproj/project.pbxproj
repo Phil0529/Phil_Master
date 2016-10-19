@@ -58,6 +58,7 @@
 		FF21A89A1DB5F05D00973433 /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A88F1DB5F05D00973433 /* PGIndexBannerSubiew.m */; };
 		FF21A89B1DB5F05D00973433 /* SDPageFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8911DB5F05D00973433 /* SDPageFlowView.m */; };
 		FF21A89C1DB5F05D00973433 /* UIVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8931DB5F05D00973433 /* UIVC_Ph.m */; };
+		FF21A8A41DB61ED100973433 /* Tools_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8A31DB61ED100973433 /* Tools_Ph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,6 +167,8 @@
 		FF21A8911DB5F05D00973433 /* SDPageFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPageFlowView.m; sourceTree = "<group>"; };
 		FF21A8921DB5F05D00973433 /* UIVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIVC_Ph.h; sourceTree = "<group>"; };
 		FF21A8931DB5F05D00973433 /* UIVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVC_Ph.m; sourceTree = "<group>"; };
+		FF21A8A21DB61ED100973433 /* Tools_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools_Ph.h; sourceTree = "<group>"; };
+		FF21A8A31DB61ED100973433 /* Tools_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools_Ph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +239,8 @@
 				822AAD8C1CE18DBB00F84C63 /* UIImage+RoundedCorner.m */,
 				8220A6F21CE5AB22000B1B8B /* UIButton+Function_Ph.h */,
 				8220A6F31CE5AB22000B1B8B /* UIButton+Function_Ph.m */,
+				FF21A8A21DB61ED100973433 /* Tools_Ph.h */,
+				FF21A8A31DB61ED100973433 /* Tools_Ph.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -384,15 +389,15 @@
 			children = (
 				FF21A8921DB5F05D00973433 /* UIVC_Ph.h */,
 				FF21A8931DB5F05D00973433 /* UIVC_Ph.m */,
+				FF21A8861DB5F05D00973433 /* CardPageVC.h */,
+				FF21A8871DB5F05D00973433 /* CardPageVC.m */,
+				FF21A8881DB5F05D00973433 /* CardPageView.h */,
+				FF21A8891DB5F05D00973433 /* CardPageView.m */,
 				FF21A8811DB5F05D00973433 /* CardCell.h */,
 				FF21A8821DB5F05D00973433 /* CardCell.m */,
 				FF21A8831DB5F05D00973433 /* CardPageCell.h */,
 				FF21A8841DB5F05D00973433 /* CardPageCell.m */,
 				FF21A8851DB5F05D00973433 /* CardPageProtocol.h */,
-				FF21A8861DB5F05D00973433 /* CardPageVC.h */,
-				FF21A8871DB5F05D00973433 /* CardPageVC.m */,
-				FF21A8881DB5F05D00973433 /* CardPageView.h */,
-				FF21A8891DB5F05D00973433 /* CardPageView.m */,
 				FF21A88A1DB5F05D00973433 /* CycleScrollView.h */,
 				FF21A88B1DB5F05D00973433 /* CycleScrollView.m */,
 				FF21A88C1DB5F05D00973433 /* NewPagedFlowView.h */,
@@ -556,6 +561,7 @@
 				826D2EC11CC9C71E004541C0 /* ConfigManager_Ph.m in Sources */,
 				FF21A8731DB5C91C00973433 /* UCTableCell_Ph.m in Sources */,
 				FF21A8751DB5C91C00973433 /* UserCenterVC_Ph.m in Sources */,
+				FF21A8A41DB61ED100973433 /* Tools_Ph.m in Sources */,
 				8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */,
 				826D2EC01CC9C71E004541C0 /* ConfigItem_Ph.m in Sources */,
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,

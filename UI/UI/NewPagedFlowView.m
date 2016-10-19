@@ -198,7 +198,9 @@
     UIView *cell = [_cells objectAtIndex:pageIndex];
     
     if ((NSObject *)cell == [NSNull null]) {
-        cell = [_dataSource flowView:self cellForPageAtIndex:pageIndex % self.orginPageCount];
+        if (_dataSource && [_dataSource respondsToSelector:@selector(flowView:cellForPageAtIndex:)]) {
+            cell = [_dataSource flowView:self cellForPageAtIndex:pageIndex % self.orginPageCount];
+        }
         NSAssert(cell!=nil, @"datasource must not return nil");
         [_cells replaceObjectAtIndex:pageIndex withObject:cell];
         
