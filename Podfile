@@ -27,4 +27,5 @@ pod 'YYKit'
 pod 'CVKHierarchySearcher'
 pod 'Masonry'
 pod 'ReactiveCocoa'
+pod 'Realm'
 end

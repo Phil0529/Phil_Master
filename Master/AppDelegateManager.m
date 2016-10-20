@@ -36,7 +36,6 @@
 
 void uncaughtExceptionHandler(NSException *exception)
 {
-    // Internal error reporting
     NSLog(@"CRASH: %@", exception);
     NSLog(@"Stack Trace: %@", [exception callStackSymbols]);
 }
@@ -48,15 +47,6 @@ void uncaughtExceptionHandler(NSException *exception)
 
 - (void)initWindow{
     TabBarVC_Ph *tabBarController = [[TabBarVC_Ph alloc] init];
-//    LeftDrawerVC_Ph *leftDrawerVC = [[LeftDrawerVC_Ph alloc] init];
-//    RightDrawerVC_Ph *rightDrawer = [[RightDrawerVC_Ph alloc] init];
-//    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:tabBarController
-//                                                            leftDrawerViewController:leftDrawerVC
-//                                                           rightDrawerViewController:rightDrawer];
-//    [self.drawerController setShowsShadow:YES];
-//    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-//    [self.drawerController setMaximumRightDrawerWidth:200.0];
-//    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     [self.window setRootViewController:tabBarController];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

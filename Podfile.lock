@@ -55,6 +55,9 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - Realm (1.1.0):
+    - Realm/Headers (= 1.1.0)
+  - Realm/Headers (1.1.0)
   - RongCloudIMLib (2.7.2)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
@@ -80,6 +83,7 @@ DEPENDENCIES:
   - MMDrawerController
   - Overcoat (~> 1.2)
   - ReactiveCocoa
+  - Realm
   - RongCloudIMLib
   - SDWebImage
   - TMCache
@@ -103,6 +107,7 @@ SPEC CHECKSUMS:
   MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   Overcoat: 45e4d20eafc02c8d7fcde3cb89d35f0630a9fa80
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Realm: ceecf1a4540c4ce9efe196fe73fa9855bce05bd8
   RongCloudIMLib: 9a2118f5c8c812df8f3cae7859e6eaa69fac1f9d
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   TMCache: 95ebcc9b3c7e90fb5fd8fc3036cba3aa781c9bed
@@ -111,6 +116,6 @@ SPEC CHECKSUMS:
   UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 509ca382f9980ad7b1268884dd7779a4aecff09d
+PODFILE CHECKSUM: b30d2fda917cb57abe508c67bd84ef07278aaf9c
 
 COCOAPODS: 1.1.0.beta.2
