@@ -37,7 +37,6 @@
 		FF21A8511DB5C88400973433 /* NavigationVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8451DB5C88400973433 /* NavigationVC_Ph.m */; };
 		FF21A8521DB5C88400973433 /* RightDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8471DB5C88400973433 /* RightDrawerVC_Ph.m */; };
 		FF21A8531DB5C88400973433 /* TabBarVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8491DB5C88400973433 /* TabBarVC_Ph.m */; };
-		FF21A8541DB5C88400973433 /* UITabBar+CenterBtnExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A84B1DB5C88400973433 /* UITabBar+CenterBtnExtension.m */; };
 		FF21A8551DB5C88400973433 /* UIViewController+BaseViewController_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A84D1DB5C88400973433 /* UIViewController+BaseViewController_Ph.m */; };
 		FF21A85E1DB5C8A800973433 /* HomeVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8571DB5C8A800973433 /* HomeVC_Ph.m */; };
 		FF21A85F1DB5C8A800973433 /* LaunchLiveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8591DB5C8A800973433 /* LaunchLiveVC.m */; };
@@ -124,8 +123,6 @@
 		FF21A8471DB5C88400973433 /* RightDrawerVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightDrawerVC_Ph.m; sourceTree = "<group>"; };
 		FF21A8481DB5C88400973433 /* TabBarVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarVC_Ph.h; sourceTree = "<group>"; };
 		FF21A8491DB5C88400973433 /* TabBarVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarVC_Ph.m; sourceTree = "<group>"; };
-		FF21A84A1DB5C88400973433 /* UITabBar+CenterBtnExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CenterBtnExtension.h"; sourceTree = "<group>"; };
-		FF21A84B1DB5C88400973433 /* UITabBar+CenterBtnExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CenterBtnExtension.m"; sourceTree = "<group>"; };
 		FF21A84C1DB5C88400973433 /* UIViewController+BaseViewController_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BaseViewController_Ph.h"; sourceTree = "<group>"; };
 		FF21A84D1DB5C88400973433 /* UIViewController+BaseViewController_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BaseViewController_Ph.m"; sourceTree = "<group>"; };
 		FF21A8561DB5C8A800973433 /* HomeVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC_Ph.h; sourceTree = "<group>"; };
@@ -273,6 +270,7 @@
 				826D2EBB1CC9C71E004541C0 /* Configuration */,
 				826D2EC21CC9C73B004541C0 /* Extern */,
 				826D2EC31CC9C73B004541C0 /* Util */,
+				FFC787111DB89893007D22A6 /* Deprecated */,
 				82D1BC831C995EDB0043B83E /* Products */,
 				E67032C12E0815F3A87A59FF /* Pods */,
 				1E7ACC32A08CBD6E5570E6CA /* Frameworks */,
@@ -340,8 +338,6 @@
 				FF21A8471DB5C88400973433 /* RightDrawerVC_Ph.m */,
 				FF21A8481DB5C88400973433 /* TabBarVC_Ph.h */,
 				FF21A8491DB5C88400973433 /* TabBarVC_Ph.m */,
-				FF21A84A1DB5C88400973433 /* UITabBar+CenterBtnExtension.h */,
-				FF21A84B1DB5C88400973433 /* UITabBar+CenterBtnExtension.m */,
 				FF21A84C1DB5C88400973433 /* UIViewController+BaseViewController_Ph.h */,
 				FF21A84D1DB5C88400973433 /* UIViewController+BaseViewController_Ph.m */,
 			);
@@ -389,6 +385,21 @@
 			children = (
 				FF21A8921DB5F05D00973433 /* UIVC_Ph.h */,
 				FF21A8931DB5F05D00973433 /* UIVC_Ph.m */,
+				FFC787121DB89909007D22A6 /* CardPage */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FFC787111DB89893007D22A6 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		FFC787121DB89909007D22A6 /* CardPage */ = {
+			isa = PBXGroup;
+			children = (
 				FF21A8861DB5F05D00973433 /* CardPageVC.h */,
 				FF21A8871DB5F05D00973433 /* CardPageVC.m */,
 				FF21A8881DB5F05D00973433 /* CardPageView.h */,
@@ -407,7 +418,7 @@
 				FF21A8901DB5F05D00973433 /* SDPageFlowView.h */,
 				FF21A8911DB5F05D00973433 /* SDPageFlowView.m */,
 			);
-			path = UI;
+			name = CardPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,7 +552,6 @@
 				FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */,
 				FF21A8601DB5C8A800973433 /* LaunchLiveView.m in Sources */,
 				FF21A83A1DB5C86D00973433 /* MasterViewModel.m in Sources */,
-				FF21A8541DB5C88400973433 /* UITabBar+CenterBtnExtension.m in Sources */,
 				FF21A83C1DB5C86D00973433 /* PopNavigation.m in Sources */,
 				FF21A8961DB5F05D00973433 /* CardPageVC.m in Sources */,
 				FF21A84E1DB5C88400973433 /* BaseVC_Ph.m in Sources */,

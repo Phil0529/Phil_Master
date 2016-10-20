@@ -25,7 +25,6 @@
     [self tableView];
 }
 
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return _dataArray.count;
 }
@@ -36,7 +35,17 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UIVC_Ph_UITableViewCell_Reuse"];
     }
     
-    [cell.textLabel setText:[NSString stringWithFormat:@"%@",_dataArray[indexPath.row]]];
+    NSString *title;
+    UIType type = [_dataArray[indexPath.row] integerValue];
+    switch (type) {
+        case UIType_3DCardPage:{
+            title = @"3DCardPage";
+        }
+            break;
+        default:
+            break;
+    }
+    [cell.textLabel setText:title];
     return cell;
 }
 

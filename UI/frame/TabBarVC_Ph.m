@@ -10,7 +10,6 @@
 #import "ConfigManager_Ph.h"
 #import "MenuVC_Ph.h"
 #import "NavigationVC_Ph.h"
-#import "UITabBar+CenterBtnExtension.h"
 #import "LaunchLiveVC.h"
 #import "LeftDrawerVC_Ph.h"
 #import "RightDrawerVC_Ph.h"
@@ -43,7 +42,6 @@
             MMDrawerController *drawController = [[MMDrawerController alloc] initWithCenterViewController:navVC leftDrawerViewController:leftVc];
             [drawController setShowsShadow:YES];
             [drawController setRestorationIdentifier:@"MMDrawer"];
-            [drawController setMaximumRightDrawerWidth:200.0];
             [drawController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
             [drawController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
             [drawController.tabBarItem setImage:[[UIImage imageNamed:item.normalImage]
@@ -69,14 +67,13 @@
 }
 
 - (void)addCenterButton{
-    [self.tabBar setTabBarCenterButton:^(UIButton *centerButton) {
-        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateNormal];
-        
-        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateSelected];
-        
-        [centerButton addTarget:self action:@selector(clickCenterButton) forControlEvents:UIControlEventTouchUpInside];
-    }];
-    
+//    [self.tabBar setTabBarCenterButton:^(UIButton *centerButton) {
+//        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateNormal];
+//        
+//        [centerButton setBackgroundImage:[UIImage imageNamed:@"ic_tab_live"] forState:UIControlStateSelected];
+//        
+//        [centerButton addTarget:self action:@selector(clickCenterButton) forControlEvents:UIControlEventTouchUpInside];
+//    }];
 }
 
 - (void)clickCenterButton

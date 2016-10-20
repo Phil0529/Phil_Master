@@ -9,7 +9,6 @@
 #import "UCAlbumVC_Ph.h"
 #import "TabBarVC_Ph.h"
 #import <MMDrawerController/MMDrawerController.h>
-#import "UITabBar+CenterBtnExtension.h"
 
 @implementation UCAlbumVC_Ph
 
