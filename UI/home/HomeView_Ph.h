@@ -1,13 +1,13 @@
 //
-//  LaunchLiveVC.h
+//  HomeView_Ph.h
 //  Master
 //
-//  Created by Phil Xhc on 5/13/16.
+//  Created by xhc on 10/20/16.
 //  Copyright © 2016 Xhc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface LaunchLiveVC : UIViewController
+@interface HomeView_Ph : UIView
 
 @end

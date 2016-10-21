@@ -10,7 +10,6 @@
 #import "ConfigManager_Ph.h"
 #import "MenuVC_Ph.h"
 #import "NavigationVC_Ph.h"
-#import "LaunchLiveVC.h"
 #import "LeftDrawerVC_Ph.h"
 #import "RightDrawerVC_Ph.h"
 #import <UIViewController+MMDrawerController.h>
@@ -78,12 +77,6 @@
 
 - (void)clickCenterButton
 {
-    LaunchLiveVC *vc = [[LaunchLiveVC alloc] init];
-    vc.modalTransitionStyle = UIModalPresentationPopover;
-    
-    [UIView animateWithDuration:0.5f animations:^{
-        [self presentViewController:vc animated:YES completion:nil];
-    }];
 }
 
 

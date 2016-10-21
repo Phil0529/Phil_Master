@@ -30,7 +30,7 @@
 //
 //- (void)setAdsWithImages:(NSArray *)imageArray;
 
-- (CardPageCell *)dequeueReusableCellWithIndex:(NSIndexPath *)indexPath;
+//- (CardPageCell *)dequeueReusableCellWithIndex:(NSIndexPath *)indexPath;
 //
 //- (void)reloadData;
 

@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSUInteger, MasterType){
+    MasterType_Objc_MsgSend,
+};
+
+
 @interface MasterVC_Ph : BaseVC_Ph
 
 @end

@@ -34,11 +34,11 @@
 }
 
 - (UIView *)cellViewInCardPageView:(CardPageView *)cardPageView indexPath:(NSIndexPath *)indexPath{
-    CardPageCell *cell = [cardPageView dequeueReusableCellWithIndex:indexPath];
-    if(!cell){
+//    CardPageCell *cell = [cardPageView dequeueReusableCellWithIndex:indexPath];
+//    if(!cell){
 //        cell = [CardPageCell alloc] initWithNSIndexPath:indexPath reuseIdentifier:<#(NSString *)#>
-    }
-    return cell;
+//    }
+    return nil;
 }
 
 

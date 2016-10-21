@@ -7,13 +7,13 @@
 //
 
 #import "MasterVC_Ph.h"
-#import "MasterView.h"
-#import "AnimationTool.h"
-#import <ReactiveCocoa.h>
+#import "ObjcMsgSendVC_Ph.h"
 
-@interface MasterVC_Ph ()
+@interface MasterVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
-@property (nonatomic,strong)      MasterView *testView;                  //
+@property (nonatomic,strong) UITableView *tableView;
+
+@property (nonatomic,strong) NSArray *dataArray;
 
 @end
 
@@ -21,37 +21,69 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.userInteractionEnabled = YES;
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setFrame:CGRectMake(0.f, 100.f,SCREEN_WIDTH, 50.f)];
-    [btn setBackgroundColor:[UIColor redColor]];
-    
-    
-    
-    [[btn rac_signalForControlEvents:1<<6] subscribeNext:^(UIButton *btn) {
-        AnimationTool *animationTool = [[AnimationTool alloc] init];
-        [animationTool addAnimationPopView:self.testView duration:.5f orientation:AnimationOrientation_Bottom];
-    }];
-
-    [self.view addSubview:btn];
+    [self dataArray];
+    [self tableView];
 }
 
-- (MasterView *)testView{
-    if (!_testView) {
-        _testView = [[MasterView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH,100.f)];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return _dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UIVC_Ph_UITableViewCell_Reuse"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UIVC_Ph_UITableViewCell_Reuse"];
     }
-    return _testView;
+    
+    NSString *title;
+    MasterType type = [_dataArray[indexPath.row] integerValue];
+    switch (type) {
+        case MasterType_Objc_MsgSend:{
+            title = @"Objc_Msg_Send";
+        }
+            break;
+        default:
+            break;
+    }
+    [cell.textLabel setText:title];
+    return cell;
 }
 
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    MasterType type = [_dataArray[indexPath.row] integerValue];
+    UIViewController *vc;
+    switch (type) {
+        case MasterType_Objc_MsgSend:{
+            vc = [ObjcMsgSendVC_Ph new];
+        }
+            break;
+    }
+    if (vc) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (UITableView *)tableView{
+    if (!_tableView) {
+        @weakify(self);
+        _tableView = ({
+            @strongify(self);
+            UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+            [tableView setRowHeight:SCALING_FACTOR_H(64.f)];
+            [tableView setDelegate:self];
+            [tableView setDataSource:self];
+            [self.view addSubview:tableView];
+            tableView;
+        });
+    }
+    return _tableView;
 }
 
+- (NSArray *)dataArray{
+    if(!_dataArray){
+        _dataArray = @[@(MasterType_Objc_MsgSend)];
+    }
+    return _dataArray;
+}
 
 @end

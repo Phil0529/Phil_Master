@@ -118,14 +118,14 @@
     NSInteger b = self.cellCount;
     
     _currentIndex = a >=b ? 0 : _currentIndex < 0 ? b - 1 : _currentIndex;
-    
-    NSInteger firstIndex = _currentIndex - 2 < 0 ? _currentIndex + b - 2 :_currentIndex - 2;
-    
-    NSInteger prev = _currentIndex - 1 < 0 ? b - 1 : _currentIndex - 1;
-    
-    NSInteger next = _currentIndex + 1 > b - 1 ? 0 : _currentIndex + 1;
-    
-    NSInteger lastIndex = _currentIndex + 2 > b - 1 ? _currentIndex + 2 - b : _currentIndex + 2;
+//    
+//    NSInteger firstIndex = _currentIndex - 2 < 0 ? _currentIndex + b - 2 :_currentIndex - 2;
+//    
+//    NSInteger prev = _currentIndex - 1 < 0 ? b - 1 : _currentIndex - 1;
+//    
+//    NSInteger next = _currentIndex + 1 > b - 1 ? 0 : _currentIndex + 1;
+//    
+//    NSInteger lastIndex = _currentIndex + 2 > b - 1 ? _currentIndex + 2 - b : _currentIndex + 2;
     
     
     

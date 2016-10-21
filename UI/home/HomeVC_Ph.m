@@ -10,8 +10,11 @@
 #import <MMDrawerController/MMDrawerBarButtonItem.h>
 #import "UIViewController+MMDrawerController.h"
 #import "TabBarVC_Ph.h"
+#import "HomeView_Ph.h"
 
 @interface HomeVC_Ph ()
+
+@property (nonatomic,strong) HomeView_Ph *homeView;
 
 @end
 
@@ -20,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupLeftMenuButton];
+    [self homeView];
 //    MMDrawerController *drawerController = (MMDrawerController *)[UIApplication sharedApplication].keyWindow.rootViewController;
 //    TabBarVC_Ph *tabBarController = (TabBarVC_Ph *)drawerController.centerViewController;
 //    [self setupRightMenuButton];
@@ -72,6 +76,14 @@
 
 -(void)rightDrawerButtonPress:(id)sender{
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideRight animated:YES completion:nil];
+}
+
+- (HomeView_Ph *)homeView{
+    if (!_homeView) {
+        _homeView = [[HomeView_Ph alloc] initWithFrame:CGRectMake(0.f, 0.f, SCREEN_WIDTH, SCREEN_HEIGHT-64.f)];
+        [self.view addSubview:_homeView];
+    }
+    return _homeView;
 }
 
 @end
