@@ -12,7 +12,8 @@ typedef NS_ENUM(NSInteger,ConfigType){
     ConfigType_Home             = 1,
     ConfigType_UserCenter       = 2,
     ConfigType_Master           = 3,
-    ConfigType_UI         = 4,
+    ConfigType_UI               = 4,
+    ConfigType_Tools            = 5,
 };
 
 

@@ -36,7 +36,11 @@
              [ConfigItem_Ph newItem:@"UI"
                         normalImage:@"tab_activity"
                       selectedImage:@"tab_activity_pressed"
-                               type:ConfigType_UI]
+                               type:ConfigType_UI],
+             [ConfigItem_Ph newItem:@"Animation"
+                        normalImage:@"tab_activity"
+                      selectedImage:@"tab_activity_pressed"
+                               type:ConfigType_Tools]
              ];
 }
 

@@ -11,6 +11,7 @@
 #import "UserCenterVC_Ph.h"
 #import "MasterVC_Ph.h"
 #import "UIVC_Ph.h"
+#import "ToolsVC_Ph.h"
 #import <UIViewController+MMDrawerController.h>
 
 @interface MenuVC_Ph ()
@@ -41,6 +42,10 @@
             break;
         case ConfigType_UI:{
             vc = [UIVC_Ph new];
+        }
+            break;
+        case ConfigType_Tools:{
+            vc = [ToolsVC_Ph new];
         }
             break;
         default:{

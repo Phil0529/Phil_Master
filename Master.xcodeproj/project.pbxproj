@@ -26,11 +26,6 @@
 		C8A99F34D03FA64B11426445 /* libPods-Master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC420693F8F97AE50886914 /* libPods-Master.a */; };
 		FF0872F01DB8ACF2008C5AA8 /* PopNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872ED1DB8ACF2008C5AA8 /* PopNavigation.m */; };
 		FF0872F11DB8ACF2008C5AA8 /* UIView+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872EF1DB8ACF2008C5AA8 /* UIView+Extent.m */; };
-		FF0872F71DB8AD21008C5AA8 /* AnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872F31DB8AD21008C5AA8 /* AnimationTool.m */; };
-		FF0872F81DB8AD21008C5AA8 /* NonWindowAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872F61DB8AD21008C5AA8 /* NonWindowAnimationTool.m */; };
-		FF0872FF1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872FE1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.m */; };
-		FF0873261DB8D5E7008C5AA8 /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0873251DB8D5E7008C5AA8 /* EOCAutoDictionary.m */; };
-		FF21A8381DB5C86D00973433 /* MasterVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A82C1DB5C86D00973433 /* MasterVC_Ph.m */; };
 		FF21A84E1DB5C88400973433 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */; };
 		FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8411DB5C88400973433 /* LeftDrawerVC_Ph.m */; };
 		FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8431DB5C88400973433 /* MenuVC_Ph.m */; };
@@ -57,7 +52,15 @@
 		FF21A8A41DB61ED100973433 /* Tools_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8A31DB61ED100973433 /* Tools_Ph.m */; };
 		FFC787151DB89D09007D22A6 /* HomeView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC787141DB89D09007D22A6 /* HomeView_Ph.m */; };
 		FFC787181DB89E74007D22A6 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFC787171DB89E74007D22A6 /* NSDate+Helper.m */; };
-		FFF9D45A1DB9E8F700DBDCAD /* NSString+Develop.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4591DB9E8F700DBDCAD /* NSString+Develop.m */; };
+		FFF9D4651DBA108700DBDCAD /* EOCAutoDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D45D1DBA108700DBDCAD /* EOCAutoDictionary.m */; };
+		FFF9D4661DBA108700DBDCAD /* MasterVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D45F1DBA108700DBDCAD /* MasterVC_Ph.m */; };
+		FFF9D4671DBA108700DBDCAD /* NSString+Develop.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4611DBA108700DBDCAD /* NSString+Develop.m */; };
+		FFF9D4681DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4631DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m */; };
+		FFF9D46C1DBA10D300DBDCAD /* ToolsVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */; };
+		FFF9D4711DBA11A400DBDCAD /* FadeAnimationVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4701DBA11A400DBDCAD /* FadeAnimationVC_Ph.m */; };
+		FFF9D4771DBA11DA00DBDCAD /* AnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4731DBA11DA00DBDCAD /* AnimationTool.m */; };
+		FFF9D4781DBA11DA00DBDCAD /* NonWindowAnimationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D4761DBA11DA00DBDCAD /* NonWindowAnimationTool.m */; };
+		FFF9D47C1DBA146D00DBDCAD /* FadeAnimationView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF9D47B1DBA146D00DBDCAD /* FadeAnimationView_Ph.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,17 +103,6 @@
 		FF0872ED1DB8ACF2008C5AA8 /* PopNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigation.m; sourceTree = "<group>"; };
 		FF0872EE1DB8ACF2008C5AA8 /* UIView+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extent.h"; sourceTree = "<group>"; };
 		FF0872EF1DB8ACF2008C5AA8 /* UIView+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extent.m"; sourceTree = "<group>"; };
-		FF0872F21DB8AD21008C5AA8 /* AnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTool.h; sourceTree = "<group>"; };
-		FF0872F31DB8AD21008C5AA8 /* AnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTool.m; sourceTree = "<group>"; };
-		FF0872F41DB8AD21008C5AA8 /* AnimationToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationToolProtocol.h; sourceTree = "<group>"; };
-		FF0872F51DB8AD21008C5AA8 /* NonWindowAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonWindowAnimationTool.h; sourceTree = "<group>"; };
-		FF0872F61DB8AD21008C5AA8 /* NonWindowAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonWindowAnimationTool.m; sourceTree = "<group>"; };
-		FF0872FD1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcMsgSendVC_Ph.h; sourceTree = "<group>"; };
-		FF0872FE1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcMsgSendVC_Ph.m; sourceTree = "<group>"; };
-		FF0873241DB8D5E7008C5AA8 /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
-		FF0873251DB8D5E7008C5AA8 /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
-		FF21A82B1DB5C86D00973433 /* MasterVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC_Ph.h; sourceTree = "<group>"; };
-		FF21A82C1DB5C86D00973433 /* MasterVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC_Ph.m; sourceTree = "<group>"; };
 		FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		FF21A8401DB5C88400973433 /* LeftDrawerVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDrawerVC_Ph.h; sourceTree = "<group>"; };
@@ -164,8 +156,25 @@
 		FFC787141DB89D09007D22A6 /* HomeView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeView_Ph.m; path = UI/Home/HomeView_Ph.m; sourceTree = SOURCE_ROOT; };
 		FFC787161DB89E74007D22A6 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
 		FFC787171DB89E74007D22A6 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
-		FFF9D4581DB9E8F700DBDCAD /* NSString+Develop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Develop.h"; sourceTree = "<group>"; };
-		FFF9D4591DB9E8F700DBDCAD /* NSString+Develop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Develop.m"; sourceTree = "<group>"; };
+		FFF9D45C1DBA108700DBDCAD /* EOCAutoDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EOCAutoDictionary.h; sourceTree = "<group>"; };
+		FFF9D45D1DBA108700DBDCAD /* EOCAutoDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EOCAutoDictionary.m; sourceTree = "<group>"; };
+		FFF9D45E1DBA108700DBDCAD /* MasterVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterVC_Ph.h; sourceTree = "<group>"; };
+		FFF9D45F1DBA108700DBDCAD /* MasterVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterVC_Ph.m; sourceTree = "<group>"; };
+		FFF9D4601DBA108700DBDCAD /* NSString+Develop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Develop.h"; sourceTree = "<group>"; };
+		FFF9D4611DBA108700DBDCAD /* NSString+Develop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Develop.m"; sourceTree = "<group>"; };
+		FFF9D4621DBA108700DBDCAD /* ObjcMsgSendVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcMsgSendVC_Ph.h; sourceTree = "<group>"; };
+		FFF9D4631DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcMsgSendVC_Ph.m; sourceTree = "<group>"; };
+		FFF9D46A1DBA10D300DBDCAD /* ToolsVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolsVC_Ph.h; sourceTree = "<group>"; };
+		FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolsVC_Ph.m; sourceTree = "<group>"; };
+		FFF9D46F1DBA11A400DBDCAD /* FadeAnimationVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimationVC_Ph.h; sourceTree = "<group>"; };
+		FFF9D4701DBA11A400DBDCAD /* FadeAnimationVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimationVC_Ph.m; sourceTree = "<group>"; };
+		FFF9D4721DBA11DA00DBDCAD /* AnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationTool.h; sourceTree = "<group>"; };
+		FFF9D4731DBA11DA00DBDCAD /* AnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationTool.m; sourceTree = "<group>"; };
+		FFF9D4741DBA11DA00DBDCAD /* AnimationToolProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationToolProtocol.h; sourceTree = "<group>"; };
+		FFF9D4751DBA11DA00DBDCAD /* NonWindowAnimationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NonWindowAnimationTool.h; sourceTree = "<group>"; };
+		FFF9D4761DBA11DA00DBDCAD /* NonWindowAnimationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NonWindowAnimationTool.m; sourceTree = "<group>"; };
+		FFF9D47A1DBA146D00DBDCAD /* FadeAnimationView_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FadeAnimationView_Ph.h; sourceTree = "<group>"; };
+		FFF9D47B1DBA146D00DBDCAD /* FadeAnimationView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FadeAnimationView_Ph.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,10 +202,10 @@
 			children = (
 				FF21A8801DB5F05D00973433 /* UI */,
 				FF21A8631DB5C90700973433 /* UserCenter */,
-				FF21A8081DB5C81900973433 /* Master */,
-				FF21A8091DB5C81900973433 /* Frame */,
 				FF21A80A1DB5C81900973433 /* Home */,
-				82D2EF791D3C806E00A54336 /* Animation */,
+				FFF9D45B1DBA108700DBDCAD /* Master */,
+				FFF9D4641DBA108700DBDCAD /* Tools */,
+				FF21A8091DB5C81900973433 /* Frame */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -228,11 +237,6 @@
 		826D2EC31CC9C73B004541C0 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				FF0872F21DB8AD21008C5AA8 /* AnimationTool.h */,
-				FF0872F31DB8AD21008C5AA8 /* AnimationTool.m */,
-				FF0872F41DB8AD21008C5AA8 /* AnimationToolProtocol.h */,
-				FF0872F51DB8AD21008C5AA8 /* NonWindowAnimationTool.h */,
-				FF0872F61DB8AD21008C5AA8 /* NonWindowAnimationTool.m */,
 				FF0872EC1DB8ACF2008C5AA8 /* PopNavigation.h */,
 				FF0872ED1DB8ACF2008C5AA8 /* PopNavigation.m */,
 				FF0872EE1DB8ACF2008C5AA8 /* UIView+Extent.h */,
@@ -296,13 +300,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		82D2EF791D3C806E00A54336 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Animation;
-			sourceTree = "<group>";
-		};
 		E67032C12E0815F3A87A59FF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,45 +309,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FF0872F91DB8AE8D008C5AA8 /* Objc_MsgSend */ = {
-			isa = PBXGroup;
-			children = (
-				FF0872FD1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.h */,
-				FF0872FE1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.m */,
-				FF0873241DB8D5E7008C5AA8 /* EOCAutoDictionary.h */,
-				FF0873251DB8D5E7008C5AA8 /* EOCAutoDictionary.m */,
-				FFF9D4581DB9E8F700DBDCAD /* NSString+Develop.h */,
-				FFF9D4591DB9E8F700DBDCAD /* NSString+Develop.m */,
-			);
-			name = Objc_MsgSend;
-			sourceTree = "<group>";
-		};
-		FF21A8081DB5C81900973433 /* Master */ = {
-			isa = PBXGroup;
-			children = (
-				FF21A82B1DB5C86D00973433 /* MasterVC_Ph.h */,
-				FF21A82C1DB5C86D00973433 /* MasterVC_Ph.m */,
-				FF0872F91DB8AE8D008C5AA8 /* Objc_MsgSend */,
-			);
-			name = Master;
-			path = Animation;
-			sourceTree = "<group>";
-		};
 		FF21A8091DB5C81900973433 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
-				FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */,
-				FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */,
-				FF21A8401DB5C88400973433 /* LeftDrawerVC_Ph.h */,
-				FF21A8411DB5C88400973433 /* LeftDrawerVC_Ph.m */,
 				FF21A8421DB5C88400973433 /* MenuVC_Ph.h */,
 				FF21A8431DB5C88400973433 /* MenuVC_Ph.m */,
-				FF21A8441DB5C88400973433 /* NavigationVC_Ph.h */,
-				FF21A8451DB5C88400973433 /* NavigationVC_Ph.m */,
-				FF21A8461DB5C88400973433 /* RightDrawerVC_Ph.h */,
-				FF21A8471DB5C88400973433 /* RightDrawerVC_Ph.m */,
 				FF21A8481DB5C88400973433 /* TabBarVC_Ph.h */,
 				FF21A8491DB5C88400973433 /* TabBarVC_Ph.m */,
+				FF21A8401DB5C88400973433 /* LeftDrawerVC_Ph.h */,
+				FF21A8411DB5C88400973433 /* LeftDrawerVC_Ph.m */,
+				FF21A8461DB5C88400973433 /* RightDrawerVC_Ph.h */,
+				FF21A8471DB5C88400973433 /* RightDrawerVC_Ph.m */,
+				FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */,
+				FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */,
+				FF21A8441DB5C88400973433 /* NavigationVC_Ph.h */,
+				FF21A8451DB5C88400973433 /* NavigationVC_Ph.m */,
 				FF21A84C1DB5C88400973433 /* UIViewController+BaseViewController_Ph.h */,
 				FF21A84D1DB5C88400973433 /* UIViewController+BaseViewController_Ph.m */,
 			);
@@ -428,6 +401,63 @@
 				FF21A8911DB5F05D00973433 /* SDPageFlowView.m */,
 			);
 			name = CardPage;
+			sourceTree = "<group>";
+		};
+		FFF9D45B1DBA108700DBDCAD /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				FFF9D45E1DBA108700DBDCAD /* MasterVC_Ph.h */,
+				FFF9D45F1DBA108700DBDCAD /* MasterVC_Ph.m */,
+				FFF9D4691DBA10AE00DBDCAD /* Objc_msgSend */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		FFF9D4641DBA108700DBDCAD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FFF9D46A1DBA10D300DBDCAD /* ToolsVC_Ph.h */,
+				FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */,
+				FFF9D46E1DBA115800DBDCAD /* Animation */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		FFF9D4691DBA10AE00DBDCAD /* Objc_msgSend */ = {
+			isa = PBXGroup;
+			children = (
+				FFF9D45C1DBA108700DBDCAD /* EOCAutoDictionary.h */,
+				FFF9D45D1DBA108700DBDCAD /* EOCAutoDictionary.m */,
+				FFF9D4601DBA108700DBDCAD /* NSString+Develop.h */,
+				FFF9D4611DBA108700DBDCAD /* NSString+Develop.m */,
+				FFF9D4621DBA108700DBDCAD /* ObjcMsgSendVC_Ph.h */,
+				FFF9D4631DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m */,
+			);
+			name = Objc_msgSend;
+			sourceTree = "<group>";
+		};
+		FFF9D46E1DBA115800DBDCAD /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				FFF9D46F1DBA11A400DBDCAD /* FadeAnimationVC_Ph.h */,
+				FFF9D4701DBA11A400DBDCAD /* FadeAnimationVC_Ph.m */,
+				FFF9D47A1DBA146D00DBDCAD /* FadeAnimationView_Ph.h */,
+				FFF9D47B1DBA146D00DBDCAD /* FadeAnimationView_Ph.m */,
+				FFF9D4791DBA144900DBDCAD /* Tool */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		FFF9D4791DBA144900DBDCAD /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FFF9D4721DBA11DA00DBDCAD /* AnimationTool.h */,
+				FFF9D4731DBA11DA00DBDCAD /* AnimationTool.m */,
+				FFF9D4741DBA11DA00DBDCAD /* AnimationToolProtocol.h */,
+				FFF9D4751DBA11DA00DBDCAD /* NonWindowAnimationTool.h */,
+				FFF9D4761DBA11DA00DBDCAD /* NonWindowAnimationTool.m */,
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,19 +588,20 @@
 				FF21A8991DB5F05D00973433 /* NewPagedFlowView.m in Sources */,
 				FF21A89B1DB5F05D00973433 /* SDPageFlowView.m in Sources */,
 				FF21A8941DB5F05D00973433 /* CardCell.m in Sources */,
-				FF0873261DB8D5E7008C5AA8 /* EOCAutoDictionary.m in Sources */,
-				FF0872FF1DB8AF1B008C5AA8 /* ObjcMsgSendVC_Ph.m in Sources */,
 				FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */,
-				FFF9D45A1DB9E8F700DBDCAD /* NSString+Develop.m in Sources */,
+				FFF9D4661DBA108700DBDCAD /* MasterVC_Ph.m in Sources */,
 				FF21A8961DB5F05D00973433 /* CardPageVC.m in Sources */,
-				FF0872F81DB8AD21008C5AA8 /* NonWindowAnimationTool.m in Sources */,
 				FF21A84E1DB5C88400973433 /* BaseVC_Ph.m in Sources */,
 				FF21A85E1DB5C8A800973433 /* HomeVC_Ph.m in Sources */,
 				FF21A8511DB5C88400973433 /* NavigationVC_Ph.m in Sources */,
 				FF21A8971DB5F05D00973433 /* CardPageView.m in Sources */,
+				FFF9D47C1DBA146D00DBDCAD /* FadeAnimationView_Ph.m in Sources */,
 				8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */,
 				FFC787181DB89E74007D22A6 /* NSDate+Helper.m in Sources */,
+				FFF9D4711DBA11A400DBDCAD /* FadeAnimationVC_Ph.m in Sources */,
+				FFF9D4681DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m in Sources */,
 				FF21A8551DB5C88400973433 /* UIViewController+BaseViewController_Ph.m in Sources */,
+				FFF9D4671DBA108700DBDCAD /* NSString+Develop.m in Sources */,
 				FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */,
 				FF21A8951DB5F05D00973433 /* CardPageCell.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
@@ -579,7 +610,6 @@
 				FF21A8531DB5C88400973433 /* TabBarVC_Ph.m in Sources */,
 				826D2EC11CC9C71E004541C0 /* ConfigManager_Ph.m in Sources */,
 				FF21A8731DB5C91C00973433 /* UCTableCell_Ph.m in Sources */,
-				FF0872F71DB8AD21008C5AA8 /* AnimationTool.m in Sources */,
 				FF21A8751DB5C91C00973433 /* UserCenterVC_Ph.m in Sources */,
 				FF21A8A41DB61ED100973433 /* Tools_Ph.m in Sources */,
 				8220A6F41CE5AB22000B1B8B /* UIButton+Function_Ph.m in Sources */,
@@ -587,14 +617,17 @@
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,
 				FF21A8721DB5C91C00973433 /* UCHeadView_Ph.m in Sources */,
 				FF0872F11DB8ACF2008C5AA8 /* UIView+Extent.m in Sources */,
+				FFF9D4771DBA11DA00DBDCAD /* AnimationTool.m in Sources */,
+				FFF9D4651DBA108700DBDCAD /* EOCAutoDictionary.m in Sources */,
 				FF21A89A1DB5F05D00973433 /* PGIndexBannerSubiew.m in Sources */,
 				FF21A8981DB5F05D00973433 /* CycleScrollView.m in Sources */,
 				826D2ED31CC9C82A004541C0 /* AppDelegate.m in Sources */,
 				FF21A8521DB5C88400973433 /* RightDrawerVC_Ph.m in Sources */,
-				FF21A8381DB5C86D00973433 /* MasterVC_Ph.m in Sources */,
+				FFF9D46C1DBA10D300DBDCAD /* ToolsVC_Ph.m in Sources */,
 				822AAD8F1CE18DBB00F84C63 /* UIImage+RoundedCorner.m in Sources */,
 				FFC787151DB89D09007D22A6 /* HomeView_Ph.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
+				FFF9D4781DBA11DA00DBDCAD /* NonWindowAnimationTool.m in Sources */,
 				826D2ED81CC9C82A004541C0 /* main.m in Sources */,
 				FF21A89C1DB5F05D00973433 /* UIVC_Ph.m in Sources */,
 				FF21A8741DB5C91C00973433 /* UCTopView_Ph.m in Sources */,
