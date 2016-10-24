@@ -8,6 +8,7 @@
 
 #import "ToolsVC_Ph.h"
 #import "FadeAnimationVC_Ph.h"
+#import "CategoryToolVC_Ph.h"
 
 @interface ToolsVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -42,6 +43,10 @@
             title = @"Animation";
         }
             break;
+        case ToolsType_Category:{
+            title = @"Category";
+        }
+            break;
         default:
             break;
     }
@@ -57,6 +62,9 @@
             vc = [FadeAnimationVC_Ph new];
         }
             break;
+        case ToolsType_Category:{
+            vc = [CategoryToolVC_Ph new];
+        }
     }
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
@@ -81,7 +89,7 @@
 
 - (NSArray *)dataArray{
     if(!_dataArray){
-        _dataArray = @[@(ToolsType_Animation)];
+        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category)];
     }
     return _dataArray;
 }
