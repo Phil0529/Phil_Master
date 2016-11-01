@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HPGrowingTextView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -92,17 +97,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2AD46018FC7A850E7B7B1B1D801CE848</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>39778FC68F219ABD899BA5A67FD4AB3B</key>
+		<key>3920052187D65BBC76B762CFC463CF93</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>45D06060162EAD16540084107015E8C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -122,17 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5459D32546B586AA7AFF2C6C8EAC8CE0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>550F7EEAEEA17E3F92C873912E23B01C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6294BB97240007E22C8BE004B47C2F7D</key>
+		<key>577B498C9A27B21B56FEE4FA012B8A2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>664A598B177920F08BE17529CE49C140</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,17 +157,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AD5CB8398F33F5E60B161E894F1B343F</key>
+		<key>8EA7AFCE934897D7F16FE38D7C283830</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA6C572B4FDF6F41F526390E3657DD99</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C2D4F994B2433A202057461A629D2925</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>CA13BB17AD99F294EC8D9D5C2D60719C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

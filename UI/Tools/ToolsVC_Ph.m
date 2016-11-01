@@ -9,6 +9,8 @@
 #import "ToolsVC_Ph.h"
 #import "FadeAnimationVC_Ph.h"
 #import "CategoryToolVC_Ph.h"
+#import "ProgressHUDVC_Ph.h"
+#import "GCDVC_Ph.h"
 
 @interface ToolsVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -47,7 +49,13 @@
             title = @"Category";
         }
             break;
-        default:
+        case ToolsType_Progress:{
+            title = @"Progresss";
+        }
+            break;
+        case ToolsType_GCD:{
+            title = @"GCD";
+        }
             break;
     }
     [cell.textLabel setText:title];
@@ -65,6 +73,15 @@
         case ToolsType_Category:{
             vc = [CategoryToolVC_Ph new];
         }
+            break;
+        case ToolsType_Progress:{
+            vc = [ProgressHUDVC_Ph new];
+        }
+            break;
+        case ToolsType_GCD:{
+            vc = [GCDVC_Ph new];
+        }
+            break;
     }
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
@@ -89,7 +106,7 @@
 
 - (NSArray *)dataArray{
     if(!_dataArray){
-        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category)];
+        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category),@(ToolsType_Progress),@(ToolsType_GCD)];
     }
     return _dataArray;
 }

@@ -26,6 +26,9 @@ PODS:
   - CVKHierarchySearcher (0.2.0)
   - CWStatusBarNotification (2.3.5)
   - DGActivityIndicatorView (2.1)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - HPGrowingTextView (1.1)
   - Mantle (1.5.8):
     - Mantle/extobjc (= 1.5.8)
@@ -73,8 +76,9 @@ PODS:
 DEPENDENCIES:
   - AMapLocation
   - CVKHierarchySearcher
-  - CWStatusBarNotification (~> 2.3.4)
+  - CWStatusBarNotification
   - DGActivityIndicatorView
+  - FMDB
   - HPGrowingTextView
   - Mantle (~> 1.4)
   - Masonry
@@ -99,6 +103,7 @@ SPEC CHECKSUMS:
   CVKHierarchySearcher: 7be8d3bcbcc6f86ff07f785e6c632b5e40da2553
   CWStatusBarNotification: 3d2738b25c3207f60cc50201388d3c96182545ff
   DGActivityIndicatorView: 1942ae657a8d247c035f229422b2d15a8adbe5b6
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   HPGrowingTextView: 88a716d97fb853bcb08a4a08e4727da17efc9b19
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
@@ -116,6 +121,6 @@ SPEC CHECKSUMS:
   UMengSocial: 48b67179c492a8cf7803fbb0438b8f55432e2fc1
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: b30d2fda917cb57abe508c67bd84ef07278aaf9c
+PODFILE CHECKSUM: d6d473a688437cca216768e32123cb1f08e31842
 
 COCOAPODS: 1.1.0.beta.2

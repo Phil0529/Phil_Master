@@ -14,9 +14,19 @@
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        Method originalMethod = class_getInstanceMethod([self class], @selector(viewDidLoad));
-        Method newMethod = class_getInstanceMethod([self class], @selector(extension_viewDidLoad));
-        method_exchangeImplementations(originalMethod, newMethod);
+        Method originalMethodViewDidLoad = class_getInstanceMethod([self class], @selector(viewDidLoad));
+        Method newMethodViewDidLoad = class_getInstanceMethod([self class], @selector(extension_viewDidLoad));
+        method_exchangeImplementations(originalMethodViewDidLoad, newMethodViewDidLoad);
+        
+        Method originalMethodViewDidAppear = class_getInstanceMethod([self class], @selector(viewDidAppear:));
+        Method newMethodViewDidAppear = class_getInstanceMethod([self class], @selector(extension_viewDidAppear:));
+        method_exchangeImplementations(originalMethodViewDidAppear, newMethodViewDidAppear);
+        
+        
+//        Method originalMethodDealloc= class_getInstanceMethod([self class], @selector(dealloc));
+//        Method newMethodDealloc = class_getInstanceMethod([self class], @selector(extension_viewDidLoad));
+//        method_exchangeImplementations(originalMethodDealloc, newMethodDealloc);
+        
     });
 }
 
@@ -26,5 +36,12 @@
         [self.view setBackgroundColor:COLORFORRGBA(0xffffff,1.f)];
     }
 }
+
+- (void)extension_viewDidAppear:(BOOL)animated {
+    [self extension_viewDidAppear:animated];
+    NSLog(@"enter controller：%@", [[self class] description]);
+}
+
+
 
 @end

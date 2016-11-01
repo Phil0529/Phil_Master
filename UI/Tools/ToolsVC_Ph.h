@@ -11,6 +11,8 @@
 typedef NS_ENUM(NSUInteger, ToolsType){
     ToolsType_Animation,
     ToolsType_Category,
+    ToolsType_Progress,
+    ToolsType_GCD,
 };
 
 

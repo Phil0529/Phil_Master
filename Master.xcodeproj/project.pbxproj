@@ -50,6 +50,9 @@
 		FF21A89B1DB5F05D00973433 /* SDPageFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8911DB5F05D00973433 /* SDPageFlowView.m */; };
 		FF21A89C1DB5F05D00973433 /* UIVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8931DB5F05D00973433 /* UIVC_Ph.m */; };
 		FF21A8A41DB61ED100973433 /* Tools_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8A31DB61ED100973433 /* Tools_Ph.m */; };
+		FF39EA341DC1E18500F6D326 /* ProgressHUDVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA331DC1E18500F6D326 /* ProgressHUDVC_Ph.m */; };
+		FF39EA371DC1E4FF00F6D326 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA361DC1E4FF00F6D326 /* UIView+Toast.m */; };
+		FF39EA3B1DC3282200F6D326 /* GCDVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA3A1DC3282200F6D326 /* GCDVC_Ph.m */; };
 		FF999FCC1DBDE134000D53EE /* UIImageView+Extension_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FCB1DBDE134000D53EE /* UIImageView+Extension_Ph.m */; };
 		FF999FD31DBDE46E000D53EE /* CategoryToolVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FD21DBDE46E000D53EE /* CategoryToolVC_Ph.m */; };
 		FF999FD61DBDE499000D53EE /* CategoryToolView_ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FD51DBDE499000D53EE /* CategoryToolView_ph.m */; };
@@ -155,6 +158,12 @@
 		FF21A8931DB5F05D00973433 /* UIVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIVC_Ph.m; sourceTree = "<group>"; };
 		FF21A8A21DB61ED100973433 /* Tools_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools_Ph.h; sourceTree = "<group>"; };
 		FF21A8A31DB61ED100973433 /* Tools_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools_Ph.m; sourceTree = "<group>"; };
+		FF39EA321DC1E18500F6D326 /* ProgressHUDVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUDVC_Ph.h; sourceTree = "<group>"; };
+		FF39EA331DC1E18500F6D326 /* ProgressHUDVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUDVC_Ph.m; sourceTree = "<group>"; };
+		FF39EA351DC1E4FF00F6D326 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		FF39EA361DC1E4FF00F6D326 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		FF39EA391DC3282200F6D326 /* GCDVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC_Ph.h; sourceTree = "<group>"; };
+		FF39EA3A1DC3282200F6D326 /* GCDVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC_Ph.m; sourceTree = "<group>"; };
 		FF999FCA1DBDE134000D53EE /* UIImageView+Extension_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension_Ph.h"; sourceTree = "<group>"; };
 		FF999FCB1DBDE134000D53EE /* UIImageView+Extension_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension_Ph.m"; sourceTree = "<group>"; };
 		FF999FD11DBDE46E000D53EE /* CategoryToolVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryToolVC_Ph.h; sourceTree = "<group>"; };
@@ -383,6 +392,26 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		FF39EA311DC1E16100F6D326 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				FF39EA321DC1E18500F6D326 /* ProgressHUDVC_Ph.h */,
+				FF39EA331DC1E18500F6D326 /* ProgressHUDVC_Ph.m */,
+				FF39EA351DC1E4FF00F6D326 /* UIView+Toast.h */,
+				FF39EA361DC1E4FF00F6D326 /* UIView+Toast.m */,
+			);
+			name = Progress;
+			sourceTree = "<group>";
+		};
+		FF39EA381DC3281500F6D326 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				FF39EA391DC3282200F6D326 /* GCDVC_Ph.h */,
+				FF39EA3A1DC3282200F6D326 /* GCDVC_Ph.m */,
+			);
+			name = GCD;
+			sourceTree = "<group>";
+		};
 		FF999FCD1DBDE404000D53EE /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -438,8 +467,10 @@
 		FFF9D4641DBA108700DBDCAD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				FF39EA381DC3281500F6D326 /* GCD */,
 				FFF9D46A1DBA10D300DBDCAD /* ToolsVC_Ph.h */,
 				FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */,
+				FF39EA311DC1E16100F6D326 /* Progress */,
 				FF999FCD1DBDE404000D53EE /* Category */,
 				FFF9D46E1DBA115800DBDCAD /* Animation */,
 			);
@@ -624,6 +655,7 @@
 				8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */,
 				FFC787181DB89E74007D22A6 /* NSDate+Helper.m in Sources */,
 				FF999FCC1DBDE134000D53EE /* UIImageView+Extension_Ph.m in Sources */,
+				FF39EA3B1DC3282200F6D326 /* GCDVC_Ph.m in Sources */,
 				FFF9D4711DBA11A400DBDCAD /* FadeAnimationVC_Ph.m in Sources */,
 				FFF9D4681DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m in Sources */,
 				FF21A8551DB5C88400973433 /* UIViewController+BaseViewController_Ph.m in Sources */,
@@ -643,6 +675,7 @@
 				82DE29591CDB4FDB00CC7EAF /* UITools.m in Sources */,
 				FF21A8721DB5C91C00973433 /* UCHeadView_Ph.m in Sources */,
 				FF0872F11DB8ACF2008C5AA8 /* UIView+Extent.m in Sources */,
+				FF39EA371DC1E4FF00F6D326 /* UIView+Toast.m in Sources */,
 				FFF9D4771DBA11DA00DBDCAD /* AnimationTool.m in Sources */,
 				FFF9D4651DBA108700DBDCAD /* EOCAutoDictionary.m in Sources */,
 				FF21A89A1DB5F05D00973433 /* PGIndexBannerSubiew.m in Sources */,
@@ -654,6 +687,7 @@
 				FFC787151DB89D09007D22A6 /* HomeView_Ph.m in Sources */,
 				826D2EDD1CC9C897004541C0 /* AppDelegateManager.m in Sources */,
 				FFF9D4781DBA11DA00DBDCAD /* NonWindowAnimationTool.m in Sources */,
+				FF39EA341DC1E18500F6D326 /* ProgressHUDVC_Ph.m in Sources */,
 				826D2ED81CC9C82A004541C0 /* main.m in Sources */,
 				FF21A89C1DB5F05D00973433 /* UIVC_Ph.m in Sources */,
 				FF21A8741DB5C91C00973433 /* UCTopView_Ph.m in Sources */,

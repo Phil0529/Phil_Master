@@ -18,7 +18,7 @@ pod 'UMengMessage'
 pod 'UMengAnalytics-NO-IDFA'
 #pod 'SMS-For-iOS', '1.2.0'
 pod 'CVKHierarchySearcher'
-pod 'CWStatusBarNotification', '~> 2.3.4'
+pod 'CWStatusBarNotification'
 pod 'AMapLocation' #定位SDK
 pod 'MMDrawerController'
 pod 'YYKit'
@@ -28,4 +28,6 @@ pod 'CVKHierarchySearcher'
 pod 'Masonry'
 pod 'ReactiveCocoa'
 pod 'Realm'
+pod ‘FMDB’
+
 end
