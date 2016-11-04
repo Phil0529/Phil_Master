@@ -26,6 +26,9 @@
 		C8A99F34D03FA64B11426445 /* libPods-Master.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC420693F8F97AE50886914 /* libPods-Master.a */; };
 		FF0872F01DB8ACF2008C5AA8 /* PopNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872ED1DB8ACF2008C5AA8 /* PopNavigation.m */; };
 		FF0872F11DB8ACF2008C5AA8 /* UIView+Extent.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0872EF1DB8ACF2008C5AA8 /* UIView+Extent.m */; };
+		FF109D311DC89241008AF671 /* TestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D301DC89241008AF671 /* TestTool.m */; };
+		FF109D371DC89CF6008AF671 /* FMDBView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */; };
+		FF109D3A1DC9782F008AF671 /* TestVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D391DC9782F008AF671 /* TestVC_Ph.m */; };
 		FF21A84E1DB5C88400973433 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */; };
 		FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8411DB5C88400973433 /* LeftDrawerVC_Ph.m */; };
 		FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8431DB5C88400973433 /* MenuVC_Ph.m */; };
@@ -53,6 +56,7 @@
 		FF39EA341DC1E18500F6D326 /* ProgressHUDVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA331DC1E18500F6D326 /* ProgressHUDVC_Ph.m */; };
 		FF39EA371DC1E4FF00F6D326 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA361DC1E4FF00F6D326 /* UIView+Toast.m */; };
 		FF39EA3B1DC3282200F6D326 /* GCDVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF39EA3A1DC3282200F6D326 /* GCDVC_Ph.m */; };
+		FF3B58FF1DC8750E00B68845 /* FMDBVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3B58FE1DC8750E00B68845 /* FMDBVC_Ph.m */; };
 		FF999FCC1DBDE134000D53EE /* UIImageView+Extension_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FCB1DBDE134000D53EE /* UIImageView+Extension_Ph.m */; };
 		FF999FD31DBDE46E000D53EE /* CategoryToolVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FD21DBDE46E000D53EE /* CategoryToolVC_Ph.m */; };
 		FF999FD61DBDE499000D53EE /* CategoryToolView_ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF999FD51DBDE499000D53EE /* CategoryToolView_ph.m */; };
@@ -109,6 +113,12 @@
 		FF0872ED1DB8ACF2008C5AA8 /* PopNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopNavigation.m; sourceTree = "<group>"; };
 		FF0872EE1DB8ACF2008C5AA8 /* UIView+Extent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extent.h"; sourceTree = "<group>"; };
 		FF0872EF1DB8ACF2008C5AA8 /* UIView+Extent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extent.m"; sourceTree = "<group>"; };
+		FF109D2F1DC89241008AF671 /* TestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTool.h; sourceTree = "<group>"; };
+		FF109D301DC89241008AF671 /* TestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTool.m; sourceTree = "<group>"; };
+		FF109D351DC89CF6008AF671 /* FMDBView_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBView_Ph.h; sourceTree = "<group>"; };
+		FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBView_Ph.m; sourceTree = "<group>"; };
+		FF109D381DC9782F008AF671 /* TestVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC_Ph.h; sourceTree = "<group>"; };
+		FF109D391DC9782F008AF671 /* TestVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_Ph.m; sourceTree = "<group>"; };
 		FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		FF21A8401DB5C88400973433 /* LeftDrawerVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDrawerVC_Ph.h; sourceTree = "<group>"; };
@@ -164,6 +174,8 @@
 		FF39EA361DC1E4FF00F6D326 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		FF39EA391DC3282200F6D326 /* GCDVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDVC_Ph.h; sourceTree = "<group>"; };
 		FF39EA3A1DC3282200F6D326 /* GCDVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDVC_Ph.m; sourceTree = "<group>"; };
+		FF3B58FD1DC8750E00B68845 /* FMDBVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBVC_Ph.h; sourceTree = "<group>"; };
+		FF3B58FE1DC8750E00B68845 /* FMDBVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBVC_Ph.m; sourceTree = "<group>"; };
 		FF999FCA1DBDE134000D53EE /* UIImageView+Extension_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Extension_Ph.h"; sourceTree = "<group>"; };
 		FF999FCB1DBDE134000D53EE /* UIImageView+Extension_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Extension_Ph.m"; sourceTree = "<group>"; };
 		FF999FD11DBDE46E000D53EE /* CategoryToolVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryToolVC_Ph.h; sourceTree = "<group>"; };
@@ -412,6 +424,21 @@
 			name = GCD;
 			sourceTree = "<group>";
 		};
+		FF3B58FC1DC874E400B68845 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				FF3B58FD1DC8750E00B68845 /* FMDBVC_Ph.h */,
+				FF3B58FE1DC8750E00B68845 /* FMDBVC_Ph.m */,
+				FF109D2F1DC89241008AF671 /* TestTool.h */,
+				FF109D301DC89241008AF671 /* TestTool.m */,
+				FF109D351DC89CF6008AF671 /* FMDBView_Ph.h */,
+				FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */,
+				FF109D381DC9782F008AF671 /* TestVC_Ph.h */,
+				FF109D391DC9782F008AF671 /* TestVC_Ph.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
 		FF999FCD1DBDE404000D53EE /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -467,9 +494,10 @@
 		FFF9D4641DBA108700DBDCAD /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				FF39EA381DC3281500F6D326 /* GCD */,
 				FFF9D46A1DBA10D300DBDCAD /* ToolsVC_Ph.h */,
 				FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */,
+				FF3B58FC1DC874E400B68845 /* FMDB */,
+				FF39EA381DC3281500F6D326 /* GCD */,
 				FF39EA311DC1E16100F6D326 /* Progress */,
 				FF999FCD1DBDE404000D53EE /* Category */,
 				FFF9D46E1DBA115800DBDCAD /* Animation */,
@@ -640,7 +668,9 @@
 				8220A6FA1CE5E07F000B1B8B /* WXApiManager.m in Sources */,
 				FF21A8701DB5C91C00973433 /* UCAlbumVC_Ph.m in Sources */,
 				FF21A8991DB5F05D00973433 /* NewPagedFlowView.m in Sources */,
+				FF109D371DC89CF6008AF671 /* FMDBView_Ph.m in Sources */,
 				FF21A89B1DB5F05D00973433 /* SDPageFlowView.m in Sources */,
+				FF109D311DC89241008AF671 /* TestTool.m in Sources */,
 				FF21A8941DB5F05D00973433 /* CardCell.m in Sources */,
 				FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */,
 				FFF9D4661DBA108700DBDCAD /* MasterVC_Ph.m in Sources */,
@@ -653,12 +683,14 @@
 				FF999FD61DBDE499000D53EE /* CategoryToolView_ph.m in Sources */,
 				FFF9D47C1DBA146D00DBDCAD /* FadeAnimationView_Ph.m in Sources */,
 				8220A6F71CE5E072000B1B8B /* WBApiManger.m in Sources */,
+				FF3B58FF1DC8750E00B68845 /* FMDBVC_Ph.m in Sources */,
 				FFC787181DB89E74007D22A6 /* NSDate+Helper.m in Sources */,
 				FF999FCC1DBDE134000D53EE /* UIImageView+Extension_Ph.m in Sources */,
 				FF39EA3B1DC3282200F6D326 /* GCDVC_Ph.m in Sources */,
 				FFF9D4711DBA11A400DBDCAD /* FadeAnimationVC_Ph.m in Sources */,
 				FFF9D4681DBA108700DBDCAD /* ObjcMsgSendVC_Ph.m in Sources */,
 				FF21A8551DB5C88400973433 /* UIViewController+BaseViewController_Ph.m in Sources */,
+				FF109D3A1DC9782F008AF671 /* TestVC_Ph.m in Sources */,
 				FFF9D4671DBA108700DBDCAD /* NSString+Develop.m in Sources */,
 				FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */,
 				FF21A8951DB5F05D00973433 /* CardPageCell.m in Sources */,

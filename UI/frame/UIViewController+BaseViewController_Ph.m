@@ -18,9 +18,9 @@
         Method newMethodViewDidLoad = class_getInstanceMethod([self class], @selector(extension_viewDidLoad));
         method_exchangeImplementations(originalMethodViewDidLoad, newMethodViewDidLoad);
         
-        Method originalMethodViewDidAppear = class_getInstanceMethod([self class], @selector(viewDidAppear:));
-        Method newMethodViewDidAppear = class_getInstanceMethod([self class], @selector(extension_viewDidAppear:));
-        method_exchangeImplementations(originalMethodViewDidAppear, newMethodViewDidAppear);
+//        Method originalMethodViewDidAppear = class_getInstanceMethod([self class], @selector(viewDidAppear:));
+//        Method newMethodViewDidAppear = class_getInstanceMethod([self class], @selector(extension_viewDidAppear:));
+//        method_exchangeImplementations(originalMethodViewDidAppear, newMethodViewDidAppear);
         
         
 //        Method originalMethodDealloc= class_getInstanceMethod([self class], @selector(dealloc));
@@ -36,11 +36,11 @@
         [self.view setBackgroundColor:COLORFORRGBA(0xffffff,1.f)];
     }
 }
-
-- (void)extension_viewDidAppear:(BOOL)animated {
-    [self extension_viewDidAppear:animated];
-    NSLog(@"enter controller：%@", [[self class] description]);
-}
+//
+//- (void)extension_viewDidAppear:(BOOL)animated {
+//    [self extension_viewDidAppear:animated];
+//    NSLog(@"enter controller：%@", [[self class] description]);
+//}
 
 
 

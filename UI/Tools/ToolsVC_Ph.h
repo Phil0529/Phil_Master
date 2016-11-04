@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, ToolsType){
     ToolsType_Category,
     ToolsType_Progress,
     ToolsType_GCD,
+    ToolsType_FMDB,
 };
 
 

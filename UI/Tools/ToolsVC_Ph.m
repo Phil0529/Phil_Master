@@ -11,6 +11,7 @@
 #import "CategoryToolVC_Ph.h"
 #import "ProgressHUDVC_Ph.h"
 #import "GCDVC_Ph.h"
+#import "FMDBVC_Ph.h"
 
 @interface ToolsVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -57,6 +58,10 @@
             title = @"GCD";
         }
             break;
+        case ToolsType_FMDB:{
+            title = @"FMDB";
+        }
+            break;
     }
     [cell.textLabel setText:title];
     return cell;
@@ -80,6 +85,10 @@
             break;
         case ToolsType_GCD:{
             vc = [GCDVC_Ph new];
+        }
+            break;
+        case ToolsType_FMDB:{
+            vc = [FMDBVC_Ph new];
         }
             break;
     }
@@ -106,7 +115,7 @@
 
 - (NSArray *)dataArray{
     if(!_dataArray){
-        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category),@(ToolsType_Progress),@(ToolsType_GCD)];
+        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category),@(ToolsType_Progress),@(ToolsType_GCD),@(ToolsType_FMDB)];
     }
     return _dataArray;
 }
