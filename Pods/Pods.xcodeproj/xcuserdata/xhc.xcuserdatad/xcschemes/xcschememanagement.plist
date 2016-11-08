@@ -14,11 +14,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CWStatusBarNotification.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>DGActivityIndicatorView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -89,7 +84,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UITableView+FDTemplateLayoutCell.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>YYKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iOS-Echarts-iOS-Echarts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>iOS-Echarts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -97,17 +107,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3920052187D65BBC76B762CFC463CF93</key>
+		<key>18AB3BAF8E86247FA13E0402473F376B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>24ED9C89E300A4400887E191DA43E8A9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2717E782412CF546AD140E5C05BF07AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>32C4C333F12E8211D1377F1359588E9B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>410B25DF16EA5C5B3E2698F74F9625FB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>45D06060162EAD16540084107015E8C3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -132,16 +152,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>577B498C9A27B21B56FEE4FA012B8A2F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>664A598B177920F08BE17529CE49C140</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>70BC44266C6FFE30D2C57129458E070B</key>
 		<dict>
 			<key>primary</key>
@@ -157,7 +167,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8EA7AFCE934897D7F16FE38D7C283830</key>
+		<key>8C26C9616EA3D610AFDE02A79C7093AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9828F69342BC581088C1AAF1199290B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B4CDBCF828EC6A968516669347D8699</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,12 +187,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA6C572B4FDF6F41F526390E3657DD99</key>
+		<key>C2D4F994B2433A202057461A629D2925</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C2D4F994B2433A202057461A629D2925</key>
+		<key>C6E32AE37732ED428A569253D4FF5C6B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -182,7 +202,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7C7D5BE80D9A225BF88F0CA731F4383</key>
+		<key>E71795BC6A068FA91D69F2C1F5AFABEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
