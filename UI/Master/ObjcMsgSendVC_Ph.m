@@ -33,7 +33,7 @@
     [btn setTitle:@"测试" forState:0];
     [btn setTitleColor:[UIColor redColor] forState:0];
     [[btn rac_signalForControlEvents:1<<6] subscribeNext:^(id x) {
-        NSString *test = @"23123";
+//        NSString *test = @"23123";
     }];
     [self.view addSubview:btn];
     

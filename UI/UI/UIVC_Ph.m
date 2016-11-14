@@ -8,6 +8,7 @@
 
 #import "UIVC_Ph.h"
 #import "CardPageVC.h"
+#import "FDTbVC_Ph.h"
 
 @interface UIVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -42,7 +43,9 @@
             title = @"3DCardPage";
         }
             break;
-        default:
+        case UIType_FDTableView:{
+            title = @"FDTableView";
+        }
             break;
     }
     [cell.textLabel setText:title];
@@ -55,6 +58,10 @@
     switch (type) {
         case UIType_3DCardPage:{
             vc = [CardPageVC new];
+        }
+            break;
+        case UIType_FDTableView:{
+            vc = [FDTbVC_Ph new];
         }
             break;
     }
@@ -81,7 +88,7 @@
 
 - (NSArray *)dataArray{
     if(!_dataArray){
-        _dataArray = @[@(UIType_3DCardPage)];
+        _dataArray = @[@(UIType_3DCardPage),@(UIType_FDTableView)];
     }
     return _dataArray;
 }
