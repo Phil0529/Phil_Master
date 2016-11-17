@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "AppDelegateManager.h"
 
+const NSString *Phil_Title = @"123";
+
 @interface AppDelegate ()
 {
     AppDelegateManager *_manager;

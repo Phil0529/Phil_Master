@@ -29,6 +29,7 @@
 		FF109D311DC89241008AF671 /* TestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D301DC89241008AF671 /* TestTool.m */; };
 		FF109D371DC89CF6008AF671 /* FMDBView_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */; };
 		FF109D3A1DC9782F008AF671 /* TestVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF109D391DC9782F008AF671 /* TestVC_Ph.m */; };
+		FF185CC21DD9CA03008FFBA1 /* AnimationVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF185CC11DD9CA03008FFBA1 /* AnimationVC_Ph.m */; };
 		FF21A84E1DB5C88400973433 /* BaseVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */; };
 		FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8411DB5C88400973433 /* LeftDrawerVC_Ph.m */; };
 		FF21A8501DB5C88400973433 /* MenuVC_Ph.m in Sources */ = {isa = PBXBuildFile; fileRef = FF21A8431DB5C88400973433 /* MenuVC_Ph.m */; };
@@ -124,6 +125,8 @@
 		FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBView_Ph.m; sourceTree = "<group>"; };
 		FF109D381DC9782F008AF671 /* TestVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC_Ph.h; sourceTree = "<group>"; };
 		FF109D391DC9782F008AF671 /* TestVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_Ph.m; sourceTree = "<group>"; };
+		FF185CC01DD9CA03008FFBA1 /* AnimationVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationVC_Ph.h; sourceTree = "<group>"; };
+		FF185CC11DD9CA03008FFBA1 /* AnimationVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationVC_Ph.m; sourceTree = "<group>"; };
 		FF21A83E1DB5C88400973433 /* BaseVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC_Ph.h; sourceTree = "<group>"; };
 		FF21A83F1DB5C88400973433 /* BaseVC_Ph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC_Ph.m; sourceTree = "<group>"; };
 		FF21A8401DB5C88400973433 /* LeftDrawerVC_Ph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftDrawerVC_Ph.h; sourceTree = "<group>"; };
@@ -355,6 +358,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FF185CBF1DD9C9EA008FFBA1 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				FF185CC01DD9CA03008FFBA1 /* AnimationVC_Ph.h */,
+				FF185CC11DD9CA03008FFBA1 /* AnimationVC_Ph.m */,
+			);
+			name = Animations;
+			sourceTree = "<group>";
+		};
 		FF21A8091DB5C81900973433 /* Frame */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,10 +425,20 @@
 			children = (
 				FF21A8921DB5F05D00973433 /* UIVC_Ph.h */,
 				FF21A8931DB5F05D00973433 /* UIVC_Ph.m */,
+				FF185CBF1DD9C9EA008FFBA1 /* Animations */,
 				FF407E9C1DD1650B004177CF /* FDTableView */,
 				FFC787121DB89909007D22A6 /* CardPage */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		FF2A6E181DDB137500826302 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FF109D381DC9782F008AF671 /* TestVC_Ph.h */,
+				FF109D391DC9782F008AF671 /* TestVC_Ph.m */,
+			);
+			name = Test;
 			sourceTree = "<group>";
 		};
 		FF39EA311DC1E16100F6D326 /* Progress */ = {
@@ -448,8 +470,6 @@
 				FF109D301DC89241008AF671 /* TestTool.m */,
 				FF109D351DC89CF6008AF671 /* FMDBView_Ph.h */,
 				FF109D361DC89CF6008AF671 /* FMDBView_Ph.m */,
-				FF109D381DC9782F008AF671 /* TestVC_Ph.h */,
-				FF109D391DC9782F008AF671 /* TestVC_Ph.m */,
 			);
 			name = FMDB;
 			sourceTree = "<group>";
@@ -534,6 +554,7 @@
 			children = (
 				FFF9D46A1DBA10D300DBDCAD /* ToolsVC_Ph.h */,
 				FFF9D46B1DBA10D300DBDCAD /* ToolsVC_Ph.m */,
+				FF2A6E181DDB137500826302 /* Test */,
 				FFECA0531DD55861009AA40E /* Block */,
 				FF3B58FC1DC874E400B68845 /* FMDB */,
 				FF39EA381DC3281500F6D326 /* GCD */,
@@ -735,6 +756,7 @@
 				FF109D3A1DC9782F008AF671 /* TestVC_Ph.m in Sources */,
 				FFF9D4671DBA108700DBDCAD /* NSString+Develop.m in Sources */,
 				FF21A84F1DB5C88400973433 /* LeftDrawerVC_Ph.m in Sources */,
+				FF185CC21DD9CA03008FFBA1 /* AnimationVC_Ph.m in Sources */,
 				FF21A8951DB5F05D00973433 /* CardPageCell.m in Sources */,
 				826D2EDA1CC9C82A004541C0 /* Master.xcdatamodeld in Sources */,
 				FF21A8711DB5C91C00973433 /* UCBaseVC_Ph.m in Sources */,

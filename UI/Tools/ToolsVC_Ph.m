@@ -13,6 +13,9 @@
 #import "GCDVC_Ph.h"
 #import "FMDBVC_Ph.h"
 #import "BlockVC_Ph.h"
+#import "TestVC_Ph.h"
+
+NSString *const Test_Address = @"123";
 
 @interface ToolsVC_Ph ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -67,6 +70,10 @@
             title = @"Block";
         }
             break;
+        case ToolsType_Test:{
+            title = @"Test";
+        }
+            break;
     }
     [cell.textLabel setText:title];
     return cell;
@@ -100,6 +107,10 @@
             vc = [BlockVC_Ph new];
         }
             break;
+        case ToolsType_Test:{
+            vc = [TestVC_Ph new];
+        }
+            break;
     }
     if (vc) {
         [self.navigationController pushViewController:vc animated:YES];
@@ -124,7 +135,7 @@
 
 - (NSArray *)dataArray{
     if(!_dataArray){
-        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category),@(ToolsType_Progress),@(ToolsType_GCD),@(ToolsType_FMDB),@(ToolsType_Block)];
+        _dataArray = @[@(ToolsType_Animation),@(ToolsType_Category),@(ToolsType_Progress),@(ToolsType_GCD),@(ToolsType_FMDB),@(ToolsType_Block),@(ToolsType_Test)];
     }
     return _dataArray;
 }
